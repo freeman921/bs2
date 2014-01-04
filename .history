@@ -1,0 +1,6170 @@
+#+1259120208
+history
+#+1259230981
+ls
+#+1259231002
+cd programs/
+#+1259231003
+ls
+#+1259231004
+ls
+#+1259231005
+cd ..
+#+1259231006
+ls
+#+1259231011
+d PCfiles/
+#+1259231015
+cd PCfiles/
+#+1259231015
+LS
+#+1259231018
+ls
+#+1259231020
+cd ..
+#+1259231020
+ls
+#+1259231052
+ls
+#+1259231056
+cd test
+#+1259231057
+ls
+#+1259231061
+ls
+#+1259231065
+vim sample
+#+1259231099
+ls
+#+1259231417
+grep -n \{o,\} sample
+#+1259231422
+grep -n \{o,\} sample
+#+1259231436
+grep -n 'o' \{2,\} sample
+#+1259231448
+grep --color -n 'o' \{2,\} sample
+#+1259231484
+grep --color -n \{'o'2,\} sample
+#+1259231505
+grep --color -n 'o'{2,\} sample
+#+1259231516
+grep --color -n 'o{2,\}' sample
+#+1259231526
+grep --color -n 'o\{2,\}' sample
+#+1259231532
+grep --color -n 'o\{2,6\}' sample
+#+1259231536
+grep --color -n 'o\{6\}' sample
+#+1259231537
+grep --color -n 'o\{6\}' sample
+#+1259231540
+grep --color -n 'o\{5\}' sample
+#+1259231549
+clear
+#+1259231576
+traceroute 140.113.65.5
+#+1259231589
+traceroute www.google.com
+#+1259231614
+ping -R www.google.com
+#+1259231621
+ping -r www.google.com
+#+1259231721
+history
+#+1259231743
+grep --color -n 'e\{5\}' sample
+#+1259231746
+grep --color -n 'e\{2\}' sample
+#+1259231766
+ls
+#+1259231771
+pwd
+#+1259231775
+cd ..
+#+1259231776
+ls
+#+1259231779
+ls -al
+#+1259231781
+vim .procmailrc
+#+1259231789
+ls
+#+1259231791
+ls -al
+#+1259231801
+vim .tcshrc
+#+1259231841
+vim .tcshrc
+#+1259231875
+rehash
+#+1259231880
+exit
+#+1259232043
+ls
+#+1259232054
+vim .tcshrc
+#+1259232087
+ls
+#+1259232089
+ls -al
+#+1259232104
+PS1='Freeman..\w..$  '
+#+1259232112
+PS='Freeman..\w..$  '
+#+1259232212
+ls
+#+1259232218
+cd test
+#+1259232220
+ls
+#+1259234125
+fucl
+#+1259234127
+fuck
+#+1259234130
+clear
+#+1259234137
+ls -al
+#+1259234153
+vim ../.tcshrc
+#+1259234193
+fuck
+#+1259234199
+ls -al
+#+1259234204
+cd ..
+#+1259234205
+ls
+#+1259234206
+ls -al
+#+1259234212
+rehash
+#+1259234219
+fuck
+#+1259234222
+vim .tcshrc
+#+1259234253
+fuck
+#+1259234257
+fuck
+#+1259234259
+vim .tcshrc
+#+1259234272
+cat Tall Gay Eat shit La
+#+1259234278
+vim .tcshrc
+#+1259234296
+fuck
+#+1259234302
+ls
+#+1259234312
+ls
+#+1259234316
+ls
+#+1259234318
+ls
+#+1259234320
+ls
+#+1259234324
+fuck
+#+1259234326
+clear
+#+1259234330
+pwd
+#+1259234332
+ls -al
+#+1259234342
+vim .tc
+#+1259234345
+vim .tcshrc
+#+1259234537
+fuck=
+#+1259234539
+fuck
+#+1259234543
+exit
+#+1259234555
+ls
+#+1259234558
+fuck
+#+1259234566
+cat shit
+#+1259234569
+man cat
+#+1259234579
+man 'cat'
+#+1259234585
+cat 'shit'
+#+1259234601
+print 'shit'
+#+1259234611
+echo shit
+#+1259234618
+vim .tcshrc
+#+1259234710
+ls
+#+1259234713
+fuck
+#+1259234715
+fuck
+#+1259234715
+fuck
+#+1259234717
+clear
+#+1259234718
+ls
+#+1259234721
+bye
+#+1259234776
+ls
+#+1259234785
+fuck
+#+1259234799
+cd test
+#+1259234800
+ls
+#+1259234806
+cat sample
+#+1259234831
+grep -n '^&' sample
+#+1259234838
+grep -n ^ & sample
+#+1259234850
+grep -n ^ & sample
+#+1259234860
+grep -n {^ & } sample
+#+1259234882
+grep -n [^ & ] sample
+#+1259234893
+fuck
+#+1259234902
+ls
+#+1259234905
+ls
+#+1259234909
+clear
+#+1259234910
+ls
+#+1259234911
+fuck
+#+1259234932
+bye
+#+1259234936
+bye
+#+1259236406
+ls
+#+1259236410
+game
+#+1259236412
+ls
+#+1259236416
+cd code
+#+1259236417
+ls
+#+1259236419
+vim test.cpp
+#+1259236425
+ls
+#+1259236435
+g++ test.cpp
+#+1259236438
+ls
+#+1259236452
+./a.out
+#+1259236476
+.a.out
+#+1259236480
+./a.out
+#+1259236488
+g++ test.cpp -o fuck.o
+#+1259236490
+ls
+#+1259236495
+./fuck.o
+#+1259236508
+cd..
+#+1259236510
+ls
+#+1259236512
+cd code
+#+1259236517
+ls
+#+1259236524
+vim shit.c
+#+1259236596
+vim shit.c
+#+1259236600
+vim shit.c
+#+1259236610
+ls
+#+1259236627
+gcc shit.c
+#+1259236631
+./a.out
+#+1259236636
+./a.out
+#+1259236636
+./a.out
+#+1259236666
+man gcc
+#+1259236750
+man printf
+#+1259236755
+man printf
+#+1259236761
+man printf | less
+#+1259236775
+cat `man printf`
+#+1259236828
+top
+#+1259236835
+top
+#+1259239033
+fuck
+#+1259239039
+fuck
+#+1259239042
+fuck
+#+1259239043
+fuck
+#+1259239043
+fuck
+#+1259239044
+fuck
+#+1259239044
+fuck
+#+1259239045
+fuck
+#+1259239046
+clear
+#+1259239052
+fuck
+#+1259239057
+et ; lkhedfl ; hefoldhsf ; lkd
+#+1259239058
+ojsd ; jdspodff
+#+1259239059
+fdsofds
+#+1259239060
+d
+#+1259239060
+fds
+#+1259239060
+f
+#+1259239063
+df
+#+1259239069
+clear
+#+1259239070
+f
+#+1259239076
+f
+#+1259239078
+clear
+#+1259239084
+fuck
+#+1259239087
+fuck
+#+1259239092
+fuck
+#+1259239099
+\dfdsfdsfdsfdsfdsfdsfdsfdffdsfdsfsfdsfsd
+#+1259239108
+ls
+#+1259239118
+ls
+#+1259239118
+ls
+#+1259239141
+ls
+#+1259239145
+ls
+#+1259239151
+clear
+#+1259252090
+ls
+#+1259252092
+telnet
+#+1259252103
+telnet bs2.to
+#+1259252217
+ls
+#+1259252220
+ls
+#+1259252223
+clear
+#+1259262463
+ifconfig
+#+1259262781
+ls
+#+1259263258
+telnet bs2.to
+#+1259438597
+telnet bs2.to
+#+1259438631
+exit
+#+1259599285
+telnet bs2.to
+#+1259599441
+telnet bs2.to
+#+1259664762
+LC_TIME zh_tw
+#+1259664774
+locale
+#+1259664787
+LC_TIME zh_tw
+#+1259664793
+locale
+#+1259690482
+telnet bs2.to
+#+1259690510
+exit
+#+1259731995
+ls
+#+1259732004
+ls
+#+1259732006
+clear
+#+1260504378
+telnet bs2.to
+#+1260504468
+telnet bs2.to
+#+1262934252
+telnet bs2.to:3456
+#+1262934359
+telnet bs2.to
+#+1262943489
+ls
+#+1262943491
+ls
+#+1263022753
+telnet bs2.to -p3456
+#+1263022757
+telnet bs2.to -p 3456
+#+1263022771
+telnet bs2.to 3456
+#+1263022814
+telnet bs2.to 3456
+#+1263220052
+telnet bs2.to 3456
+#+1263221627
+ping -a 140.113.235.131
+#+1263227897
+telnet bs2.to 3456
+#+1263301771
+telnet bs2.to
+#+1263399859
+ls
+#+1263399863
+cd code/
+#+1263399864
+ls
+#+1263399868
+vim test.cpp
+#+1263399875
+vim test.cpp
+#+1263400106
+g++ test.cpp
+#+1263400111
+vim test.cpp
+#+1263400121
+g++ test.cpp
+#+1263400126
+vim test.cpp
+#+1263400162
+g++ test.cpp
+#+1263400187
+vim test.cpp
+#+1263400403
+g++ test.cpp
+#+1263400406
+./a.out
+#+1263400468
+logout
+#+1263636906
+traceroot 140.113.63.162
+#+1263636910
+traceroot 140.113.63.162
+#+1263636914
+man trace
+#+1263636927
+man tracerou
+#+1263636930
+man trace
+#+1263636936
+man tracesource
+#+1263636940
+man traceroot
+#+1263636968
+man traceroute 140.113.63.162
+#+1263636976
+traceroute 140.113.63.162
+#+1263637032
+man traceroute
+#+1263637071
+ping 140.113.63.162 -r
+#+1263637080
+ping -r 140.113.63.162
+#+1263637089
+ping -R 140.113.63.162
+#+1263637099
+traceroute 140.113.63.162
+#+1263637115
+traceroute 140.113.63.185
+#+1263637128
+ping 140.113.63.162
+#+1263637135
+traceroute 140.113.63.162
+#+1263637147
+man ping
+#+1263637183
+ping -R 140.113.63.162
+#+1270386416
+ls
+#+1270386418
+cd programs/
+#+1270386420
+ls
+#+1270386435
+mv siscasm.txt siscasm
+#+1270386438
+perl
+#+1270386495
+ls
+#+1270386513
+perl siscasm test.asm lala.mc
+#+1270386527
+ls
+#+1270386560
+vim test.asm
+#+1270386594
+perl siscasm test.asm lala.mc
+#+1270386599
+vim test.asm
+#+1275388900
+calc
+#+1275388919
+cal
+#+1275388922
+cal 1
+#+1275388930
+calc
+#+1275392868
+cal 9999
+#+1275393113
+cal
+#+1275393116
+cal -h
+#+1275395994
+cal 2010
+#+1275396106
+cal -CN 1911
+#+1275396118
+cal -s CN 1911
+#+1275396124
+cal -h
+#+1275396134
+man cal
+#+1275396153
+ncal -s CN 1911
+#+1275396268
+ncal 1752
+#+1276429873
+cd ..
+#+1276429874
+ls
+#+1276429877
+cd ..
+#+1276429878
+ls
+#+1276429882
+cd ..
+#+1276429883
+ls
+#+1276429890
+cd faculty/
+#+1276429891
+ls
+#+1276429913
+cd tsaiwn/
+#+1276429914
+ls
+#+1276429919
+cd public_html
+#+1276429920
+ls
+#+1276429935
+what exam
+#+1276429939
+where exam
+#+1276429944
+man where
+#+1276430066
+man which
+#+1276430086
+which exam
+#+1276430091
+which test
+#+1276430184
+man find
+#+1276430206
+find test
+#+1276430214
+find final
+#+1276430218
+find exam
+#+1276430229
+man find
+#+1276430485
+find / -name exam*
+#+1276430490
+find / -name *exam*
+#+1276430538
+find . -name *exam*
+#+1276430651
+cd ../..
+#+1276430654
+cd ..
+#+1276430654
+ls
+#+1276430664
+cd gcs
+#+1276430665
+ls
+#+1276430666
+cd ..
+#+1276430671
+cd cs
+#+1276430672
+ls
+#+1276430675
+cd 98ep
+#+1276430676
+ls
+#+1276430680
+cd ..
+#+1276430682
+cd 98
+#+1276430682
+ls
+#+1276430688
+cd 9817248
+#+1276430689
+ls
+#+1276430698
+locate . free
+#+1276430703
+locate . freeman
+#+1276430719
+find . freeman
+#+1276430790
+find ./public_html freeman
+#+1276430793
+find ./public_html freeman
+#+1276430800
+cd public_html
+#+1276430800
+ls
+#+1276430803
+ls
+#+1276430808
+find . free
+#+1276430815
+find . freeman
+#+1276430820
+find . freeman*
+#+1276430832
+find . freeman*
+#+1276430838
+find . freemanfuck*
+#+1276430850
+ls
+#+1276430854
+cd demo
+#+1276430857
+ls
+#+1276430865
+ls
+#+1276430867
+ls -al
+#+1276430870
+cd ..
+#+1276430870
+ls
+#+1276430882
+find . freeman*
+#+1276430951
+man locate
+#+1276431001
+locate -d .: freeman*
+#+1276431004
+locate -d .: freeman
+#+1276431011
+locate freeman*
+#+1276431013
+locate freeman*
+#+1276431017
+find freeman
+#+1276431019
+find freeman*
+#+1276431031
+find . -name freeman*
+#+1276431042
+ls
+#+1276431051
+cd freemanfuckedward/
+#+1276431052
+ls
+#+1276431053
+cd ..
+#+1276431054
+ls
+#+1276431064
+find . -name freeman*
+#+1276431066
+cd ..
+#+1276431067
+ls
+#+1276431072
+find . -name freeman*
+#+1276431075
+find . -name freeman*
+#+1276431076
+find . -name freeman*
+#+1276431077
+ls
+#+1276431079
+ls
+#+1276431084
+cd ../../..
+#+1276431085
+ls
+#+1276431088
+cd faculty/
+#+1276431090
+cd tsaiwn/
+#+1276431091
+ls
+#+1276431097
+cd public_html
+#+1276431098
+ls
+#+1276431106
+find . *exam*
+#+1276431130
+find . *exam*
+#+1276431324
+~~~00exam/hwz602453.htm
+#+1276431535
+ls
+#+1276431589
+locate . *exam*
+#+1276431597
+locate ./ *exam*
+#+1276431599
+locate ./ *exam*
+#+1276431602
+locate . *exam*
+#+1276431609
+man locate
+#+1276431666
+locate -d ./: *exam*
+#+1276431674
+cd `
+#+1276431676
+cd ~
+#+1276431678
+ls
+#+1276431683
+cd programs/
+#+1276431684
+ls
+#+1276431872
+cd ..
+#+1276431874
+ls
+#+1276431879
+cd datas/
+#+1276431880
+ls
+#+1276431883
+cd ..
+#+1276431884
+ls
+#+1276431893
+locate . Vector*
+#+1276431896
+locate ./ Vector*
+#+1276431902
+find . Vector*
+#+1276431905
+find ./ Vector*
+#+1276431908
+ls
+#+1276431921
+find ./ -name Vector*
+#+1276431927
+find . -name Vector*
+#+1276431932
+ls
+#+1276431935
+man find
+#+1276431989
+find ./ -name Vector*
+#+1276431990
+ls
+#+1276431995
+find ./ -name test
+#+1276432334
+ls
+#+1276432351
+cd ..
+#+1276432352
+cd ..
+#+1276432353
+ls
+#+1276432355
+cd ..
+#+1276432356
+cd /
+#+1276432359
+ls
+#+1276432360
+cd u
+#+1276432362
+ls
+#+1276432363
+cd cs
+#+1276432364
+ls
+#+1276432366
+cd 98
+#+1276432373
+cd 9817248
+#+1276432374
+ls
+#+1276432382
+cd freemanfuckfrank
+#+1276432395
+ls -al
+#+1276432405
+cd ..
+#+1276432411
+ls -al freemanfuckfrank
+#+1276432610
+ls
+#+1276432612
+cd ..
+#+1276432615
+cd 9817248
+#+1276432616
+ls
+#+1276432651
+cd freemanfuckfrank
+#+1276432656
+cd freemanfucked
+#+1276432659
+cd freemanfuckfr
+#+1276432687
+cd freemanfuckfrank
+#+1276432697
+who
+#+1276432717
+who cetsai
+#+1276432831
+last
+#+1276432848
+grep last tsai
+#+1276432862
+last | grep tsai
+#+1276432927
+man last
+#+1276432939
+last
+#+1276433090
+ls
+#+1276433214
+ls
+#+1276433218
+dir
+#+1276433220
+ls
+#+1276433375
+ls
+#+1276433379
+cd ..
+#+1276433431
+ls
+#+1276433438
+cd freemanfuckfrank
+#+1276433476
+ls
+#+1276433478
+ls
+#+1276433488
+vim test.cpp
+#+1276433598
+mv test.cpp test.c
+#+1276433602
+gcc test.c
+#+1276433604
+ls
+#+1276433607
+ls -al
+#+1276433621
+chmod 100 a.out
+#+1276433623
+ls -al
+#+1276433627
+a.out
+#+1276433631
+/a.out
+#+1276433637
+ls
+#+1276433644
+./a.out
+#+1276433648
+./a.out
+#+1276433651
+./a.out
+#+1276433659
+chmod 000 a.out
+#+1276433661
+ls -al
+#+1276433671
+./a.out
+#+1276433673
+./a.out
+#+1276433677
+chmod 100 a.out
+#+1276433679
+./a.out
+#+1276433686
+vim a.out
+#+1276433692
+cat a.out
+#+1276433696
+chmod 755
+#+1276433698
+chmod 755 a.out
+#+1276433706
+cat a.out
+#+1276433711
+PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY:q
+#+1276433713
+ls
+#+1276433715
+cls
+#+1276433716
+ls
+#+1276433719
+ls
+#+1276433754
+ls
+#+1276433767
+mkdir alienloveedward
+#+1276433767
+ls
+#+1276433774
+ls
+#+1276433794
+vim alienloveedward/x
+#+1276433799
+ls
+#+1276433807
+find . -name x
+#+1276433812
+find . -name a
+#+1276433817
+find . -name a.out
+#+1276433821
+find . -name a*
+#+1276433828
+find . -name *a*
+#+1276433833
+find . -name a
+#+1276433837
+find . -name a*
+#+1276433849
+find ./ -name a*
+#+1276433854
+ls
+#+1276433858
+find ./ -name te
+#+1276433860
+find ./ -name te*
+#+1276433865
+find ./ -name a*
+#+1276433876
+cd ..
+#+1276433884
+find ./ -name te*
+#+1276433887
+find ./ -name te*
+#+1276433894
+find ./ te*
+#+1276433900
+find ./ -name te*
+#+1276433985
+find ./ -name te*
+#+1276433987
+find ./ -name test
+#+1276433994
+find ./ -name test.c
+#+1276434000
+find ./ test.c
+#+1276434020
+find ./ test.c
+#+1276434044
+find freemanfuckfrank/ -name te*
+#+1276434049
+find freemanfuckfrank/ -name test.c
+#+1276434055
+ls
+#+1276434060
+cd freemanfuckfrank
+#+1276434061
+ls
+#+1276434071
+mv test.c alienloveedward/
+#+1276434072
+ls
+#+1276434081
+find ./ -name te*
+#+1276434084
+find ./ -name test.c
+#+1276434090
+find ./ -name te**
+#+1276434092
+find ./ -name te*
+#+1276434103
+man find
+#+1276434175
+find ./ -name 'te*'
+#+1276434186
+ls
+#+1276434189
+cd ..
+#+1276434190
+ls
+#+1276434196
+find ./ -name 'te*'
+#+1276434197
+find ./ -name 'te*'
+#+1276434204
+cd ../../..
+#+1276434206
+ls
+#+1276434209
+cd faculty/
+#+1276434209
+ls
+#+1276434213
+cd tsaiwn/
+#+1276434213
+ls
+#+1276434238
+cd public_html
+#+1276434239
+ls
+#+1276434250
+find ./ -name '*exam*'
+#+1276434270
+find ./ -name '*exam*' > ~/good
+#+1276434278
+find ./ -name '*exam*' > ~/good
+#+1276434310
+vim ~/good
+#+1276434416
+find ./ -name '*final*' > ~/good
+#+1276434433
+vim ~/good
+#+1276434702
+ls
+#+1276434713
+cd course
+#+1276434713
+ls
+#+1276434720
+cd introcs
+#+1276434722
+ls
+#+1276434770
+cd ..
+#+1276434770
+ls
+#+1276434775
+cd oop
+#+1276434778
+ls
+#+1276434780
+cd ..
+#+1276434783
+cd oop/
+#+1276434784
+ls
+#+1276434787
+cd ..
+#+1276434792
+cd introcs_old
+#+1276434795
+cd introcs\_old
+#+1276434796
+ls
+#+1276434806
+ls -al | grep intro
+#+1276434811
+ls
+#+1276434826
+cd course
+#+1276434827
+ks
+#+1276434828
+ls
+#+1276434834
+cd introcs
+#+1276434836
+ls
+#+1276434841
+cd ..
+#+1276434842
+ls
+#+1276434847
+ls
+#+1276434848
+cd ..
+#+1276434848
+ls
+#+1276434862
+vim ~/good
+#+1276435007
+find ./ -mtime 100 -name '*final*' > ~/good
+#+1276435303
+vim ~/good
+#+1276435313
+ls
+#+1276435476
+cd ~
+#+1276435477
+ls
+#+1276435487
+find ./ -mtime 100 -name '*final*' > ~/good
+#+1276435499
+find ./ -mtime 100 -name '*.cpp' > ~/good
+#+1276435504
+vim good
+#+1276435512
+find ./ -name '*.cpp' > ~/good
+#+1276435515
+find ./ -name '*.cpp'
+#+1276435540
+find ./ -mtime 100 -name '*.cpp'
+#+1276435546
+find ./ -mtime 100 -name '*.cpp'
+#+1276435553
+find ./ -mtime 100 -name '*.c'
+#+1276435589
+find ./ -mtime -100 -name '*.c'
+#+1276435662
+find ./ -mtime -10 -name '*.c'
+#+1276435664
+ls
+#+1276435678
+find ./ -mtime -10 -name 'HIB'
+#+1276435681
+find ./ -mtime -10 -name 'HIB'
+#+1276435683
+find ./ -mtime -10 -name 'HIB'
+#+1276435687
+find ./ -mtime -10 -name 'HIB'
+#+1276435688
+find ./ -mtime -10 -name 'HIB'
+#+1276435688
+find ./ -mtime -10 -name 'HIB'
+#+1276435689
+find ./ -mtime -10 -name 'HIB'
+#+1276435689
+find ./ -mtime -10 -name 'HIB'
+#+1276435691
+find ./ -mtime -10 -name 'HIB'
+#+1276435693
+find ./ -mtime -10 -name 'HIB'
+#+1276435720
+find ./ -mtime -10 -name 'HIB'
+#+1276435722
+find ./ -mtime -10 -name HIB
+#+1276435725
+find ./ -mtime -10 -name 'HIB'
+#+1276438364
+ls
+#+1276438367
+cd public_html/
+#+1276438368
+ls
+#+1276438371
+cd PCfiles/
+#+1276438372
+ls
+#+1276438379
+find ./ -mtime -10 -name 'HIB'
+#+1276438390
+find ./ -mtime-10 -name 'HIB'
+#+1276438394
+find ./ -mtime -4 -name 'HIB'
+#+1276438401
+find ./ -mtime -4 -name 'HIB*'
+#+1276438406
+cd ..
+#+1276438407
+cd ..
+#+1276438410
+find ./ -mtime -4 -name 'HIB*'
+#+1276438411
+ls
+#+1276438420
+find ./ -mtime -1 -name 'HIB*'
+#+1276438423
+find ./ -mtime -10 -name 'HIB*'
+#+1276438446
+mtime public_html/PCfiles/HIB2.zip
+#+1276438453
+cat public_html/PCfiles/HIB2.zip
+#+1276438459
+PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY:q
+#+1276438466
+ls public_html/PCfiles/HIB2.zip
+#+1276438479
+ls -a public_html/PCfiles/HIB2.zip
+#+1276438483
+ls -l public_html/PCfiles/HIB2.zip
+#+1276438565
+cd ../../../
+#+1276438566
+ls
+#+1276438568
+cd faculty/
+#+1276438569
+ls
+#+1276438571
+cd tsaiwn/
+#+1276438572
+ls
+#+1276438576
+cd public_html
+#+1276438577
+ls
+#+1276438621
+find ./ -mtime -30 -name '*final*' > ~/good
+#+1276438930
+vim ~/good
+#+1276438944
+ls
+#+1276438947
+quit
+#+1276438949
+exit
+#+1277223116
+cal
+#+1277223127
+cal -CN 1912
+#+1277223132
+cal -CN 1912
+#+1277223135
+cal -h
+#+1277223138
+man cal
+#+1277223196
+cal -s CN 1912
+#+1277223201
+cal 1912
+#+1277223210
+cal -s CN 1912
+#+1277223219
+cal --help
+#+1277223220
+cal --help
+#+1277223222
+cal --h
+#+1277223223
+cal -h
+#+1277223229
+man cal
+#+1277223270
+cal -s CN 1912
+#+1277223274
+ncal -s CN 1912
+#+1277223284
+ncal -s CN 1911
+#+1277223510
+ncal -s EN 1911
+#+1277223526
+ncal -s US 1911
+#+1277223551
+ncal -s CN 1911
+#+1277550432
+ls
+#+1277550438
+cls
+#+1277550441
+gtk
+#+1277550443
+gtk+
+#+1277550463
+man apt-get
+#+1277550466
+man apt-get
+#+1277550471
+gtk+
+#+1277550472
+gtk
+#+1277550474
+man gtk
+#+1277550479
+info gtk
+#+1277550514
+cn
+#+1277550515
+cls
+#+1277550518
+clear
+#+1277550519
+ls
+#+1281016739
+ls
+#+1281016741
+ls -al
+#+1284207997
+ls -al
+#+1284208026
+vim .tcshrc
+#+1284208071
+ee
+#+1284208081
+ee
+#+1284208153
+man telnet
+#+1284208204
+fuck
+#+1284208441
+user
+#+1284208446
+user -l mcchiang
+#+1284208492
+userdb
+#+1284208498
+userdb
+#+1284208595
+ls
+#+1284208735
+schedule
+#+1284208787
+n
+#+1284208791
+schedule n
+#+1284208798
+schedule
+#+1284208847
+schedule
+#+1284358081
+ls
+#+1284358083
+ls
+#+1284358088
+ls
+#+1284358090
+dir
+#+1284358107
+passwd
+#+1284358159
+passwd
+#+1284358166
+winpasswd
+#+1284358176
+winpasswd
+#+1284358241
+passwd
+#+1284358251
+winpasswd
+#+1284358254
+winpasswd
+#+1284358266
+ls
+#+1284358288
+l,s
+#+1284358289
+ls
+#+1284358449
+man telnet
+#+1284358511
+telnet bs2.to
+#+1284358529
+telnet -8 bs2.to
+#+1284358622
+schedule
+#+1284359203
+mail-forward-wizard
+#+1284359338
+ls
+#+1284359340
+mutt
+#+1284359583
+mutt
+#+1284359708
+newsgroup
+#+1284359714
+newsgroup -tin
+#+1284359721
+tin
+#+1284359764
+mutt
+#+1284359884
+mutt
+#+1284360178
+help
+#+1284360720
+screen
+#+1284360804
+ls
+#+1284360808
+man screen
+#+1284360933
+screen
+#+1284379956
+ls
+#+1284380022
+cls
+#+1284380043
+ls
+#+1284380066
+ls
+#+1284380078
+ls
+#+1284380091
+ls
+#+1284380150
+ls
+#+1284380196
+ls
+#+1284380214
+ls
+#+1284380285
+cls
+#+1284380330
+cd ~
+#+1284380460
+mkdir public_html
+#+1284380463
+ls
+#+1284380539
+cd public_html/
+#+1284380544
+ls
+#+1284380554
+ls -al
+#+1284380569
+man ls
+#+1284380572
+cls
+#+1284380583
+man ls
+#+1284380594
+cls
+#+1284380633
+help
+#+1284454973
+ls
+#+1284454985
+ls
+#+1284454990
+cd public_html/
+#+1284454991
+ls
+#+1284455034
+cd PCfiles/
+#+1284455035
+ls
+#+1284455114
+ls
+#+1284455119
+who
+#+1285670438
+ls
+#+1285670440
+ls
+#+1285847133
+cd /temp
+#+1285847136
+cd /tmp
+#+1285847136
+ls
+#+1285847139
+ls -al
+#+1285847157
+cd /tmp
+#+1285847159
+ls
+#+1285847160
+ls -al
+#+1285847175
+ls
+#+1285847179
+cd ~
+#+1285847180
+ls
+#+1285847182
+cd ..
+#+1285847183
+ls
+#+1285847202
+cd 9817196
+#+1285847216
+ls
+#+1285847224
+chmod
+#+1285847247
+ls
+#+1285847250
+ls -al
+#+1285847409
+vim .tcshrc
+#+1285847427
+cd /tmp
+#+1285847428
+ls
+#+1285847432
+vim fuck
+#+1285847443
+ls
+#+1285847471
+rm fuck
+#+1285847487
+cp ~/.tcshrc ./
+#+1285847488
+ls
+#+1285847493
+vim .tcshrc
+#+1285847674
+ls
+#+1285847677
+who
+#+1285847722
+cd /tmp
+#+1285847723
+ls
+#+1285847726
+ls -al
+#+1285847731
+ls
+#+1285847764
+ls
+#+1285847769
+cd /tmp
+#+1285847770
+ls -al
+#+1285847776
+who
+#+1285847797
+srlin pts/8 9 30 19:55 ( 140.113.68.28 )
+#+1285847799
+ls
+#+1285847802
+cd ..
+#+1286793151
+ls
+#+1286793160
+passwd
+#+1286793176
+ls
+#+1286793214
+ls
+#+1287068132
+ls
+#+1287068143
+cd programs/
+#+1287068144
+ls
+#+1287068153
+cd PL/
+#+1287068155
+ls
+#+1287068160
+cd \[PL]\[HW1]9817028/
+#+1287068161
+ls
+#+1287068164
+cd hw1/
+#+1287068164
+ls
+#+1287068201
+vim 9817028_EX1.f95
+#+1287987394
+passwd
+#+1287987404
+ls
+#+1287987408
+ls
+#+1289125961
+ls
+#+1289125964
+ls
+#+1289125965
+ls
+#+1289125966
+ls
+#+1289125967
+cls
+#+1289125972
+scheme
+#+1289125981
+scheme-script
+#+1289126808
+help
+#+1289127632
+ls
+#+1289134176
+ls
+#+1289134177
+ls
+#+1289134854
+petite
+#+1289139699
+ls
+#+1289139703
+cd programs/
+#+1289139704
+ls
+#+1289139708
+cd PL
+#+1289139709
+ls
+#+1289139736
+mkdir scheme
+#+1289139738
+ls
+#+1289139742
+cd scheme/
+#+1289139742
+ls
+#+1289139768
+vim ha.lisp
+#+1289139802
+ls
+#+1289139812
+petite
+#+1289139945
+ls
+#+1289139950
+vim ha.lisp
+#+1289140085
+mv ha.lisp ha.ss
+#+1289140155
+petite
+#+1289140263
+vim ha.ss
+#+1289140274
+petite
+#+1289140426
+ls
+#+1289140428
+cd p
+#+1289140430
+cd programs/
+#+1289140431
+ls
+#+1289140435
+cd PL/scheme/
+#+1289140436
+ls
+#+1289140441
+vim ha.ss
+#+1289140469
+petite
+#+1289205112
+ls
+#+1289205116
+cd p
+#+1289205120
+cd programs/
+#+1289205121
+ls
+#+1289205131
+cat PL
+#+1289205134
+ls PL
+#+1289205151
+mv PL/scheme/ ./
+#+1289205152
+ls
+#+1289205156
+ls PL
+#+1289205161
+cd scheme/
+#+1289205162
+ls
+#+1289205171
+petite
+#+1289205184
+vim ha.ss
+#+1289205191
+petite
+#+1289285244
+ls
+#+1289285252
+cd programs/scheme/
+#+1289285253
+ls
+#+1289285257
+petite
+#+1304090137
+telnet imaple.tw
+#+1305615520
+ls
+#+1305615522
+cd code
+#+1305615522
+ls
+#+1305615531
+vim test.cpp
+#+1305615558
+g++ test.cpp
+#+1305615561
+g++ test.cpp
+#+1305615563
+vim test.cpp
+#+1305615588
+g++ test.cpp
+#+1305615592
+./a.out
+#+1305615964
+vim test.cpp
+#+1305615989
+g++ test.cpp
+#+1305616020
+vim test.cpp
+#+1305616031
+g++ test.cpp
+#+1305616034
+vim test.cpp
+#+1305616047
+g++ test.cpp
+#+1305616053
+./a.out
+#+1305616066
+./a.out
+#+1305616084
+./a.out
+#+1305616093
+./a.out
+#+1305616162
+./a.out
+#+1305616193
+./a.out
+#+1305616279
+vim test.cpp
+#+1305616302
+g++ test.cpp
+#+1305616306
+vim test.cpp
+#+1305616324
+g++ test.cpp
+#+1305616329
+vim test.cpp
+#+1305616338
+g++ test.cpp
+#+1305616341
+./a.out
+#+1305616367
+./a.out
+#+1305707476
+ls
+#+1305707480
+cd code
+#+1305707481
+ls
+#+1305707490
+vim test.cpp
+#+1305712306
+ls
+#+1305712315
+ls toDO/
+#+1305712321
+cd ov
+#+1305712347
+cd toDo
+#+1305712349
+ls
+#+1305712367
+cd toDO/overload/
+#+1305712369
+ls
+#+1305712374
+vim 9817028.cpp
+#+1305712389
+ls
+#+1305712391
+vim overload.cpp
+#+1305712399
+cd ..
+#+1305712401
+cd ..
+#+1305712404
+ls
+#+1305712411
+mv toDo DS
+#+1305712418
+mv toDO DS
+#+1305712421
+ls
+#+1305712448
+mv DS_hw2 DS/hw2
+#+1305712452
+mv DS_hw3 DS/hw3
+#+1305712455
+ls
+#+1305712480
+rm dlab\ mov/
+#+1305712484
+rmdir dlab\ mov/
+#+1305712489
+rmdir -r dlab\ mov/
+#+1305712494
+rmdir --r dlab\ mov/
+#+1305712498
+rmdir -R dlab\ mov/
+#+1305712502
+man rmdir
+#+1305712532
+man rm
+#+1305712565
+rm -R dlab\ mov/
+#+1305712572
+ls
+#+1305712595
+rm fuck.o
+#+1305712610
+mkdir Algo
+#+1305712618
+mov test.cpp board.cpp
+#+1305712625
+mv test.cpp algo/board.cpp
+#+1305712632
+mv test.cpp Algo/board.cpp
+#+1305712633
+ls
+#+1305712639
+cd tsiawn/
+#+1305712640
+ls
+#+1305712642
+cd ..
+#+1305712643
+ls
+#+1305712647
+cd programs/
+#+1305712648
+ls
+#+1305712654
+cd ..
+#+1305712657
+ls
+#+1305712665
+mv programs/ asm
+#+1305712666
+ls
+#+1305712680
+cd ..
+#+1305712681
+ls
+#+1305712683
+clear
+#+1305712683
+ls
+#+1305712689
+vim good
+#+1305712693
+ls
+#+1305712698
+regedit good
+#+1305712704
+vim sent
+#+1305712710
+ls
+#+1305712718
+rm test.o
+#+1305712720
+ls
+#+1305712728
+ls test/
+#+1310970533
+ls
+#+1310970624
+ls
+#+1310970627
+cd public_html/
+#+1310970628
+ls
+#+1310970788
+ls
+#+1310970792
+vls Cgame/
+#+1310970793
+ls
+#+1310970802
+cd Cgame/
+#+1310970804
+ls
+#+1310970807
+vim 1.php
+#+1311054041
+ls
+#+1311054045
+cd public_html/
+#+1311054046
+ls
+#+1311054051
+cd Cgame/
+#+1311054052
+ls
+#+1311054104
+cd ..
+#+1311054116
+cp Cgame/ php
+#+1311054122
+man cp
+#+1311054136
+cp -R Cgame/ php
+#+1311054138
+ls
+#+1311054141
+cd php
+#+1311054142
+ls
+#+1311054153
+vim 2.html
+#+1311054169
+vim index.html
+#+1311054203
+ls
+#+1311054218
+mv 2.html 2.php
+#+1311054222
+vim 2.php
+#+1311054316
+ls
+#+1311489007
+php
+#+1311489014
+man php
+#+1311489023
+man jsp
+#+1311489029
+service
+#+1311489034
+man service
+#+1311495462
+lgout
+#+1311495464
+logout
+#+1317563100
+figlet
+#+1317630742
+fuck
+#+1317630746
+fuck
+#+1317697362
+ls
+#+1317697364
+ls
+#+1317697387
+cdpu
+#+1317697399
+cd public_html/
+#+1317697401
+ls
+#+1317697408
+cd PCfiles/
+#+1317697409
+ls
+#+1317697436
+mail
+#+1317697446
+exit
+#+1317697738
+mutt
+#+1317698226
+mutt
+#+1317974146
+top
+#+1317974185
+ls
+#+1317974188
+cd code
+#+1317974190
+cd network\ programing/
+#+1317974191
+ls
+#+1317974194
+cd intro/
+#+1317974195
+ls
+#+1317974215
+g++ daytimetcpcliv6.c
+#+1317974303
+g++ daytimetcpcliv6.c
+#+1317974566
+mv daytimetcpsrv.c ../lib
+#+1317974571
+cd ../lib
+#+1317974576
+g++ daytimetcpcliv6.c
+#+1317974584
+g++ daytimetcpsrv.c
+#+1317974666
+ls
+#+1317974676
+./a.out
+#+1317974935
+cd ..
+#+1317974936
+ls
+#+1317974940
+cd source\ code/
+#+1317974941
+ls
+#+1317975048
+cd intro
+#+1317975064
+g++ daytimetcpsrvv6.c
+#+1317975081
+vim daytimetcpsrvv6.c
+#+1317975093
+g++ daytimetcpsrvv6.c
+#+1317975101
+g++ daytimetcpsrvv6.c
+#+1317975102
+vim daytimetcpsrvv6.c
+#+1317975121
+g++ daytimetcpsrvv6.c
+#+1317975471
+g++ daytimetcpsrvv6.c
+#+1317975628
+vim daytimetcpsrvv6.c
+#+1317975656
+g++ daytimetcpsrvv6.c
+#+1317975666
+vim daytimetcpsrvv6.c
+#+1317975684
+g++ daytimetcpsrvv6.c
+#+1317975858
+ls
+#+1317975931
+vim daytimetcpsrvv6.c
+#+1317975953
+g++ daytimetcpsrvv6.c
+#+1317976010
+cd ..
+#+1317976010
+ls
+#+1317976137
+mv config.h.in config.h
+#+1317976143
+cd intro
+#+1317976146
+g++ daytimetcpsrvv6.c
+#+1317976151
+cd ..
+#+1317976157
+mv config.h config.h.in
+#+1317976522
+man iostream
+#+1317976530
+man stdio
+#+1317977533
+ps
+#+1317977543
+ps
+#+1317977545
+clean
+#+1317977547
+clear
+#+1317977549
+top
+#+1317977616
+bg
+#+1317977618
+fg
+#+1317977637
+ls
+#+1317977657
+ps -al
+#+1317977670
+man ps
+#+1317977691
+ps
+#+1317977693
+ps -l
+#+1317977698
+top -l
+#+1317977704
+ps -g
+#+1317977712
+top
+#+1317977781
+tcsh
+#+1318385610
+ls
+#+1318386303
+top
+#+1318386328
+man process
+#+1318386334
+man ps
+#+1318386342
+ps -al
+#+1318386348
+ps -al } more
+#+1318386354
+ps -al | more
+#+1318386364
+ps -al | more
+#+1318386553
+man ps
+#+1318386587
+man ps -alN
+#+1318386595
+ps -alN | more
+#+1318386601
+ps -N | more
+#+1318386631
+daemon
+#+1318386666
+top
+#+1318399509
+ls
+#+1318399525
+ls
+#+1318399530
+cd code
+#+1318399531
+ls
+#+1318399537
+cd network\ programing/
+#+1318399538
+ls
+#+1318399539
+cd
+#+1318399556
+cd source\ code
+#+1318399566
+ls -al
+#+1318399597
+cd code/network\ programing/source\ code/
+#+1318399598
+ls
+#+1318399609
+./configure
+#+1318399623
+ls -al
+#+1318399644
+~ls -al | more
+#+1318399651
+ls -al | more
+#+1318399683
+man chmod
+#+1318399703
+chmod 777 configure
+#+1318399715
+./configure
+#+1318399750
+make
+#+1318399752
+ls
+#+1318399787
+ls
+#+1318399804
+cd lib
+#+1318399805
+make
+#+1318400002
+cd ../libfree/
+#+1318400004
+make
+#+1318400104
+cd /usr/include/lib/arpa
+#+1318400118
+cd ~
+#+1318400120
+ls
+#+1318400129
+ls -al
+#+1318400136
+cd /
+#+1318400137
+ls
+#+1318400142
+cd /usr
+#+1318400143
+ls
+#+1318400151
+cd include/
+#+1318400151
+ls
+#+1318400158
+cd /lib
+#+1318400164
+cd /usr/include/lib
+#+1318400325
+cd ~/code/network programing/source code/libfree
+#+1318400329
+ls
+#+1318400337
+cd ~
+#+1318400338
+ls
+#+1318400355
+cd ~/code/network programing/source code/libfree
+#+1318400363
+cd ./code/network programing/source code/libfree
+#+1318400370
+cd code/network programing/source code/libfree
+#+1318400379
+cd code/network\ programing/source\ code/libfree
+#+1318400380
+ls
+#+1318400388
+ls
+#+1318400408
+vim inet_ntop.c
+#+1318400458
+make
+#+1318400491
+README
+#+1318400494
+vim README
+#+1318400503
+cd ..
+#+1318400505
+vim readme
+#+1318400508
+ls
+#+1318400516
+vim README
+#+1318400559
+cd intro
+#+1318400563
+ls
+#+1318400581
+make daytimecpcli
+#+1318400622
+cd ../libroute
+#+1318400624
+make
+#+1318400630
+cd ../intro
+#+1318400631
+ls
+#+1318400636
+make daytimecpcli
+#+1318400695
+vim Makefile
+#+1318400708
+ls
+#+1318400722
+make daytimetcpcli
+#+1318400731
+ls
+#+1318400736
+./daytimetcpcli
+#+1318400742
+./daytimetcpcli 127.0.0.1
+#+1318400765
+make daytimetcpsrv
+#+1318400778
+./daytimetcpsrv
+#+1318400786
+ls
+#+1318400803
+vim daytimetcpsrv1.c
+#+1318400824
+vim daytimetcpsrv1.c
+#+1318400851
+vim daytimetcpcli.c
+#+1318400867
+make daytimetcpsrv
+#+1318400870
+make daytimetcpsrv1
+#+1318400879
+make daytimetcpcli
+#+1318400889
+./daytimetcpsrv1
+#+1318400914
+./daytimetcpsrv1 &
+#+1318400930
+./daytimetcpcli
+#+1318400935
+./daytimetcpcli 127.0.0.1
+#+1318403862
+ls
+#+1318403883
+vim daytimetcpsrv1
+#+1318403888
+vim daytimetcpsrv1.c
+#+1318404881
+ls
+#+1318404889
+vim ../lib/unp.h
+#+1318404997
+vim ../lib/unp.h
+#+1318405180
+ls
+#+1318405186
+lala
+#+1318405188
+ls
+#+1318405190
+cd ..
+#+1318405191
+ls
+#+1318405193
+cd ..
+#+1318405194
+ls
+#+1318405197
+cd ..
+#+1318405199
+ls
+#+1318405213
+mv network\ programing/ NP
+#+1318405215
+ls
+#+1318405219
+cd np
+#+1318405224
+ls
+#+1318405228
+cd ..
+#+1318405229
+ls
+#+1318405237
+cd test
+#+1318405238
+ls
+#+1318405241
+cd ..
+#+1318405248
+rmdir test
+#+1318405251
+rmdir test -r
+#+1318405256
+rmdir -r test
+#+1318405260
+rmdir -R test
+#+1318405271
+rmdir -h
+#+1318405274
+man rmdir
+#+1318405301
+rmdir -p test
+#+1318405309
+rmdir -pv test
+#+1318405320
+man rmdir
+#+1318405356
+rm test
+#+1318405360
+rm -R test
+#+1318405379
+ls
+#+1318405382
+cd test
+#+1318405382
+ls
+#+1318405386
+cd un
+#+1318405388
+cd unpv13e/
+#+1318405388
+ls
+#+1318405390
+cd ..
+#+1318405391
+cd ..
+#+1318405392
+ls
+#+1318405395
+man rm
+#+1318580983
+man passwd
+#+1318581038
+passwd
+#+1318581061
+tcpdump
+#+1318581068
+man tcpdump
+#+1318581143
+ifconfig
+#+1318581156
+tcpdump -i em0
+#+1318581217
+tcpdump -i lo0
+#+1318581221
+tcpdump
+#+1318650343
+winpasswd
+#+1318650355
+ls
+#+1318650730
+ls
+#+1318651743
+ls
+#+1318651746
+ls
+#+1318651749
+opcode
+#+1318651756
+man tcpdump
+#+1318651769
+man tcpdump
+#+1318651867
+tcpdump host bs2.to
+#+1318651872
+tcpdump bs2.to
+#+1318651882
+tcpdump localhost bs2.to
+#+1318651891
+ifconfig
+#+1318651910
+tcpdump -i em0 bs2.to
+#+1318665721
+bye
+#+1319296363
+ls
+#+1319296376
+cd code/NP/source\ code/
+#+1319296377
+ls
+#+1319296380
+cd intro/
+#+1319296381
+ls
+#+1319296392
+vim daytimetcpcli.c
+#+1319785004
+ls
+#+1319785015
+ls
+#+1319785066
+ls
+#+1319785072
+ls
+#+1319785075
+cd code
+#+1319785080
+cd NP
+#+1319785081
+ls
+#+1319785086
+cd source\ code/
+#+1319785086
+ls
+#+1319980231
+ls
+#+1319980238
+cd code
+#+1319980240
+cd NP
+#+1319980241
+ls
+#+1319980245
+cd source\ code/
+#+1319980245
+ls
+#+1319980249
+cd intro/
+#+1319980250
+ls
+#+1319980330
+vim daytimetcpserv.c
+#+1319980347
+vim daytimetcpsrv.c
+#+1319980367
+man vim
+#+1319980528
+vim mysrv.c
+#+1319980562
+ls
+#+1319980577
+vim mysrv.c
+#+1319981238
+ls
+#+1319981243
+cd ..
+#+1319981244
+ls
+#+1319981251
+cd ..
+#+1319981252
+ls
+#+1319981255
+cd source\ code/
+#+1319981258
+cd intro/
+#+1319981441
+vim daytimetcpsrv.c
+#+1319982922
+cd ../..
+#+1319982923
+ls
+#+1319982924
+cd ..
+#+1319982925
+ls
+#+1319982935
+vim note
+#+1319983026
+ls
+#+1320468840
+ls
+#+1320469747
+ls
+#+1320469756
+vim .vimrc
+#+1320469774
+ls
+#+1320469779
+ls -al
+#+1320469793
+vim .viminfo
+#+1320470018
+ls
+#+1320470020
+cd code
+#+1320470023
+ls
+#+1320470024
+cd NP
+#+1320470025
+ls
+#+1320470031
+cd source\ code/
+#+1320470031
+ls
+#+1320470035
+cd intro
+#+1320470036
+ls
+#+1320470274
+cd ~
+#+1320470275
+ls
+#+1320470277
+ls -al
+#+1320470289
+vim .viminfo
+#+1320470308
+vim .vimrc
+#+1320470439
+ls
+#+1320470446
+vim .vimrc
+#+1320470489
+vim
+#+1320470496
+ls
+#+1320470499
+ls -al
+#+1320470511
+vim .tcshrc
+#+1320470563
+cd /usr
+#+1320470564
+ls
+#+1320470567
+cd share
+#+1320470568
+ls
+#+1320470573
+cd locale/
+#+1320470581
+cd ..
+#+1320470582
+cd ..
+#+1320470583
+ls
+#+1320470587
+cd local/
+#+1320470587
+ls
+#+1320470591
+cd share/
+#+1320470593
+cd vim
+#+1320470594
+ls
+#+1320470598
+vim vimrc
+#+1320470749
+ls
+#+1320470815
+ls
+#+1320470819
+cd ~
+#+1320470820
+ls
+#+1320470824
+cd /etc
+#+1320470825
+ls
+#+1320470830
+vim .vimrc
+#+1320470835
+cd vim
+#+1320470836
+ls
+#+1320471005
+ls
+#+1320471015
+ls
+#+1320471018
+top
+#+1320656057
+ls
+#+1320656069
+ls
+#+1320656072
+ls
+#+1320656077
+ls
+#+1320656088
+netstat -aLptcp -finet
+#+1320656108
+ps
+#+1320656115
+ps
+#+1320656119
+ps
+#+1320656137
+ls
+#+1320656138
+ls
+#+1320656145
+ls
+#+1320656147
+ls
+#+1320656149
+ls
+#+1320656151
+ls
+#+1320656155
+cd NP
+#+1320656156
+ls
+#+1320656159
+cd my
+#+1320656162
+cd mycode/
+#+1320656163
+ls
+#+1320656169
+./a.out &
+#+1320656179
+./a.out 7788 &
+#+1320656180
+ps
+#+1320656184
+ps
+#+1320656186
+ps
+#+1320656189
+ps
+#+1320656190
+ls
+#+1320656199
+./a.out
+#+1320656216
+gcc srv.c
+#+1320656219
+ls
+#+1320656227
+./a.out
+#+1320656239
+./a.out &
+#+1320656244
+ls
+#+1320656255
+ps
+#+1320656261
+bye
+#+1320656299
+ps
+#+1320656306
+ps
+#+1320656379
+ls
+#+1320656384
+ps
+#+1320656385
+top
+#+1320656392
+ps
+#+1320656399
+ps
+#+1320656401
+ps
+#+1320656466
+man ps
+#+1320656487
+ps -G
+#+1320656493
+ps
+#+1320656504
+ps -G 87716
+#+1320656514
+ls
+#+1320656561
+ps
+#+1320656574
+ls
+#+1320656622
+ls
+#+1320656647
+ls
+#+1320656697
+ls
+#+1320656699
+ls
+#+1320656708
+man ps
+#+1320656761
+ps -l
+#+1320656774
+ls
+#+1320656784
+ls
+#+1320656792
+ls
+#+1320656815
+ps -L
+#+1320656816
+ls -l
+#+1320656826
+ps -l
+#+1320656871
+netstat -aLptcp -finet
+#+1320656925
+sockstat | grep 7766
+#+1320656942
+sockstat | grep 7777
+#+1320656968
+top
+#+1320657050
+top | grep mcchiang
+#+1320657052
+top
+#+1320657197
+ls
+#+1320657271
+ls
+#+1320657286
+sockstat
+#+1320657311
+sockstat | grep srv
+#+1320657955
+netstat -a
+#+1320657967
+netstat -n
+#+1320657971
+netstat -n | more
+#+1320657981
+sockstat
+#+1320657993
+sockstat | more
+#+1320658012
+sockstat | more | grep mcchiang
+#+1320658025
+sockstat | more | grep mcchiang
+#+1320658029
+sockstat | more
+#+1320658050
+sockstat | grep tcp4 | more
+#+1320658084
+sockstat | grep mcchiang
+#+1320658098
+sockstat | grep tcp
+#+1320658104
+username
+#+1320658109
+user
+#+1320658113
+man user
+#+1320658117
+man users
+#+1320658123
+users
+#+1320658126
+who
+#+1320658147
+ssh linux2.cs.nctu.edu.tw
+#+1320658168
+ls
+#+1320658184
+portstat
+#+1320658188
+man port
+#+1320658193
+whatis port
+#+1320658245
+info port
+#+1320658258
+ls
+#+1320658261
+clear
+#+1320658336
+man 3 stdio
+#+1320658345
+man 3 fprintf
+#+1320658375
+man 3 sprintf
+#+1320658439
+ps
+#+1320658450
+kill 11774 87716
+#+1320658452
+ps
+#+1320658477
+ls
+#+1320755843
+ls
+#+1320755857
+ls
+#+1320755873
+who
+#+1320755884
+sockstat
+#+1320755903
+sockstat | more
+#+1320755931
+ls
+#+1320755979
+cd NP/mycode/
+#+1320755980
+ls
+#+1320755985
+cd ..
+#+1320755986
+ls
+#+1320756006
+rm iterative_c.c iterative_s.c a.out cli.o
+#+1320756010
+ls
+#+1320756012
+cd mycode/
+#+1320758496
+vim srv.c
+#+1320760303
+ls
+#+1320760307
+./a.out
+#+1320760312
+gcc srv.c
+#+1320760314
+./a.out
+#+1320760358
+vim srv.c
+#+1320760404
+bg
+#+1320760507
+vim srv.c
+#+1320760542
+ps
+#+1320760553
+vim srv.c
+#+1320761891
+gcc srv.c
+#+1320761909
+vim srv.c
+#+1320761919
+gcc srv.c
+#+1320761925
+vim srv.c
+#+1320761945
+gcc srv.c
+#+1320761948
+ps
+#+1320761952
+killall a.out
+#+1320761956
+./a.out
+#+1320762026
+vim srv.c
+#+1320762062
+gcc srv.c
+#+1320762065
+./a.out
+#+1320762091
+vim srv.c
+#+1320762120
+gcc srv.c
+#+1320762131
+vim srv.c
+#+1320762152
+gcc srv.c
+#+1320762154
+./a.out
+#+1320762186
+vim srv.c
+#+1320762244
+./a.out
+#+1320767847
+ls
+#+1320767950
+cp srv.c echo_minmax_srv.c
+#+1320767958
+rm echo_ConCurrentSrv.c
+#+1320767962
+vim srv.c
+#+1320771728
+gcc srv.c
+#+1320771748
+vim srv.c
+#+1320771756
+gcc srv.c
+#+1320771761
+vim srv.c
+#+1320771883
+gcc srv.c
+#+1320771890
+vim srv.c
+#+1320772060
+gcc srv.c
+#+1320772070
+vim srv.c
+#+1320772093
+gcc srv.c
+#+1320772145
+vim srv.c
+#+1320772184
+gcc srv.c
+#+1320772188
+vim srv.c
+#+1320772245
+gcc srv.c
+#+1320772250
+vim srv.c
+#+1320772260
+gcc srv.c
+#+1320772272
+vim srv.c
+#+1320772281
+gcc srv.c
+#+1320772299
+gcc srv.c
+#+1320772304
+./a.out
+#+1320772471
+vim srv.c
+#+1320772593
+gcc srv.c
+#+1320772602
+vim srv.c
+#+1320772645
+gcc srv.c
+#+1320772648
+vim srv.c
+#+1320772661
+gcc srv.c
+#+1320772664
+./a.out
+#+1320772685
+ps
+#+1320772689
+vim srv.c
+#+1320772768
+ls
+#+1320772770
+cd ..
+#+1320772771
+ls
+#+1320772773
+cd source\ code/
+#+1320772775
+ls
+#+1320772782
+cd tcpcliserv/
+#+1320772782
+ls
+#+1320772818
+cp tcpservselect01.c ~/NP/mycode/select.c
+#+1320772827
+cd ~/NP/mycode/
+#+1320772828
+ls
+#+1320772831
+vim select.c
+#+1320773042
+vim srv.c
+#+1320773084
+vim select.c
+#+1320773140
+gcc select.c
+#+1320773160
+vim select.c
+#+1320773179
+gcc select.c
+#+1320773183
+vim select.c
+#+1320773213
+vim select.c
+#+1320773237
+gcc select.c
+#+1320773252
+vim select.c
+#+1320773297
+gcc select.c
+#+1320773306
+vim select.c
+#+1320773355
+gcc select.c
+#+1320773359
+vim select.c
+#+1320773380
+gcc select.c
+#+1320773384
+./a.out
+#+1320773429
+vim select.c
+#+1320773511
+vim echo_minmax_srv.c
+#+1320796127
+vim echo_minmax_srv.c
+#+1320796147
+vim select.c
+#+1320797628
+gcc echo_minmax_srv.c
+#+1320797632
+./a.out
+#+1320797791
+vim echo_minmax_srv.c
+#+1320797813
+gcc echo_minmax_srv.c
+#+1320797816
+./a.out
+#+1320799368
+./a.out
+#+1321243959
+man diff
+#+1321243979
+info diff
+#+1321243984
+ls
+#+1321243987
+ls
+#+1321243990
+cd test
+#+1321243991
+ls
+#+1321243994
+vim a
+#+1321244006
+vim b
+#+1321244023
+diff a b
+#+1321244034
+diff a b > differ
+#+1321244037
+vim differ
+#+1321244163
+rm a
+#+1321244166
+vim a
+#+1321244179
+diff a b > differ
+#+1321244182
+vim differ
+#+1321245666
+php
+#+1321245671
+man php
+#+1321245679
+ls
+#+1321246113
+ls
+#+1321246117
+vim test.php
+#+1321246372
+ls
+#+1321246375
+cd ..
+#+1321246375
+ls
+#+1321246390
+cp test.php public_html/test.php
+#+1321246395
+cp test.php public_html/
+#+1321246401
+cp test/test.php public_html/
+#+1321246462
+cd public_html/
+#+1321246463
+ls -al
+#+1321246491
+vim 3.php
+#+1321246500
+vim test.php
+#+1321247040
+ls
+#+1321247046
+rm test.php
+#+1321247055
+cd ..
+#+1321247055
+ls
+#+1321247058
+cd test/
+#+1321247058
+ls
+#+1321247066
+rm a b differ
+#+1321247070
+ls
+#+1321247074
+cd unpv13e/
+#+1321247075
+ls
+#+1321247079
+cd ..
+#+1321247080
+ls
+#+1321247084
+rm -R unpv13e/
+#+1321247092
+rm -Rf unpv13e/
+#+1321247095
+ls
+#+1321248828
+ls
+#+1321248831
+cd ..
+#+1321248832
+ls
+#+1321248834
+vim public_html/
+#+1321248837
+cd public_html/
+#+1321248838
+ls
+#+1321248843
+vim 3.php
+#+1321249554
+:q
+#+1321249555
+ls
+#+1321249563
+cd php
+#+1321249563
+ls
+#+1321249566
+cd ..
+#+1321249566
+ls
+#+1321249576
+mv 3.php redirect.php
+#+1321249579
+ls
+#+1322619686
+ls
+#+1322619690
+cd NP
+#+1322619693
+cd mycode/
+#+1322619693
+ls
+#+1322619705
+vim charCli.c
+#+1322619740
+ls
+#+1322619750
+./a.out
+#+1322619770
+gcc chatSrv.c
+#+1322619775
+./a.out &
+#+1322619795
+gcc charCli.c -o cli.o
+#+1322619802
+./cli.o
+#+1322619810
+./cli.o localhost 7766
+#+1322619837
+./cli.o localhost 7766
+#+1322619862
+fg
+#+1322619949
+ls
+#+1322619950
+ps
+#+1322619958
+killal .a.out
+#+1322619962
+killall .a.out
+#+1322619964
+killall a.out
+#+1322619967
+ps
+#+1322619976
+mv charCli.c chatCli.c
+#+1322619978
+ls
+#+1323860229
+ls
+#+1323860234
+ls
+#+1323860235
+ls
+#+1323860238
+ls
+#+1323860239
+ls
+#+1323860241
+ls
+#+1323860242
+ls
+#+1323860245
+cd NP
+#+1323860246
+ls
+#+1323860249
+cd mycode/
+#+1323860249
+ls
+#+1323860725
+ls
+#+1323861031
+ls
+#+1323861041
+cat old
+#+1323861045
+ls old
+#+1323861048
+ls
+#+1323861067
+mv charSrv.c chatCli.c old
+#+1323861091
+mv chatSrv.c chatCli.c old
+#+1323861096
+mv chatSrv.c old
+#+1323861110
+mv chatSrv.c old/
+#+1323861116
+ls
+#+1323861124
+ls old
+#+1323861127
+ls
+#+1323861925
+cd old
+#+1323861926
+ls
+#+1323861966
+cp echocli.c ../cli.c
+#+1323861978
+cp echosrv.c ../srv.c
+#+1323861980
+cd ..
+#+1323861980
+ls
+#+1323924500
+cd NP/mycode/
+#+1323924500
+ls
+#+1323924505
+g++ cli.cpp
+#+1323924526
+vim cli.cpp
+#+1323924577
+g++ cli.cpp
+#+1323924587
+vim cli.cpp
+#+1323924686
+g++ cli.cpp
+#+1323924699
+vim cli.cpp
+#+1323924721
+g++ cli.cpp
+#+1323924724
+vim cli.cpp
+#+1323924749
+g++ cli.cpp
+#+1323924773
+vim cli.cpp
+#+1323924842
+g++ cli.cpp
+#+1323924845
+ls
+#+1323924873
+g++ cli.cpp -o cli.o
+#+1323924969
+./cli.o
+#+1323924976
+./cli.o localhost 7766
+#+1323924991
+vim cli.cpp
+#+1323925056
+ls
+#+1323925094
+cp cli.cpp tcp_class_cli.cpp
+#+1323925108
+ls
+#+1323925116
+mv tcp_class_cli.cpp old
+#+1323925117
+ls
+#+1323925177
+vim cli.cpp
+#+1323925576
+vim cli.cpp
+#+1323925848
+g++ cli.cpp
+#+1323925855
+vim cli.cpp
+#+1323925871
+g++ cli.cpp
+#+1323925873
+vim cli.cpp
+#+1323925943
+g++ cli.cpp
+#+1323925956
+vim cli.cpp
+#+1323926237
+g++ cli.cpp
+#+1323926254
+vim cli.cpp
+#+1323928199
+g++ cli.cpp
+#+1323928206
+vim cli.cpp
+#+1323929673
+vim cli.cpp
+#+1323929695
+g++ cli.cpp
+#+1323929721
+vim cli.cpp
+#+1323929748
+g++ cli.cpp
+#+1323929751
+vim cli.cpp
+#+1323929758
+g++ cli.cpp
+#+1323929763
+vim cli.cpp
+#+1323929873
+g++ cli.cpp
+#+1323929879
+./cli.o
+#+1323929884
+./cli.o localhost 7766
+#+1323929895
+vim cli.cpp
+#+1323929937
+g++ cli.cpp
+#+1323929939
+./cli.o localhost 7766
+#+1323930872
+vim cli.cpp
+#+1323930914
+g++ cli.cpp
+#+1323930915
+./cli.o localhost 7766
+#+1323930920
+vim cli.cpp
+#+1323930941
+g++ cli.cpp
+#+1323930968
+g++ cli.cpp -o cli.o
+#+1323930971
+./cli.o localhost 7766
+#+1323933973
+vim cli.cpp
+#+1323945503
+./cli.o localhost 7766
+#+1323945509
+vim cli.cpp
+#+1323945529
+vim cli.cpp
+#+1323945582
+g++ cli.cpp -o cli.o
+#+1323945586
+./cli.o localhost 7766
+#+1323945593
+vim cli.cpp
+#+1323945651
+./cli.o localhost 5566
+#+1323945701
+g++ cli.cpp -o cli.o
+#+1323945705
+./cli.o localhost 5444
+#+1323945720
+vim cli.cpp
+#+1323945894
+ls
+#+1323945896
+cd old
+#+1323945896
+ls
+#+1323946377
+g++ tcp_class_cli.cpp
+#+1323946397
+./a.out localhost 7575
+#+1323946416
+cd ..
+#+1323946424
+g++ cli.cpp -o cli.o
+#+1323946434
+./cli.o localhost 7575
+#+1324008785
+vim cli.cpp
+#+1324008867
+g++ cli.cpp -o cli.o
+#+1324008872
+vim cli.cpp
+#+1324008887
+vim cli.cpp
+#+1324008895
+g++ cli.cpp -o cli.o
+#+1324122215
+vim cli.cpp
+#+1324122954
+vim freeman.h
+#+1324123033
+vim cli.cpp
+#+1324123073
+ls
+#+1324123091
+g++ cli.cpp -o cli.o
+#+1324123098
+vim cli.cpp
+#+1324123105
+g++ cli.cpp -o cli.o
+#+1324123113
+vim cli.cpp
+#+1324123132
+vim freeman.h
+#+1324123159
+g++ cli.cpp -o cli.o
+#+1324123183
+vim freeman.h
+#+1324124316
+vim cli.cpp
+#+1324124355
+g++ cli.cpp -o cli.o
+#+1324124369
+vim cli.cpp
+#+1324124373
+g++ cli.cpp -o cli.o
+#+1324124384
+vim freeman.h
+#+1324124398
+vim cli.cpp
+#+1324124417
+g++ cli.cpp -o cli.o
+#+1324124433
+vim cli.cpp
+#+1324124439
+vim freeman.h
+#+1324124476
+vim cli.cpp
+#+1324124487
+g++ cli.cpp -o cli.o
+#+1324124492
+vim cli.cpp
+#+1324124496
+vim freeman.h
+#+1324124532
+g++ cli.cpp -o cli.o
+#+1324124564
+vim freeman.h
+#+1324124586
+g++ cli.cpp -o cli.o
+#+1324124595
+vim freeman.h
+#+1324124614
+g++ cli.cpp -o cli.o
+#+1324124629
+vim freeman.h
+#+1324124670
+g++ cli.cpp -o cli.o
+#+1324124688
+vim freeman.h
+#+1324124705
+vim cli.cpp
+#+1324124733
+g++ cli.cpp -o cli.o
+#+1324124798
+vim cli.cpp
+#+1324124949
+g++ cli.cpp -o cli.o
+#+1324124967
+vim cli.cpp
+#+1324125086
+g++ cli.cpp -o cli.o
+#+1324125098
+vim cli.cpp
+#+1324125104
+g++ cli.cpp -o cli.o
+#+1324125112
+./a.out
+#+1324125123
+./cli.o
+#+1324125145
+vim cli.cpp
+#+1324125166
+g++ cli.cpp -o cli.o
+#+1324125167
+./cli.o
+#+1324125224
+vim freeman.h
+#+1324127222
+vim cli.cpp
+#+1324127383
+g++ cli.cpp -o cli.o
+#+1324127401
+vim cli.cpp
+#+1324127413
+vim freeman.h
+#+1324127455
+g++ cli.cpp -o cli.o
+#+1324127467
+vim freeman.h
+#+1324127478
+g++ cli.cpp -o cli.o
+#+1324127516
+vim freeman.h
+#+1324127651
+g++ cli.cpp -o cli.o
+#+1324127816
+vim freeman.h
+#+1324127865
+g++ cli.cpp -o cli.o
+#+1324127912
+vim freeman.h
+#+1324127931
+g++ cli.cpp -o cli.o
+#+1324127986
+vim freeman.h
+#+1324128052
+vim freeman.h
+#+1324128085
+g++ cli.cpp -o cli.o
+#+1324128179
+ls
+#+1324128492
+vim freeman.h
+#+1324128716
+vim freeman.h
+#+1324129462
+g++ cli.cpp -o cli.o
+#+1324129468
+vim freeman.h
+#+1324129530
+vim freeman.h
+#+1324129647
+vim freeman.h
+#+1324129762
+g++ cli.cpp -o cli.o
+#+1324129781
+./cli.o localhost 7766
+#+1324129814
+vim freeman.h
+#+1324129935
+vim cli.cpp
+#+1324129945
+./cli.o localhost 7766
+#+1324129970
+vim cli.cpp
+#+1324130001
+vim freeman.h
+#+1324130310
+g++ cli.cpp -o cli.o
+#+1324130318
+vim freeman.h
+#+1324130324
+g++ cli.cpp -o cli.o
+#+1324130476
+vim freeman.h
+#+1324130511
+g++ cli.cpp -o cli.o
+#+1324130517
+./cli.o localhost 7766
+#+1324130529
+vim cli.cpp
+#+1324130618
+vim freeman.h
+#+1324130630
+vim cli.cpp
+#+1324133817
+g++ cli.cpp -o cli.o
+#+1324133830
+vim cli.cpp
+#+1324134672
+g++ cli.cpp -o cli.o
+#+1324134675
+vim cli.cpp
+#+1324134851
+g++ cli.cpp -o cli.o
+#+1324134887
+vim cli.cpp
+#+1324134896
+g++ cli.cpp -o cli.o
+#+1324134964
+vim cli.cpp
+#+1324134977
+g++ cli.cpp -o cli.o
+#+1324135010
+vim cli.cpp
+#+1324135030
+g++ cli.cpp -o cli.o
+#+1324135037
+vim cli.cpp
+#+1324135058
+g++ cli.cpp -o cli.o
+#+1324135082
+./cli.o localhost 7766
+#+1324135085
+vim cli.cpp
+#+1324135100
+g++ cli.cpp -o cli.o
+#+1324135102
+./cli.o localhost 7766
+#+1324135111
+vim cli.cpp
+#+1324135289
+./cli.o localhost 7766
+#+1324135315
+ls
+#+1324135322
+cd old
+#+1324135322
+ls
+#+1324135329
+vim echocli.c
+#+1324135345
+cd ..
+#+1324135349
+vim cli.cpp
+#+1324137684
+./cli.o localhost 7777
+#+1324137695
+ls
+#+1324137711
+./cli.o localhost 7777 cli.o.core
+#+1324137779
+./cli.o localhost 7777
+#+1324137803
+./cli.o 127.0.0.1 7777
+#+1324274301
+ls
+#+1324274305
+cd NP/mycode/
+#+1324274305
+ls
+#+1324274510
+vim srv.cpp
+#+1324279270
+vim srv.cpp
+#+1324279274
+g++ srv.cpp
+#+1324279285
+vim srv.cpp
+#+1324279309
+g++ srv.cpp
+#+1324279319
+./a.out 4444
+#+1324279508
+vim srv.cpp
+#+1326196902
+cd NP/mycode/
+#+1326196905
+gcc test.c
+#+1326206923
+ls
+#+1326206929
+vim thread_wait_signal_mutex.c
+#+1326206963
+gcc thread_wait_signal_mutex.c
+#+1326206968
+gcc thread_wait_signal_mutex.c -pthread
+#+1326206971
+./a.out
+#+1326206977
+gcc thread_wait_signal_mutex.c -pthread
+#+1326206982
+vim thread_wait_signal_mutex.c
+#+1326207002
+gcc thread_wait_signal_mutex.c -pthread
+#+1326207004
+./a.out
+#+1326207011
+vim thread_wait_signal_mutex.c
+#+1326207036
+gcc thread_wait_signal_mutex.c -pthread
+#+1326207038
+./a.out
+#+1326207040
+vim thread_wait_signal_mutex.c
+#+1326207054
+gcc thread_wait_signal_mutex.c -pthread
+#+1326207055
+./a.out
+#+1331348766
+ls
+#+1331348774
+ls
+#+1331348776
+cd code/
+#+1331348777
+ls
+#+1331348801
+cd compiler/
+#+1331348802
+ls
+#+1331348805
+cd hw1/
+#+1331348805
+ls
+#+1331348813
+cd HW1_source/
+#+1331348814
+ls
+#+1331348819
+cd acdc-compiler/
+#+1331348819
+ls
+#+1331348833
+ls
+#+1331349030
+ls
+#+1331349032
+make
+#+1331349042
+ls
+#+1331349044
+vim run.sh
+#+1331349050
+ls
+#+1331349054
+cd bin
+#+1331349055
+ls
+#+1331349057
+ls
+#+1331349058
+cd ..
+#+1331349104
+ls
+#+1331349177
+./run.sh AcDc sample1.ac
+#+1331349182
+ls
+#+1331349191
+./run.sh
+#+1331349199
+vim run.sh
+#+1331349240
+java -classpath bin AcDc pattern/sample1.ac > result/sample1.ac.result
+#+1331349269
+ls
+#+1331349271
+cd pattern/
+#+1331349272
+ls
+#+1331349276
+java -classpath bin AcDc pattern/sample1.ac > result/sample1.ac.result
+#+1331349511
+cd ..
+#+1331349512
+java -classpath bin AcDc pattern/sample1.ac > result/sample1.ac.result
+#+1331349520
+ls
+#+1331349522
+cd bin
+#+1331349524
+cd ..
+#+1331349525
+cd src
+#+1331349526
+ls
+#+1331349541
+javac AcDc.java
+#+1331349547
+cd ../bin
+#+1331349548
+ls
+#+1331349554
+cd .
+#+1331349556
+cd ..
+#+1331349557
+ls
+#+1331349559
+cd src
+#+1331349560
+ls
+#+1331349571
+cd ..
+#+1331349580
+vim README
+#+1331349621
+ls
+#+1331349627
+cd src/
+#+1331349628
+ls
+#+1331349639
+javac AcDc.java
+#+1331349645
+ls
+#+1331349652
+cd ..
+#+1331349653
+ls
+#+1331349655
+cd bin
+#+1331349655
+ls
+#+1331349657
+ls
+#+1331349658
+cd ..
+#+1331349662
+ls
+#+1331349665
+cd src
+#+1331349666
+javac
+#+1331349695
+ls
+#+1331349699
+cd ..
+#+1331349706
+vim Makefile
+#+1331349746
+ls
+#+1331349748
+make
+#+1331349751
+ls
+#+1331349754
+cd bin
+#+1331349755
+ls
+#+1331349756
+cd ..
+#+1331349760
+cd bin
+#+1331349761
+ls -al
+#+1331349765
+cd ..
+#+1331349767
+ls
+#+1331349847
+cd ..
+#+1331349849
+cd ../../..
+#+1331349850
+ls
+#+1331609049
+exit
+#+1332471415
+ls
+#+1332471432
+passwd
+#+1332471444
+ls
+#+1332471453
+ls
+#+1332471459
+readme
+#+1332471465
+cat readme
+#+1332471527
+passwd &
+#+1332471531
+jobs
+#+1332471538
+jobs
+#+1332471542
+ls
+#+1332471547
+who
+#+1332471554
+who -u mcchiang
+#+1332471583
+l
+#+1332471584
+ls
+#+1332471588
+cd ..
+#+1332471589
+ls
+#+1332471600
+cd 9817128
+#+1332471603
+ls
+#+1332471608
+ls -l
+#+1332471610
+cd ..
+#+1332471613
+cd 9817196
+#+1332471613
+ls
+#+1332471618
+clear
+#+1332471621
+ls
+#+1332471624
+jobs
+#+1332471630
+fg 1
+#+1332471635
+jobs
+#+1332471640
+fg
+#+1332471644
+jobs
+#+1332471646
+ps
+#+1332471658
+ps -u mcchiang
+#+1332471678
+man ps
+#+1332471723
+ps -aux u mcchiang
+#+1332471970
+ls
+#+1332471974
+sudo
+#+1332472012
+ls
+#+1332472014
+ps
+#+1332472023
+passwd &
+#+1332472028
+bg
+#+1332472032
+jobs
+#+1332472045
+ls
+#+1332472052
+cd ..
+#+1332472054
+ls
+#+1332472059
+cd 9817152
+#+1332472062
+ls
+#+1332472075
+cd ..
+#+1332472084
+ls -al 9817152
+#+1332472089
+ls -l 9817152
+#+1332472093
+ls -l 9817196
+#+1332472096
+ls -l 9817152
+#+1332472098
+ls
+#+1332472104
+man password
+#+1332472109
+man passwd
+#+1332472156
+ls
+#+1332472167
+ls
+#+1332472169
+cd 9817196
+#+1332472170
+ls
+#+1332472183
+id
+#+1332472188
+man id
+#+1332472232
+ls
+#+1332472243
+ls
+#+1332472402
+ls
+#+1332472409
+jobs
+#+1332472412
+bg
+#+1332472414
+jobs
+#+1332472421
+bg 1
+#+1332472423
+jobs
+#+1332472432
+cd /etc/passwd
+#+1332472447
+vim /usr/bin/passwd
+#+1332472472
+ls -l /usr/bin/passwd
+#+1332472714
+ls
+#+1333446392
+ls
+#+1333446397
+cd code/
+#+1333446398
+ls
+#+1333446407
+rm acdc-compiler/
+#+1333446412
+rm -R acdc-compiler/
+#+1333446420
+rm -Ry acdc-compiler/
+#+1333446425
+rm -Rf acdc-compiler/
+#+1333446427
+ls
+#+1333446430
+cd compiler/
+#+1333446431
+ls
+#+1333446433
+cd hw2
+#+1333446434
+ls
+#+1333446437
+make
+#+1333446505
+vim lexer.l
+#+1333446528
+make
+#+1333446539
+vim lexer.l
+#+1333446618
+make
+#+1333446626
+vim lexer.l
+#+1333446706
+make
+#+1333446710
+ls
+#+1333446718
+./scanner
+#+1333446726
+vim scanner
+#+1333446730
+ls
+#+1333446740
+scanner test
+#+1333446745
+scanner < test
+#+1333446750
+./scanner < test
+#+1333446819
+./scanner
+#+1333446857
+ls
+#+1333446869
+gcc lex.yy.c -o lex.o
+#+1333446898
+gcc -c lex.yy.c -o lex.o
+#+1333446906
+./lex.o
+#+1333446911
+./lex.o
+#+1333446913
+ls -al
+#+1333447081
+vim tesr
+#+1333447084
+vim test
+#+1333447237
+vim lexer.l
+#+1333447439
+./scanner < test
+#+1333447462
+vim lexer.l
+#+1333455677
+make
+#+1333455682
+./scanner < test
+#+1333455707
+vim lexer.l
+#+1333458295
+make
+#+1333458303
+./scanner < test
+#+1333458306
+vim lexer.l
+#+1333458614
+ls
+#+1333458617
+vim my
+#+1333458649
+./scanner < my
+#+1333458694
+vim lexer.l
+#+1333460087
+make
+#+1333460090
+./scanner < my
+#+1333460097
+vim lexer.l
+#+1333464828
+vim test
+#+1333464903
+:q
+#+1333465654
+vim test
+#+1333465658
+vim lexer.l
+#+1333466562
+ls
+#+1333466564
+vim lexer.l
+#+1333467125
+vim lexer.l
+#+1333467283
+cp lexer.l backup1
+#+1333467284
+vim lexer.l
+#+1333467575
+make
+#+1333467585
+vim lexer.l
+#+1333467748
+vim lexer.l
+#+1333533396
+ls
+#+1333533398
+cd code/
+#+1333533399
+ls
+#+1333533410
+cd compiler/
+#+1333533410
+ls
+#+1333533413
+cd hw2
+#+1333533413
+ls
+#+1333533419
+./scanner < test
+#+1333533433
+ls
+#+1333533437
+./scanner
+#+1333533443
+make
+#+1333533449
+./scanner < test
+#+1333533470
+./scanner < my
+#+1333539255
+ls
+#+1333539259
+vim my
+#+1333539276
+./scanner < my
+#+1333539285
+vim my
+#+1333539309
+./scanner < my
+#+1333539315
+vim my
+#+1333539341
+./scanner < my
+#+1333539709
+vim lexer.l
+#+1333543417
+cd ~
+#+1333543419
+ls -al
+#+1333543429
+vim .vimrc
+#+1333543860
+pwd
+#+1333593593
+ls
+#+1333593599
+cd code/compiler/hw2
+#+1333593600
+ls
+#+1333593607
+vim symboltable.c
+#+1333594046
+ls
+#+1333594067
+vim symboltable ( broken ) .c
+#+1333594071
+vim symboltable ( broken ) .c
+#+1333594105
+mv symboltabl. broke.c
+#+1333594113
+mv symboltabl[.] broke.c
+#+1333594124
+mv symboltable[.]* broke.c
+#+1333594132
+mv symboltable ( [.]* ) broke.c
+#+1333594134
+ls
+#+1333594167
+vim symold.c
+#+1333594184
+vim symboltable.c
+#+1333594353
+make
+#+1333594358
+./scanner < test
+#+1333594406
+vim symboltable.c
+#+1333594455
+make
+#+1333594459
+./scanner < my
+#+1333594492
+vim symboltable.c
+#+1333594574
+make
+#+1333594577
+./scanner < my
+#+1333594595
+vim symboltable.c
+#+1333594753
+make
+#+1333594756
+./scanner < my
+#+1333594766
+vim symboltable.c
+#+1333594800
+vim header.h
+#+1333594824
+vim symboltable.c
+#+1333594877
+./scanner < my
+#+1333594887
+vim symboltable.c
+#+1333595053
+make
+#+1333595067
+vim symboltable.c
+#+1333595088
+make
+#+1333595097
+vim symboltable.c
+#+1333595109
+make
+#+1333595112
+./scanner < my
+#+1333595130
+vim symboltable.c
+#+1333595268
+make
+#+1333595271
+./scanner < my
+#+1333595677
+ls
+#+1333596023
+cd code/compiler/hw2
+#+1333596025
+ls
+#+1333596030
+vim symboltable.c
+#+1333596110
+make
+#+1333596118
+vim symboltable.c
+#+1333596203
+make
+#+1333596213
+vim symboltable.c
+#+1333596223
+make
+#+1333596236
+vim symboltable.c
+#+1333596474
+make
+#+1333596487
+./scanner < my
+#+1333596505
+vim symboltable.c
+#+1333596560
+make
+#+1333596561
+./scanner < my
+#+1333596594
+vim lexer.l
+#+1333596605
+vim my
+#+1333596611
+vim lexer.l
+#+1333596623
+vim lexer.l
+#+1333596682
+make
+#+1333596691
+vim symboltable.c
+#+1333596729
+make
+#+1333596732
+./scanner < my
+#+1333596743
+vim symboltable.c
+#+1333596768
+make
+#+1333596769
+./scanner < my
+#+1333596997
+vim test
+#+1333597006
+./scanner < my
+#+1333597009
+./scanner < testr
+#+1333597010
+./scanner < test
+#+1333597050
+ls
+#+1333597055
+vim symboltable.c
+#+1333597083
+make
+#+1333597086
+./scanner < test
+#+1333597432
+vim symboltable.c
+#+1333597460
+make
+#+1333597462
+./scanner < test
+#+1333597481
+vim symboltable.c
+#+1333597564
+make
+#+1333597566
+./scanner < test
+#+1333597585
+vim test
+#+1333597605
+mv test test.c
+#+1333597608
+vim test.c
+#+1333597635
+./scanner < test.c
+#+1333598191
+quit
+#+1333598192
+exit
+#+1333607739
+cc
+#+1333607743
+cc
+#+1333607745
+gcc
+#+1333607750
+cc
+#+1333607970
+cd test
+#+1333607971
+ls
+#+1333607977
+cdls
+#+1333607978
+ls
+#+1333607980
+cd 9817196_9831003_ver3/
+#+1333607981
+ls
+#+1333607983
+make
+#+1333607988
+./scanner < test
+#+1333607998
+vim test
+#+1333617209
+ls
+#+1333617212
+cd code/java
+#+1333617215
+ls
+#+1333617217
+cd Bs2func/
+#+1333617218
+ls
+#+1333617225
+java Bs2Telnet
+#+1333617496
+clear
+#+1333617500
+bg
+#+1333617529
+clear
+#+1333617531
+jobs
+#+1333617554
+bg | record
+#+1333617560
+jobs
+#+1333617564
+bg
+#+1333617601
+ls
+#+1333617603
+jobs
+#+1333617606
+bg 1
+#+1333617611
+kill 1
+#+1333617616
+kill -n 1
+#+1333617618
+man kill
+#+1333617632
+ps
+#+1333617638
+kill 46659
+#+1333617640
+bg
+#+1333617649
+clear
+#+1333617650
+jobs
+#+1333617676
+java Bs2Telnet.class
+#+1333617680
+java Bs2Telnet
+#+1333617707
+clear
+#+1333617717
+bg > record
+#+1333617731
+gclear
+#+1333617732
+ls
+#+1333617734
+jobs
+#+1333617744
+fg
+#+1333617758
+ls
+#+1333617771
+bg
+#+1333617789
+ls
+#+1333617794
+jobs
+#+1333617805
+ps -u mcchiang
+#+1333617808
+ps u mcchiang
+#+1333617812
+ps -aux u mcchiang
+#+1333617819
+ps
+#+1333617825
+ps
+#+1333617839
+ls
+#+1333617842
+cd code/java
+#+1333617844
+cd Bs2func/
+#+1333617845
+ls
+#+1333617848
+vim record
+#+1333617854
+ls
+#+1333617856
+vim Visitor\ List.txt
+#+1333617869
+ls
+#+1333618126
+ls
+#+1333618128
+ps
+#+1333618133
+ls
+#+1333618135
+cd ..
+#+1333618136
+cd ..
+#+1333618137
+ls
+#+1333618283
+ps -u mcchiang u
+#+1333618297
+ps -u mcchiang
+#+1333618305
+ps -u mcchiang -u mcchiang u
+#+1333618317
+ps -u mcchiang -u mcchiang u
+#+1333618323
+ps -u mcchiang u
+#+1333618326
+ps -aux mcchiang u
+#+1333618356
+ps -u mcchiang -u mcchiang u
+#+1333618452
+ps -u mcchiang
+#+1333618455
+ps -umcchiang
+#+1333618490
+ps -U mcchiang
+#+1333618538
+who
+#+1333618553
+ps -U hwsu
+#+1333618586
+ls
+#+1333618588
+ps
+#+1333618599
+ps -U mcchiang
+#+1333618626
+whois hwsu
+#+1333618632
+who hwsu
+#+1333618634
+man who
+#+1333618657
+who -m hwsu
+#+1333618694
+who hwsu
+#+1333618699
+who | grep hwsu
+#+1333623832
+cd java/Bs2func/
+#+1333623835
+vim Visitor\ List.txt
+#+1333626888
+vim Visitor\ List.txt
+#+1333626898
+cat Visitor\ List.txt
+#+1333626913
+ls
+#+1333626914
+clear
+#+1333637836
+cat Visitor\ List.txt
+#+1333637877
+clear
+#+1333642851
+cat Visitor\ List.txt
+#+1333642855
+clear
+#+1333676141
+cat Visitor\ List.txt
+#+1333676174
+clear
+#+1333736476
+ls
+#+1333736479
+cd code/
+#+1333736481
+cd java
+#+1333736482
+ls
+#+1333736486
+cd Bs2func/
+#+1333736488
+ls
+#+1333736495
+cat Visitor\ List.txt
+#+1333737060
+clear
+#+1333737064
+ls
+#+1333737067
+ls
+#+1333817439
+cd code/java/Bs2func/
+#+1333817442
+cat Visitor\ List.txt
+#+1333817456
+cat Visitor\ List.txt | more
+#+1333817497
+ls
+#+1333817499
+clear
+#+1333871678
+ls
+#+1333871680
+cd ja
+#+1333871684
+cd code/java/Bs2func/
+#+1333871685
+ls
+#+1333871694
+ps -U mcchiang
+#+1333871703
+vim Visitor\ List.txt
+#+1333871717
+clear
+#+1333871788
+ls
+#+1333871836
+ls
+#+1333872147
+ls
+#+1334034120
+ls
+#+1334076815
+ls
+#+1334076817
+vim a
+#+1334076839
+vim b
+#+1334076852
+differ a b
+#+1334076856
+diff a b
+#+1334076956
+man diff
+#+1334076981
+diff -wb a b
+#+1334077039
+vim b
+#+1334077056
+ls
+#+1334077061
+rm b
+#+1334077065
+vim b
+#+1334077208
+ls
+#+1334077217
+diff -wb a b
+#+1334077220
+diff -wb a.txt b.txt
+#+1334078393
+rm a.txt b.txt
+#+1334078395
+ls
+#+1334133939
+ls
+#+1334133943
+cd NP
+#+1334133945
+cd ..
+#+1334133948
+cd NPLab/
+#+1334133949
+ls
+#+1334133957
+cd lab\ 5\ tcp\ drop\ rate/
+#+1334133958
+ls
+#+1334133987
+ls
+#+1334133991
+cd 2.1
+#+1334133996
+cat lab5.8023_N*_P1_InThrput.log | awk'{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134001
+ls
+#+1334134024
+awk
+#+1334134029
+fawk
+#+1334134032
+man awk
+#+1334134037
+fawk
+#+1334134040
+awk
+#+1334134045
+clear
+#+1334134045
+ls
+#+1334134064
+cat lab5.8023_N*_P1_InThrput.log | awk'{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134090
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134197
+ls
+#+1334134205
+cd ../5.1
+#+1334134209
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134224
+cd ../50.1
+#+1334134227
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134320
+ls
+#+1334134322
+cd ..
+#+1334134322
+ls
+#+1334134326
+cd 2.2
+#+1334134331
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134360
+cd ..
+#+1334134362
+cd 2.3
+#+1334134364
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134387
+cd ../5.2
+#+1334134389
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134399
+cd ../5.1
+#+1334134400
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134404
+cd ../5.3
+#+1334134406
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134424
+cd ../5.4
+#+1334134426
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134436
+cd ../5.5
+#+1334134438
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134448
+cd ../50.2
+#+1334134451
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134469
+cd ../50.3
+#+1334134471
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134486
+cd ../50.4
+#+1334134487
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334134518
+cd ../50.5
+#+1334134519
+cat lab5.8023_N*_P1_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334135015
+ls
+#+1334135017
+vim new\ file
+#+1334135116
+ls
+#+1334135135
+ls
+#+1334135136
+cd ..
+#+1334135137
+ls
+#+1334135428
+cd 2.1
+#+1334135445
+ls
+#+1334135502
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334135540
+cd ../5.1
+#+1334135542
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334135559
+cd ../5.1
+#+1334135562
+cd ../50.1
+#+1334135564
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum/80}'
+#+1334416265
+cd code/java/Bs2func/
+#+1334416266
+ls
+#+1334416281
+java Bs2Telnet
+#+1334416342
+bg | record
+#+1334416357
+bg > record
+#+1334416383
+ls
+#+1334416391
+clear
+#+1334416392
+jobs
+#+1334416410
+ls
+#+1334416415
+ls
+#+1334416417
+ls
+#+1334416419
+jobs
+#+1334416439
+bg 1 > record
+#+1334416443
+jobs
+#+1334416449
+fg
+#+1334416702
+ls
+#+1334416706
+jobs
+#+1334416708
+ps
+#+1334416715
+ps -U mcchiang
+#+1334416758
+ls
+#+1334416763
+cd code
+#+1334416764
+ls
+#+1334416770
+ls
+#+1334416774
+who mcchiang
+#+1334416780
+whois mcchiang
+#+1334416787
+ls
+#+1334416825
+ls
+#+1334416837
+ps -aux | grep mcchiang
+#+1334416844
+cd java
+#+1334416845
+ls
+#+1334416848
+cd Bs2func/
+#+1334416849
+ls
+#+1334416862
+ls
+#+1334416980
+ls
+#+1334416990
+ls
+#+1334416993
+vim Visitor\ List.txt
+#+1334417011
+ls
+#+1334417532
+ls
+#+1334417687
+ls
+#+1334417735
+java Bs2Telnet
+#+1334417942
+bg
+#+1334417955
+ls
+#+1334417958
+jobs
+#+1334417959
+bg
+#+1334417962
+jobs
+#+1334417967
+ps
+#+1334417972
+continue
+#+1334417976
+bg 1
+#+1334417979
+fg 1
+#+1334417984
+bg
+#+1334418573
+ls
+#+1334418575
+cd code/
+#+1334418579
+cd java
+#+1334418582
+cd Bs2func/
+#+1334418582
+ls
+#+1334418587
+vim Visitor\ List.txt
+#+1334458083
+cd code/java/Bs2func/
+#+1334458084
+ls
+#+1334458088
+cat Visitor\ List.txt
+#+1334458114
+:clear
+#+1334458119
+clear
+#+1334458399
+cat Visitor\ List.txt
+#+1334466448
+clear
+#+1334466453
+vim Visitor\ List.txt
+#+1334466501
+clear
+#+1334466653
+ls
+#+1334466706
+ls
+#+1334466709
+clear
+#+1334473316
+ls
+#+1334473341
+man renice
+#+1334473367
+renice
+#+1334473378
+ps -U mcchiang
+#+1334473388
+renice 17058 20
+#+1334473588
+renice -n 15 -p 17058
+#+1334473594
+ls
+#+1334473816
+ls
+#+1334473942
+man mailto
+#+1334473978
+mime
+#+1334473984
+man mailto
+#+1334473992
+maito
+#+1334473994
+mailto
+#+1334474103
+ls
+#+1334474128
+ls
+#+1334474301
+ls
+#+1334474306
+ls
+#+1334474313
+cd code
+#+1334474314
+ls
+#+1334474350
+cd java
+#+1334474351
+ls
+#+1334474362
+cd Bs2func/
+#+1334474363
+ls
+#+1334474371
+cd ..
+#+1334474417
+cp Bs2func/ ~/programs/bbs
+#+1334474426
+cp -R Bs2func/ ~/programs/bbs
+#+1334474436
+cp -r Bs2func/ ~/programs/bbs
+#+1334474442
+mkdir ~/programs
+#+1334474444
+cp -r Bs2func/ ~/programs/bbs
+#+1334474449
+cd ~/programs/
+#+1334474450
+ls
+#+1334474456
+cd bbs/
+#+1334474458
+ls
+#+1334474561
+ls
+#+1334474568
+vim Visitor\ List.txt
+#+1334474682
+ls
+#+1334474735
+help
+#+1334474753
+mail
+#+1334474785
+man mail
+#+1334474793
+mime
+#+1334474795
+mimu
+#+1334474826
+mutt
+#+1334475111
+ls
+#+1334475113
+mutt
+#+1334475194
+mutt
+#+1334475197
+ls
+#+1334475788
+mail-forward-wizard
+#+1334475891
+ls
+#+1334475893
+cd ~
+#+1334475894
+ls
+#+1334475895
+ls -al
+#+1334479790
+ls
+#+1334479794
+ps
+#+1334479802
+cd code/
+#+1334479804
+cd java
+#+1334479806
+cd Bs2func/
+#+1334479810
+vim Visitor\ List.txt
+#+1334479831
+clear
+#+1334494019
+ls
+#+1334494033
+ls
+#+1334494035
+vim Visitor\ List.txt q
+#+1334494081
+ls
+#+1334494194
+cd ..
+#+1334494195
+cd ..
+#+1334494196
+ls
+#+1334494200
+cd ..
+#+1334494206
+cd NPLab/
+#+1334494207
+ls
+#+1334494214
+cd lab\ 5\ tcp\ drop\ rate/
+#+1334494215
+ls
+#+1334494226
+cd ..
+#+1334494245
+mv lab\ 5\ tcp\ drop\ rate/ lab5
+#+1334494246
+ls
+#+1334494251
+cd lab5
+#+1334494252
+ls
+#+1334494544
+cd 2.1
+#+1334494545
+ls
+#+1334494654
+vim lab5.8023_N21_P10_UniIn.log
+#+1334494671
+vim lab5.8023_N21_P1_UniIn.log
+#+1334494682
+ls
+#+1334494744
+vim lab5.8023_N21_P12_UniIn.log
+#+1334494843
+cat lab5.8023_N21_P ( * | 10 ) _InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334494860
+cat lab5.8023_N21_P ( * | 10 ) _InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334494875
+cat lab5.8023_N21_P*_InThrput.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334494906
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334494913
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334494931
+vim lab5.8023_N21_P12_UniIn.log
+#+1334494961
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334494975
+ls
+#+1334494987
+cd ../2.2
+#+1334494995
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495006
+cd ../2.3
+#+1334495008
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495017
+ls
+#+1334495041
+cd ../5.1
+#+1334495043
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495056
+cd ../5.2
+#+1334495057
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495068
+cd ../5.3
+#+1334495069
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495077
+cd ../5.4
+#+1334495078
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495085
+cd ../5.5
+#+1334495087
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495118
+cd ../50.1
+#+1334495120
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495137
+cd ../50.2
+#+1334495140
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495148
+cd ../50.3
+#+1334495150
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495158
+cd ../50.4
+#+1334495160
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495168
+cd ../50.5
+#+1334495169
+cat lab5.8023_N21_P*_UniIn.log | awk '{sum+=$2} END{print "aggregate: ",sum-75}'
+#+1334495210
+ls
+#+1334495214
+cd ..
+#+1334495216
+cd 2.1
+#+1334495217
+ls
+#+1334495230
+cat lab5.8023_N21_P11_UniOut.log
+#+1334495486
+ls
+#+1334495502
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495541
+cd ../2.2
+#+1334495542
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495554
+cd ../2.3
+#+1334495555
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495583
+cd ../5.1
+#+1334495584
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495601
+cd ../5.2
+#+1334495602
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495609
+cd ../5.3
+#+1334495610
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495618
+cd ../5.4
+#+1334495620
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495627
+cd ../5.5
+#+1334495628
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495644
+cd ../50.1
+#+1334495644
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495655
+cd ../50.1
+#+1334495660
+cd ../50.2
+#+1334495662
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495671
+cd ../50.3
+#+1334495672
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495681
+cd ../50.4
+#+1334495682
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334495688
+cd ../50.5
+#+1334495689
+cat lab5.8023_N21_P11_UniOut.log | awk '{sum+=$2} END{print "aggregate: ",sum}'
+#+1334496531
+ls
+#+1334496533
+vim new\ file
+#+1334503621
+ls
+#+1334503630
+cd ~/programs/
+#+1334503631
+ls
+#+1334503633
+cd bbs/
+#+1334503635
+vim Visitor\ List.txt
+#+1334503678
+clear
+#+1334507608
+mutt
+#+1334537794
+ls
+#+1334537796
+ps
+#+1334537800
+cd programs/
+#+1334537802
+ls
+#+1334537805
+cd bbs/
+#+1334537806
+ls
+#+1334537809
+vim Visitor\ List.txt
+#+1334537844
+ls
+#+1334537849
+rm Visitor\ List.txt
+#+1334537857
+cd ~/code/java/Bs2func/
+#+1334537858
+ls
+#+1334537860
+vim Visitor\ List.txt
+#+1334537914
+ls
+#+1334558540
+vim Visitor\ List.txt
+#+1334578469
+ls
+#+1334579689
+ls
+#+1334579705
+ls
+#+1334591917
+ls
+#+1334591919
+vim Visitor\ List.txt
+#+1334591985
+vim Visitor\ List.txt
+#+1334647475
+ls
+#+1334647480
+ps
+#+1334647484
+ps
+#+1334647490
+ps -U mcchiang
+#+1334647521
+ps
+#+1334647524
+jobs
+#+1334647525
+ps
+#+1334647527
+ps
+#+1334647543
+ps -aux | grep mcchiang
+#+1334666825
+ls
+#+1334666836
+cd code/java/Bs2func/
+#+1334666839
+vim Visitor\ List.txt
+#+1334666966
+clear
+#+1334673720
+ls
+#+1334675422
+telnet bs2.to
+#+1334675438
+ls
+#+1334675475
+vim Visitor\ List.txt
+#+1334675517
+ps -U mcchiang
+#+1334675527
+ps -p 17058
+#+1334675535
+ps -ux -p 17058
+#+1334675551
+ls
+#+1334736388
+ls
+#+1334736392
+vim Visitor\ List.txt
+#+1334736397
+ls
+#+1334736407
+ps
+#+1334736419
+jobs
+#+1334736426
+kill 17058
+#+1334736441
+ls
+#+1334736446
+wget Visitor\ List.txt
+#+1334736500
+ls
+#+1334912708
+cd code/compiler/
+#+1334912709
+ls
+#+1334912717
+mv hw3\ source/
+#+1334912719
+mv hw3\ source/ hw3
+#+1334912720
+ls
+#+1334912722
+cd hw3
+#+1334912723
+ls
+#+1334912726
+make
+#+1334912731
+cd ..
+#+1334912733
+cd hw2
+#+1334912734
+ls
+#+1334912738
+c ../hw3
+#+1334912739
+ls
+#+1334912743
+cd ../hw3
+#+1334912744
+ls
+#+1334912771
+ls
+#+1334912803
+ls
+#+1334912820
+make
+#+1334912824
+make
+#+1334912825
+ls
+#+1334912836
+make Makefile
+#+1334912841
+make
+#+1334912856
+./parser test00
+#+1334912866
+ls -l parser
+#+1334912879
+chmod parser 755
+#+1334912887
+chmod 755 parser
+#+1334912888
+ls
+#+1334912896
+./parser test00
+#+1334912901
+vim test00
+#+1334912915
+ls
+#+1334912921
+./parser Test0
+#+1334912925
+vim Test0
+#+1334912930
+vim Test1
+#+1334912934
+ls
+#+1334912957
+ls
+#+1334912968
+make
+#+1334912982
+vim Test0
+#+1334912986
+ls
+#+1334912988
+vim Test1
+#+1334912991
+ls
+#+1334912993
+ls -al
+#+1334913045
+ls
+#+1334913049
+refresh
+#+1334913056
+man ls
+#+1334913120
+ls
+#+1334913123
+ls -l
+#+1334913125
+cd ..
+#+1334913127
+cd hw2
+#+1334913130
+ls -l
+#+1334913134
+cd ..
+#+1334913137
+cd hw3
+#+1334913138
+ls
+#+1334913140
+ls -l
+#+1334913149
+ls
+#+1334913152
+ls -l
+#+1334913170
+cd ..
+#+1334913173
+ls
+#+1334913176
+cd ..
+#+1334913178
+cd ~
+#+1334913180
+cd code/
+#+1334913181
+cd compiler/
+#+1334913184
+cd hw3\ source/
+#+1334913185
+ls
+#+1334913187
+make
+#+1334913192
+make Makefile
+#+1334913194
+ls
+#+1334913197
+ls -l
+#+1334913214
+ps -U mcchiang
+#+1334913218
+make
+#+1334913221
+ls -l
+#+1334913223
+ls -al
+#+1334913227
+cd ..
+#+1334913230
+ls
+#+1334913285
+ls
+#+1334913292
+cd code/compiler/
+#+1334913293
+ls
+#+1334913300
+cd hw3\ source/
+#+1334913300
+ls
+#+1334913303
+make
+#+1334913305
+ls
+#+1334913308
+cd ..
+#+1334913310
+cd hw2
+#+1334913311
+ls
+#+1334913312
+make
+#+1334913316
+cd ..
+#+1334913317
+ls
+#+1334913321
+cd hw3\ source/
+#+1334913322
+ls
+#+1334913325
+ls
+#+1334913329
+ls -l
+#+1334913335
+make
+#+1334913338
+make Makefile
+#+1334913346
+vim parser
+#+1334913350
+ls
+#+1334913352
+ls
+#+1334913742
+ls
+#+1334913767
+ls
+#+1334913819
+ls
+#+1334913915
+ls
+#+1334913918
+ls -l
+#+1334914934
+ls
+#+1334914938
+cd code/compiler/hw3\ /
+#+1334914963
+cd ..
+#+1334914971
+mv hw3\ / hw3
+#+1334914972
+ls
+#+1334914974
+cd hw3
+#+1334914975
+ls
+#+1334914978
+make
+#+1334914982
+ls -l
+#+1334914998
+./parser
+#+1334915007
+vim Makefile
+#+1334915028
+make
+#+1334915045
+vim Makefile
+#+1334915132
+make
+#+1334915135
+ls
+#+1334915138
+rm parser
+#+1334915141
+make
+#+1334915146
+ls
+#+1334915152
+vim Makefile
+#+1334915232
+make
+#+1334915263
+ls
+#+1334915272
+cd hw2
+#+1334915275
+cd ../hw2
+#+1334915275
+ls
+#+1334915289
+./scanner
+#+1334915301
+./scanner < test.c
+#+1334915315
+ls
+#+1334915364
+make
+#+1334915370
+./scanner < test.c
+#+1334915377
+ls
+#+1334915396
+./scanner < symold.c
+#+1334915423
+vim lexer.l
+#+1334915836
+ls
+#+1334915839
+cd ../hw43
+#+1334915841
+cd ../hw3
+#+1334915842
+ls
+#+1334915844
+vim Makefile
+#+1334915853
+make
+#+1334915859
+ls
+#+1334915871
+bison
+#+1334915896
+bison -v
+#+1334915950
+ls
+#+1334915952
+make
+#+1334915954
+ls
+#+1334915974
+chmod 755 parser
+#+1334915975
+ls
+#+1334915990
+./parser test00
+#+1334915998
+./parser < test00
+#+1334915999
+ls
+#+1334916003
+ls -l
+#+1334916011
+make clean
+#+1334916014
+make
+#+1334916018
+ls
+#+1334916027
+./parser test00
+#+1334916062
+vim parser.y
+#+1334933620
+ls
+#+1334933657
+ls
+#+1334933673
+ls
+#+1334933683
+cd ~/programs/
+#+1334933683
+ls
+#+1334933688
+cd bbs/
+#+1334933688
+ls
+#+1334933691
+ls
+#+1334933707
+java Bs2Telnet
+#+1334933789
+ls
+#+1334933789
+ps
+#+1334933793
+ps -U mcchiang
+#+1334933823
+ls
+#+1334933835
+ps -aux | grep mcchiang
+#+1335004051
+cd programs/bbs/
+#+1335004053
+ls
+#+1335004062
+java Bs2Telnet
+#+1335004489
+clear
+#+1335004492
+exit
+#+1335013090
+vim a
+#+1335013123
+ls
+#+1335013140
+cd code/compiler/hw3
+#+1335013144
+vim parser.y
+#+1335013618
+make
+#+1335013637
+cp test00 mytest
+#+1335013640
+vim mytest
+#+1335013652
+mv mytest mytest.c
+#+1335013656
+vim mytest.c
+#+1335013694
+./parser mytest.c
+#+1335013710
+./parser < mytest.c
+#+1335013714
+vim mytest.c
+#+1335013735
+ls
+#+1335013738
+./parser < mytest.c
+#+1335013756
+vim mytest.c
+#+1335013779
+./parser < mytest.c
+#+1335013789
+vim mytest.c
+#+1335013836
+./parser < mytest.c
+#+1335013839
+./parser < mytest.c
+#+1335013841
+./parser < mytest.c
+#+1335013842
+vim mytest.c
+#+1335013852
+./parser < test00
+#+1335013857
+vim test00
+#+1335013871
+ls
+#+1335014170
+vim parser.y
+#+1335014447
+make
+#+1335014467
+vim parser.y
+#+1335014472
+make
+#+1335014524
+./parser < mytest.c
+#+1335014543
+./parser < mytest.c
+#+1335014577
+vim parser.y
+#+1335015356
+make
+#+1335015358
+./parser < mytest.c
+#+1335015380
+./parser < mytest.c
+#+1335015401
+./parser < mytest.c
+#+1335015410
+./parser < mytest.c
+#+1335015455
+./parser < mytest.c
+#+1335015872
+vim parser.y
+#+1335017801
+./parser < Test0.c
+#+1335018502
+make
+#+1335018518
+vim parser.y
+#+1335018569
+make clean
+#+1335018570
+make
+#+1335018731
+./parser < Test0.c
+#+1335018761
+vim parser.y
+#+1335018774
+make
+#+1335018778
+make clean
+#+1335018779
+make
+#+1335018794
+pr
+#+1335018822
+vim parser.y
+#+1335018897
+make
+#+1335018909
+./parser < Test0.c
+#+1335018915
+vim parser.y
+#+1335018972
+make
+#+1335019016
+vim parser.y
+#+1335019201
+make
+#+1335019258
+vim parser.y
+#+1335019352
+make
+#+1335019358
+vim parser.y
+#+1335019386
+make
+#+1335019390
+vim parser.y
+#+1335019414
+make
+#+1335019434
+vim parser.y
+#+1335019537
+make
+#+1335019540
+vim parser.y
+#+1335019827
+cp parser.y bk_parse
+#+1335019829
+vim parser.y
+#+1335019860
+make
+#+1335019867
+vim parser.y
+#+1335020249
+make
+#+1335020345
+vim parser.y
+#+1335020500
+vim parser.y
+#+1335020799
+make
+#+1335020903
+make
+#+1335020937
+./parser Test01.c
+#+1335020945
+./parser Test1.c
+#+1335028584
+ps
+#+1335028594
+jobs
+#+1335028602
+fg
+#+1335028605
+ls
+#+1335028615
+pkill Bs2
+#+1335028618
+ps
+#+1335028622
+kill 10036
+#+1335117901
+ls
+#+1335117906
+cd programs/bbs/
+#+1335117907
+ls
+#+1335117913
+java Bs2Telnet
+#+1335118871
+clear
+#+1335118873
+vim Visitor\ List.txt
+#+1335118907
+ps
+#+1335118914
+> renice -n 20
+#+1335118924
+renice -n 20 26689
+#+1335118929
+fg
+#+1335118959
+vim Visitor\ List.txt
+#+1335118968
+fg
+#+1335119016
+bg
+#+1335119669
+ls
+#+1335119671
+ps
+#+1335119674
+jobs
+#+1335119680
+bg
+#+1335119684
+bg
+#+1335119687
+bg
+#+1335156310
+ls
+#+1335156314
+cd programs/
+#+1335156316
+cd bbs/
+#+1335156321
+java Bs2Telnet
+#+1335156630
+ls
+#+1335156631
+clear
+#+1335156632
+ps
+#+1335156635
+ps
+#+1335156640
+kill 26689
+#+1335156641
+ps
+#+1335156665
+ls
+#+1335156673
+vim Visitor\ List.txt
+#+1335156684
+ls
+#+1335156695
+ls
+#+1335156697
+clear
+#+1335159545
+ls
+#+1335159724
+cd ~/code/compiler/hw3
+#+1335159725
+ls
+#+1335159728
+make
+#+1335159731
+make clean
+#+1335159732
+make
+#+1335159805
+ls
+#+1335159818
+vim parser.y
+#+1335159846
+make
+#+1335159854
+vim parser.y
+#+1335159926
+make
+#+1335160009
+ls
+#+1335160037
+vim parser.y
+#+1335160448
+vim parser.y
+#+1335160710
+clear
+#+1335160711
+ls
+#+1335167858
+ls
+#+1335167863
+vim parser.y
+#+1335179286
+ls
+#+1335179356
+vim ~/programs/bbs/Visitor\ List.txt
+#+1335179388
+vim parser.y
+#+1335181162
+vim lexer3.l
+#+1335181426
+ls
+#+1335181429
+make
+#+1335181433
+vim test00
+#+1335181437
+vim test00.c
+#+1335181440
+ls
+#+1335181443
+vim mytest.c
+#+1335181459
+make
+#+1335181467
+./parser mytest.c
+#+1335181716
+vim parser.y
+#+1335182576
+make
+#+1335182587
+vim parser.y
+#+1335182617
+make
+#+1335182635
+vim parser.y
+#+1335182961
+make
+#+1335182967
+vim parser.y
+#+1335183409
+make
+#+1335183415
+vim parser.y
+#+1335183466
+vim parser.y
+#+1335183523
+vim parser.y
+#+1335183715
+ls
+#+1335183719
+vim testo.c
+#+1335183749
+gcc testo.c
+#+1335183755
+g++ testo.c
+#+1335183761
+vim testo.c
+#+1335183793
+vim parser.y
+#+1335183814
+vim lexer3.l
+#+1335183895
+vim parser.y
+#+1335184070
+make
+#+1335184087
+vim parser.y
+#+1335184382
+make
+#+1335184386
+make clean
+#+1335184388
+make
+#+1335184396
+ls
+#+1335184406
+vim Test0.c
+#+1335184438
+vim parser.y
+#+1335184549
+ls
+#+1335184566
+vim test00.c
+#+1335184572
+vim mytest.c
+#+1335184629
+./parser mytest.c
+#+1335184663
+vim parser.y
+#+1335184771
+make clean
+#+1335184773
+make
+#+1335184777
+./parser mytest.c
+#+1335184785
+vim parser.y
+#+1335184896
+make
+#+1335184899
+./parser mytest.c
+#+1335184906
+./parser Test0.c
+#+1335184920
+vim Test0.c
+#+1335185012
+vim parser.y
+#+1335185149
+vim Test1.c
+#+1335185158
+./parser Test1.c
+#+1335185168
+./parser Test2.c
+#+1335185172
+./parser Test2
+#+1335185174
+./parser Test3
+#+1335185181
+vim Test3
+#+1335185196
+./parser Test3
+#+1335185200
+vim Test3
+#+1335185213
+./parser Test3
+#+1335185217
+vim Test3
+#+1335185227
+make clean
+#+1335185228
+make
+#+1335185231
+./parser Test3
+#+1335185362
+vim parser.y
+#+1335185602
+./parser Test1
+#+1335185605
+./parser Test1.c
+#+1335185624
+vim parser.y
+#+1335185695
+vim Test0.c
+#+1335185704
+vim Test1.c
+#+1335185724
+./parser Test1.c
+#+1335185760
+vim parser.y
+#+1335186590
+make clean
+#+1335186593
+make
+#+1335186701
+vim parser.y
+#+1335186757
+make
+#+1335186765
+vim parser.y
+#+1335186781
+./parser Test1.c
+#+1335186850
+./parser Test2
+#+1335186852
+./parser Test3
+#+1335187016
+ls
+#+1335187024
+./parser Test3
+#+1335187431
+ping f5hc249.RAS.nctu.edu.tw
+#+1335610544
+hping
+#+1335610550
+exit
+#+1335709951
+ls
+#+1335709959
+cd programs/bbs/
+#+1335709960
+ls
+#+1335709976
+nice -n 20 Bs2Telnet.class
+#+1335710013
+java Bs2Telnet
+#+1335710043
+bg
+#+1335710388
+ls
+#+1335710396
+cd programs/bbs/
+#+1335710398
+vim Visitor\ List.txt
+#+1335711341
+vim Visitor\ List.txt
+#+1335711345
+ls
+#+1335713314
+vim Visitor\ List.txt
+#+1335715340
+vim Visitor\ List.txt
+#+1335715355
+clear
+#+1335723467
+vim Visitor\ List.txt
+#+1335785873
+cd NP
+#+1335785877
+cd ..NPL
+#+1335785881
+cd ../NPLab/
+#+1335785883
+ls
+#+1335785885
+cd lab7
+#+1335785886
+ls
+#+1335785888
+cd A
+#+1335785890
+ls
+#+1335785925
+cat lab5.8023_N*_P1_InThrput.log |
+#+1335785960
+cat A\ tcp\ RIP.log | awk '{sum+=$2} END{print "aggregate: ",sum}'

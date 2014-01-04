@@ -1,0 +1,765 @@
+|||||||||||||||||||||||||
+        Game 1
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 相 兵 包 卒 
+Bs2: 
+------------------------
+AI Draws
+相 兵 包 卒 帥 
+AI throws out 兵
+AI: 相 包 卒 帥 
+Bs2 Draws
+
+Bs2 throws out 相
+Bs2: 
+---------- Round2 ----------
+AI: 相 包 卒 帥 
+Bs2: 
+------------------------
+AI Draws
+帥 相 包 卒 馬 
+AI throws out 帥
+AI: 相 包 卒 馬 
+Bs2 Draws
+
+Bs2 throws out 包
+Bs2: 
+---------- Round3 ----------
+AI: 相 包 卒 馬 
+Bs2: 
+------------------------
+AI Draws
+相 馬 包 卒 卒 
+AI throws out 相
+AI: 馬 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 將
+Bs2: 
+---------- Round4 ----------
+AI: 馬 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+馬 包 卒 卒 傌 
+AI throws out 傌
+AI: 馬 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round5 ----------
+AI: 馬 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+馬 包 卒 卒 炮 
+AI throws out 炮
+AI: 馬 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 車
+Bs2: 
+---------- Round6 ----------
+AI: 馬 包 卒 卒 
+Bs2: 
+------------------------
+AI Eats 車
+馬 包 卒 卒 車 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 2
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 傌 兵 馬 卒 
+Bs2: 
+------------------------
+AI Draws
+傌 兵 馬 卒 炮 
+AI throws out 兵
+AI: 傌 馬 卒 炮 
+Bs2 Draws
+
+Bs2 throws out 仕
+Bs2: 
+---------- Round2 ----------
+AI: 傌 馬 卒 炮 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 卒 馬 
+AI throws out 卒
+AI: 傌 炮 馬 馬 
+Bs2 Draws
+
+Bs2 throws out 將
+Bs2: 
+---------- Round3 ----------
+AI: 傌 炮 馬 馬 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 馬 包 
+AI throws out 包
+AI: 傌 炮 馬 馬 
+Bs2 Draws
+
+Bs2 throws out 象
+Bs2: 
+---------- Round4 ----------
+AI: 傌 炮 馬 馬 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 馬 車 
+AI throws out 車
+AI: 傌 炮 馬 馬 
+Bs2 Draws
+
+Bs2 throws out 士
+Bs2: 
+---------- Round5 ----------
+AI: 傌 炮 馬 馬 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 馬 士 
+AI throws out 士
+AI: 傌 炮 馬 馬 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round6 ----------
+AI: 傌 炮 馬 馬 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 馬 車 
+AI throws out 車
+AI: 傌 炮 馬 馬 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round7 ----------
+AI: 傌 炮 馬 馬 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 馬 馬 硨 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 3
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 兵 士 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+兵 士 卒 卒 兵 
+AI throws out 士
+AI: 兵 卒 卒 兵 
+Bs2 Draws
+
+Bs2 throws out 帥
+Bs2: 
+---------- Round2 ----------
+AI: 兵 卒 卒 兵 
+Bs2: 
+------------------------
+AI Draws
+兵 兵 卒 卒 包 
+AI throws out 包
+AI: 兵 兵 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 相
+Bs2: 
+---------- Round3 ----------
+AI: 兵 兵 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+兵 兵 卒 卒 馬 
+AI throws out 馬
+AI: 兵 兵 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 卒
+Bs2: 
+---------- Round4 ----------
+AI: 兵 兵 卒 卒 
+Bs2: 
+------------------------
+AI Eats 卒
+兵 兵 卒 卒 卒 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 4
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 兵 象 車 馬 
+Bs2: 
+------------------------
+AI Draws
+兵 象 車 馬 兵 
+AI throws out 兵
+AI: 象 車 馬 兵 
+Bs2 Draws
+
+Bs2 throws out 傌
+Bs2: 
+---------- Round2 ----------
+AI: 象 車 馬 兵 
+Bs2: 
+------------------------
+AI Draws
+兵 象 車 馬 相 
+AI throws out 兵
+AI: 象 車 馬 相 
+Bs2 Draws
+
+Bs2 throws out 炮
+Bs2: 
+---------- Round3 ----------
+AI: 象 車 馬 相 
+Bs2: 
+------------------------
+AI Draws
+相 象 車 馬 仕 
+AI throws out 相
+AI: 象 車 馬 仕 
+Bs2 Draws
+
+Bs2 throws out 馬
+Bs2: 
+---------- Round4 ----------
+AI: 象 車 馬 仕 
+Bs2: 
+------------------------
+AI Draws
+仕 象 車 馬 包 
+AI throws out 仕
+AI: 象 車 馬 包 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round5 ----------
+AI: 象 車 馬 包 
+Bs2: 
+------------------------
+AI Draws
+象 車 馬 包 帥 
+AI throws out 象
+AI: 車 馬 包 帥 
+Bs2 Draws
+
+Bs2 throws out 硨
+Bs2: 
+---------- Round6 ----------
+AI: 車 馬 包 帥 
+Bs2: 
+------------------------
+AI Draws
+帥 車 馬 包 硨 
+AI throws out 帥
+AI: 車 馬 包 硨 
+Bs2 Draws
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 5
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 仕 兵 兵 車 
+Bs2: 
+------------------------
+AI Draws
+仕 兵 兵 車 士 
+AI throws out 仕
+AI: 兵 兵 車 士 
+Bs2 Draws
+
+Bs2 throws out 相
+Bs2: 
+---------- Round2 ----------
+AI: 兵 兵 車 士 
+Bs2: 
+------------------------
+AI Draws
+兵 兵 士 車 包 
+AI throws out 兵
+AI: 兵 士 車 包 
+Bs2 Draws
+
+Bs2 throws out 將
+Bs2: 
+---------- Round3 ----------
+AI: 兵 士 車 包 
+Bs2: 
+------------------------
+AI Draws
+兵 士 車 包 卒 
+AI throws out 兵
+AI: 士 車 包 卒 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round4 ----------
+AI: 士 車 包 卒 
+Bs2: 
+------------------------
+AI Draws
+士 車 包 卒 卒 
+AI throws out 士
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 傌
+Bs2: 
+---------- Round5 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 硨 
+AI throws out 硨
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 仕
+Bs2: 
+---------- Round6 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 傌 
+AI throws out 傌
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 硨
+Bs2: 
+---------- Round7 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 兵 
+AI throws out 兵
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 相
+Bs2: 
+---------- Round8 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 兵 
+AI throws out 兵
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 帥
+Bs2: 
+---------- Round9 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 象 
+AI throws out 象
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 炮
+Bs2: 
+---------- Round10 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 士 
+AI throws out 士
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 6
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 相 兵 士 馬 
+Bs2: 
+------------------------
+AI Draws
+相 兵 士 馬 硨 
+AI throws out 相
+AI: 兵 士 馬 硨 
+Bs2 Draws
+
+Bs2 throws out 傌
+Bs2: 
+---------- Round2 ----------
+AI: 兵 士 馬 硨 
+Bs2: 
+------------------------
+AI Eats 傌
+硨 兵 士 馬 傌 
+AI throws out 兵
+AI: 硨 士 馬 傌 
+Bs2 Eats 兵
+
+Bs2 throws out 炮
+Bs2: 
+---------- Round3 ----------
+AI: 硨 士 馬 傌 
+Bs2: 
+------------------------
+AI Eats 炮
+硨 傌 士 馬 炮 
+AI throws out 士
+AI: 硨 傌 馬 炮 
+Bs2 Draws
+
+Bs2 throws out 象
+Bs2: 
+---------- Round4 ----------
+AI: 硨 傌 馬 炮 
+Bs2: 
+------------------------
+AI Draws
+硨 傌 炮 馬 士 
+AI throws out 馬
+AI: 硨 傌 炮 士 
+Bs2 Eats 馬
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 7
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 硨 兵 兵 士 
+Bs2: 
+------------------------
+AI Draws
+硨 兵 兵 士 馬 
+AI throws out 硨
+AI: 兵 兵 士 馬 
+Bs2 Draws
+
+Bs2 throws out 硨
+Bs2: 
+---------- Round2 ----------
+AI: 兵 兵 士 馬 
+Bs2: 
+------------------------
+AI Draws
+兵 兵 士 馬 將 
+AI throws out 兵
+AI: 兵 士 馬 將 
+Bs2 Draws
+
+Bs2 throws out 象
+Bs2: 
+---------- Round3 ----------
+AI: 兵 士 馬 將 
+Bs2: 
+------------------------
+AI Eats 象
+兵 將 士 馬 象 
+AI throws out 兵
+AI: 將 士 馬 象 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round4 ----------
+AI: 將 士 馬 象 
+Bs2: 
+------------------------
+AI Draws
+將 士 象 馬 卒 
+AI throws out 馬
+AI: 將 士 象 卒 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round5 ----------
+AI: 將 士 象 卒 
+Bs2: 
+------------------------
+AI Draws
+將 士 象 卒 相 
+AI throws out 卒
+AI: 將 士 象 相 
+Bs2 Eats 卒
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 8
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 仕 炮 士 車 
+Bs2: 
+------------------------
+AI Draws
+仕 炮 士 車 傌 
+AI throws out 仕
+AI: 炮 士 車 傌 
+Bs2 Eats 仕
+
+Bs2 throws out 包
+Bs2: 
+---------- Round2 ----------
+AI: 炮 士 車 傌 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 士 車 兵 
+AI throws out 士
+AI: 傌 炮 車 兵 
+Bs2 Draws
+
+Bs2 throws out 卒
+Bs2: 
+---------- Round3 ----------
+AI: 傌 炮 車 兵 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 兵 車 兵 
+AI throws out 車
+AI: 傌 炮 兵 兵 
+Bs2 Draws
+
+Bs2 throws out 卒
+Bs2: 
+---------- Round4 ----------
+AI: 傌 炮 兵 兵 
+Bs2: 
+------------------------
+AI Draws
+傌 炮 兵 兵 卒 
+AI throws out 卒
+AI: 傌 炮 兵 兵 
+Bs2 Draws
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 9
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 仕 傌 兵 車 
+Bs2: 
+------------------------
+AI Draws
+仕 傌 兵 車 卒 
+AI throws out 仕
+AI: 傌 兵 車 卒 
+Bs2 Draws
+
+Bs2 throws out 包
+Bs2: 
+---------- Round2 ----------
+AI: 傌 兵 車 卒 
+Bs2: 
+------------------------
+AI Eats 包
+傌 兵 車 卒 包 
+AI throws out 傌
+AI: 兵 車 卒 包 
+Bs2 Draws
+
+Bs2 throws out 帥
+Bs2: 
+---------- Round3 ----------
+AI: 兵 車 卒 包 
+Bs2: 
+------------------------
+AI Draws
+兵 車 包 卒 卒 
+AI throws out 兵
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 車
+Bs2: 
+---------- Round4 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 兵 
+AI throws out 兵
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 相
+Bs2: 
+---------- Round5 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 士 
+AI throws out 士
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 硨
+Bs2: 
+---------- Round6 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 相 
+AI throws out 相
+AI: 車 包 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 卒
+Bs2: 
+---------- Round7 ----------
+AI: 車 包 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+車 包 卒 卒 卒 
+AI throws out 車
+AI: 包 卒 卒 卒 
+Bs2 Draws
+
+Bs2 throws out 將
+Bs2: 
+---------- Round8 ----------
+AI: 包 卒 卒 卒 
+Bs2: 
+------------------------
+AI Draws
+包 卒 卒 卒 炮 
+AI throws out 包
+AI: 卒 卒 卒 炮 
+Bs2 Eats 包
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round9 ----------
+AI: 卒 卒 卒 炮 
+Bs2: 
+------------------------
+AI Draws
+炮 卒 卒 卒 傌 
+AI throws out 炮
+AI: 卒 卒 卒 傌 
+Bs2 Draws
+
+Bs2 throws out 士
+Bs2: 
+---------- Round10 ----------
+AI: 卒 卒 卒 傌 
+Bs2: 
+------------------------
+AI Draws
+傌 卒 卒 卒 馬 
+AI throws out 傌
+AI: 卒 卒 卒 馬 
+Bs2 Draws
+
+Bs2 throws out 兵
+Bs2: 
+---------- Round11 ----------
+AI: 卒 卒 卒 馬 
+Bs2: 
+------------------------
+AI Draws
+馬 卒 卒 卒 馬 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 10
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 相 士 馬 卒 
+Bs2: 
+------------------------
+AI Draws
+相 士 馬 卒 士 
+AI throws out 馬
+AI: 相 士 卒 士 
+Bs2 Draws
+
+Bs2 throws out 炮
+Bs2: 
+---------- Round2 ----------
+AI: 相 士 卒 士 
+Bs2: 
+------------------------
+AI Draws
+相 士 士 卒 仕 
+AI throws out 卒
+AI: 相 士 士 仕 
+Bs2 Draws
+
+Bs2 throws out 象
+Bs2: 
+---------- Round3 ----------
+AI: 相 士 士 仕 
+Bs2: 
+------------------------
+AI Draws
+仕 相 士 士 兵 
+AI throws out 兵
+AI: 仕 相 士 士 
+Bs2 Eats 兵
+
+Bs2 throws out 硨
+Bs2: 
+---------- Round4 ----------
+AI: 仕 相 士 士 
+Bs2: 
+------------------------
+AI Draws
+仕 相 士 士 卒 
+AI throws out 卒
+AI: 仕 相 士 士 
+Bs2 Draws
+
+Bs2 throws out 仕
+Bs2: 
+---------- Round5 ----------
+AI: 仕 相 士 士 
+Bs2: 
+------------------------
+AI Draws
+仕 相 士 士 炮 
+AI throws out 炮
+AI: 仕 相 士 士 
+Bs2 Draws
+
+Bs2 throws out 馬
+Bs2: 
+---------- Round6 ----------
+AI: 仕 相 士 士 
+Bs2: 
+------------------------
+AI Draws
+仕 相 士 士 硨 
+AI throws out 硨
+AI: 仕 相 士 士 
+Bs2 Draws
+
+Player 2 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+10 rounds.... 
+4 Wins.
+0 Draws.
+6 Loses.

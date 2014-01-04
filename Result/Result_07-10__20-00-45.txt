@@ -1,0 +1,12 @@
+Game 1: money=-50
+Change (moneyToPlay) to: 1
+Game 2: money=3
+Change (moneyToPlay) to: 10
+Game 3: money=10
+
+|||||||||||||||||||||||||
+3 rounds.... 
+2 Wins.
+0 Draws.
+1 Loses.
+Money won: -37

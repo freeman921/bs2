@@ -1,0 +1,10 @@
+Game 1: money=30
+Game 2: money=40
+Game 3: money=40
+
+|||||||||||||||||||||||||
+3 rounds.... 
+3 Wins.
+0 Draws.
+0 Loses.
+Money won: 110

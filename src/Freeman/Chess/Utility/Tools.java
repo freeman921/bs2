@@ -50,8 +50,8 @@ public class Tools
 	
 	public static void initialize()
 	{
-		if (ChessMajian.demoFlag == ChessMajian.DEMONSTATE )
-			WAIT_TIME = 300;
+		if (ChessMajian.delayTime != 0  )
+			WAIT_TIME = ChessMajian.delayTime;
 
 		findStringSetup();
 		findValueSetup();

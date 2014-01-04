@@ -1,0 +1,124 @@
+Game 1: money=20
+Game 2: money=15
+Game 3: money=10
+Game 4: money=20
+Game 5: money=10
+Game 6: money=5
+Game 7: money=5
+Game 8: money=-45
+Change (moneyToPlay) to: 1
+Game 9: money=-3
+Game 10: money=4
+Change (moneyToPlay) to: 5
+Game 11: money=15
+Game 12: money=-30
+Change (moneyToPlay) to: 1
+Game 13: money=3
+Change (moneyToPlay) to: 5
+Game 14: money=20
+Game 15: money=15
+Game 16: money=-20
+Change (moneyToPlay) to: 1
+Game 17: money=4
+Change (moneyToPlay) to: 5
+Game 18: money=20
+Game 19: money=-20
+Change (moneyToPlay) to: 1
+Game 20: money=6
+Change (moneyToPlay) to: 5
+Game 21: money=20
+Game 22: money=-15
+Change (moneyToPlay) to: 1
+Game 23: money=4
+Change (moneyToPlay) to: 5
+Game 24: money=30
+Game 25: money=20
+Game 26: money=20
+Game 27: money=20
+Game 28: money=-30
+Change (moneyToPlay) to: 1
+Game 29: money=4
+Change (moneyToPlay) to: 5
+Game 30: money=20
+Game 31: money=-30
+Change (moneyToPlay) to: 1
+Game 32: money=3
+Change (moneyToPlay) to: 5
+Game 33: money=20
+Game 34: money=-20
+Change (moneyToPlay) to: 1
+Game 35: money=7
+Change (moneyToPlay) to: 5
+Game 36: money=10
+Game 37: money=15
+Game 38: money=15
+Game 39: money=15
+Game 40: money=-20
+Change (moneyToPlay) to: 1
+Game 41: money=4
+Change (moneyToPlay) to: 5
+Game 42: money=15
+Game 43: money=15
+Game 44: money=-20
+Change (moneyToPlay) to: 1
+Game 45: money=-6
+Game 46: money=4
+Change (moneyToPlay) to: 5
+Game 47: money=5
+Game 48: money=15
+Game 49: money=-20
+Change (moneyToPlay) to: 1
+Game 50: money=-3
+Game 51: money=-9
+Game 52: money=3
+Change (moneyToPlay) to: 5
+Game 53: money=20
+Game 54: money=20
+Game 55: money=15
+Game 56: money=-20
+Change (moneyToPlay) to: 1
+Game 57: money=3
+Change (moneyToPlay) to: 5
+Game 58: money=20
+Game 59: money=20
+Game 60: money=-45
+Change (moneyToPlay) to: 1
+Game 61: money=3
+Change (moneyToPlay) to: 5
+Game 62: money=-15
+Change (moneyToPlay) to: 1
+Game 63: money=4
+Change (moneyToPlay) to: 5
+Game 64: money=20
+Game 65: money=-25
+Change (moneyToPlay) to: 1
+Game 66: money=4
+Change (moneyToPlay) to: 5
+Game 67: money=-45
+Change (moneyToPlay) to: 1
+Game 68: money=4
+Change (moneyToPlay) to: 5
+Game 69: money=-20
+Change (moneyToPlay) to: 1
+Game 70: money=3
+Change (moneyToPlay) to: 5
+Game 71: money=-45
+Change (moneyToPlay) to: 1
+Game 72: money=2
+Change (moneyToPlay) to: 5
+Game 73: money=20
+Game 74: money=20
+Game 75: money=20
+Game 76: money=15
+Game 77: money=-25
+Change (moneyToPlay) to: 1
+Game 78: money=7
+Change (moneyToPlay) to: 5
+Game 79: money=-30
+Change (moneyToPlay) to: 1
+Game 80: money=5
+Change (moneyToPlay) to: 5
+Game 81: money=15
+Game 82: money=20
+Game 83: money=5
+Game 85: money=-30

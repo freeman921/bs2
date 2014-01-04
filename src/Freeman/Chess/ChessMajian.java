@@ -47,6 +47,7 @@ public class ChessMajian extends Thread
 	int gameTime;
 	public static int demoFlag;
 	public static int curGame;
+	public static int delayTime;
 
 	
 	public Deck deck;
@@ -89,12 +90,13 @@ public class ChessMajian extends Thread
 	}
 	
 	public ChessMajian(	PrintStream socketOut,Screen screen, 
-						int times,String money, int demo) // for Bs2
+						int times,String money, int demo, int delay) // for Bs2
 	{
 		system = new Bs2System(player1,player2,money);
 		gameTime = times;
 		moneyShouldPlay = money;
 		demoFlag = demo;
+		delayTime = delay;
 		
 		this.socketOut = socketOut;
 		this.screen = screen;

@@ -1,0 +1,10 @@
+Game 1: money=-70
+Change (moneyToPlay) to: 1
+Game 2: money=-4
+
+|||||||||||||||||||||||||
+2 rounds.... 
+0 Wins.
+0 Draws.
+2 Loses.
+Money won: -74

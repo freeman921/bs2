@@ -1,0 +1,27 @@
+Game 1: money=40
+Game 2: money=80
+Game 3: money=-80
+Change (moneyToPlay) to: 1
+Game 4: money=-6
+Game 5: money=-8
+Game 6: money=4
+Change (moneyToPlay) to: 10
+Game 7: money=40
+Game 8: money=30
+Game 9: money=30
+Game 10: money=-40
+Change (moneyToPlay) to: 1
+Game 11: money=-5
+Game 12: money=4
+Change (moneyToPlay) to: 10
+Game 13: money=40
+Game 14: money=70
+Game 15: money=-60
+Change (moneyToPlay) to: 1
+Game 16: money=4
+Change (moneyToPlay) to: 10
+Game 17: money=40
+Game 18: money=40
+Game 19: money=60
+Game 20: money=-80
+Change (moneyToPlay) to: 1

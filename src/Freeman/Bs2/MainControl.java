@@ -128,24 +128,31 @@ public class MainControl extends Thread
 	void chessGameControl()
 	{
 		String s,moneyToPlay;
-		int gameTime=0, demo=0;
+		int gameTime=0, demo=0, delayTime=0;
 		
 		try
 		{ 
 			System.out.println("How many rounds to play ?");
 			s = in.readLine(); 
+			
 			gameTime = Integer.parseInt(s);
 			System.out.println("How much money to play ?");
 			moneyToPlay = in.readLine(); 
+			
 			System.out.println("Mode: [" + ChessMajian.EARN_MONEY +
 				"]Earm Money  ["+ ChessMajian.DEMONSTATE + "]Demonstrate");
 			s = in.readLine();
 			demo = Integer.parseInt(s);
-		
+			
+			System.out.println("Set the delay time: (ms)");
+			s = in.readLine();
+			delayTime = Integer.parseInt(s);
+			
 			// go to the main screen of chessgame : (it asks how much $ you wanna play)
 			backToMain(socketOut);
 			socketOut.print("x\rg\r2\r3\r"); 
-			ChessMajian cm = new ChessMajian(socketOut,screen,gameTime,moneyToPlay,demo);
+			ChessMajian cm = new ChessMajian(socketOut,screen,gameTime,
+									moneyToPlay,demo,delayTime);
 			cm.start();
 
 			while ( cm.isAlive() )
@@ -161,7 +168,7 @@ public class MainControl extends Thread
 		}
 		//catch (InterruptedException e) { System.out.println("!!! Chess Interrupted !!!"); }
 		catch (Exception e) { 
-			System.out.println("!!! Input wrong !!!");
+			System.out.println("!!! User Input wrong !!!");
 			return;
 		}
 		

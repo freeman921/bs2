@@ -1,0 +1,17 @@
+Game 1: money=4
+Change (moneyToPlay) to: 1
+Game 2: money=-8
+Change (moneyToPlay) to: 1
+Game 3: money=3
+Change (moneyToPlay) to: 1
+Game 4: money=-9
+Change (moneyToPlay) to: 1
+Game 5: money=4
+Change (moneyToPlay) to: 1
+
+|||||||||||||||||||||||||
+5 rounds.... 
+3 Wins.
+0 Draws.
+2 Loses.
+Money won: -6

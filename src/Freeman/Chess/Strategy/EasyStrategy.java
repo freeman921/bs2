@@ -8,9 +8,6 @@ import Freeman.Chess.Utility.Tools;
 
 public class EasyStrategy extends Strategy
 {
-	int sumUpScore,bestScore[],bestPatIdx[]; // the Pattern index of the best score
-	PatternList list;
-	Hand ownerHand;
 	
 	public EasyStrategy(Hand hand)
 	{

@@ -1,0 +1,27 @@
+Game 1: money=-6
+Change (moneyToPlay) to: 1
+Game 2: money=4
+Change (moneyToPlay) to: 1
+Game 3: money=3
+Change (moneyToPlay) to: 1
+Game 4: money=4
+Change (moneyToPlay) to: 1
+Game 5: money=7
+Change (moneyToPlay) to: 1
+Game 6: money=1
+Change (moneyToPlay) to: 1
+Game 7: money=1
+Change (moneyToPlay) to: 1
+Game 8: money=-5
+Change (moneyToPlay) to: 1
+Game 9: money=-4
+Change (moneyToPlay) to: 1
+Game 10: money=-4
+Change (moneyToPlay) to: 1
+
+|||||||||||||||||||||||||
+10 rounds.... 
+6 Wins.
+0 Draws.
+4 Loses.
+Money won: 1

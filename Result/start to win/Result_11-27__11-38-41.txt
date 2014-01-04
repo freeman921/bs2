@@ -1,0 +1,48 @@
+Game 1: money=4
+Change (moneyToPlay) to: 1
+Game 2: money=-3
+Change (moneyToPlay) to: 1
+Game 3: money=-6
+Change (moneyToPlay) to: 1
+Game 4: money=3
+Change (moneyToPlay) to: 1
+Game 5: money=3
+Change (moneyToPlay) to: 1
+Game 6: money=7
+Change (moneyToPlay) to: 1
+Game 7: money=2
+Change (moneyToPlay) to: 1
+Game 8: money=4
+Change (moneyToPlay) to: 1
+Game 10: money=3
+Change (moneyToPlay) to: 1
+Game 11: money=4
+Change (moneyToPlay) to: 1
+Game 12: money=3
+Change (moneyToPlay) to: 1
+Game 13: money=4
+Change (moneyToPlay) to: 1
+Game 14: money=2
+Change (moneyToPlay) to: 1
+Game 15: money=4
+Change (moneyToPlay) to: 1
+Game 16: money=-6
+Change (moneyToPlay) to: 1
+Game 17: money=3
+Change (moneyToPlay) to: 1
+Game 18: money=3
+Change (moneyToPlay) to: 1
+Game 19: money=-6
+Change (moneyToPlay) to: 1
+Game 20: money=-5
+Change (moneyToPlay) to: 1
+Game 21: money=4
+Change (moneyToPlay) to: 1
+Game 22: money=4
+Change (moneyToPlay) to: 1
+Game 23: money=-6
+Change (moneyToPlay) to: 1
+Game 24: money=-5
+Change (moneyToPlay) to: 1
+Game 25: money=-9
+Change (moneyToPlay) to: 1

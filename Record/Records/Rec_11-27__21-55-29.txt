@@ -1,0 +1,119 @@
+|||||||||||||||||||||||||
+        Game 1
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: ¥K §L ¶H ¥] 
+Bs2: 
+------------------------
+AI Draws
+¥K §L ¶H ¥] ¨ò 
+AI throws out ¥K
+AI: §L ¶H ¥] ¨ò 
+Bs2 Draws
+x 
+Bs2 throws out ¥K
+Bs2: x 
+---------- Round2 ----------
+AI: §L ¶H ¥] ¨ò 
+Bs2: x 
+------------------------
+AI Draws
+§L ¶H ¥] ¨ò ÚÏ 
+AI throws out ¶H
+AI: §L ¥] ¨ò ÚÏ 
+Bs2 Draws
+x x 
+Bs2 throws out ¬Û
+Bs2: x x 
+---------- Round3 ----------
+AI: ÚÏ §L ¥] ¨ò 
+Bs2: x x 
+------------------------
+AI Draws
+ÚÏ §L ¥] ¨ò ¨ò 
+AI throws out ÚÏ
+AI: §L ¥] ¨ò ¨ò 
+Bs2 Draws
+x x x 
+Bs2 throws out ÚÏ
+Bs2: x x x 
+---------- Round4 ----------
+AI: §L ¥] ¨ò ¨ò 
+Bs2: x x x 
+------------------------
+AI Draws
+§L ¥] ¨ò ¨ò §L 
+AI throws out ¥]
+AI: §L ¨ò ¨ò §L 
+Bs2 Eats ¥]
+x x x 
+Bs2 throws out ¤h
+Bs2: x x x 
+---------- Round5 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: x x x 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò «Ó 
+AI throws out «Ó
+AI: §L §L ¨ò ¨ò 
+Bs2 Draws
+x x x x 
+Bs2 throws out ¨ò
+Bs2: x x x x 
+---------- Round6 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: x x x x 
+------------------------
+AI Eats ¨ò
+§L §L ¨ò ¨ò ¨ò 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 2
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ±N 
+AI throws out ±N
+AI: §L §L ¨ò ¨ò 
+Bs2 Eats ±N
+
+Bs2 throws out ¨®
+Bs2: 
+---------- Round2 ----------
+AI: ØX ¬¶ ¶H ¨ò 
+Bs2: 
+------------------------
+AI Draws
+ØX ¬¶ ¶H ¨ò ¨ò 
+AI throws out ØX
+AI: ¬¶ ¶H ¨ò ¨ò 
+Bs2 Draws
+x 
+Bs2 throws out ÚÏ
+Bs2: x 
+---------- Round3 ----------
+AI: ¬¶ ¶H ¨ò ¨ò 
+Bs2: x 
+------------------------
+AI Draws
+¬¶ ¶H ¨ò ¨ò §L 
+AI throws out ¬¶
+AI: ¶H ¨ò ¨ò §L 
+Bs2 Draws
+x x 
+Bs2 throws out «Ó
+Bs2: x x 
+---------- Round4 ----------
+AI: §L ¶H ¨ò ¨ò 
+Bs2: x x 
+------------------------
+AI Draws
+§L ¶H ¨ò ¨ò °¨ 
+AI throws out ¶H
+AI: §L ¨ò ¨ò °¨ 
+Bs2 Eats ¶H
+x x 

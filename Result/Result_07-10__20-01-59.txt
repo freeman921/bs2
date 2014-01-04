@@ -1,0 +1,2 @@
+Game 1: money=-30
+Change (moneyToPlay) to: 1

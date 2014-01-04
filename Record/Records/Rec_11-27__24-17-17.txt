@@ -1,0 +1,46 @@
+|||||||||||||||||||||||||
+        Game 1
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: 相 兵 士 車 
+Bs2: 
+------------------------
+AI Draws
+相 兵 士 車 卒 
+AI throws out 相
+AI: 兵 士 車 卒 
+Bs2 Draws
+x 
+Bs2 throws out 將
+Bs2: x 
+---------- Round2 ----------
+AI: 兵 士 車 卒 
+Bs2: x 
+------------------------
+AI Draws
+兵 士 車 卒 傌 
+AI throws out 士
+AI: 兵 車 卒 傌 
+Bs2 Draws
+x x 
+Bs2 throws out 包
+Bs2: x x 
+---------- Round3 ----------
+AI: 傌 兵 車 卒 
+Bs2: x x 
+------------------------
+AI Draws
+傌 兵 車 卒 帥 
+AI throws out 傌
+AI: 兵 車 卒 帥 
+Bs2 Draws
+x x x 
+Bs2 throws out 象
+Bs2: x x x 
+---------- Round4 ----------
+AI: 帥 兵 車 卒 
+Bs2: x x x 
+------------------------
+AI Draws
+帥 兵 車 卒 相 
+AI throws out 帥

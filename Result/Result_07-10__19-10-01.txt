@@ -1,0 +1,21 @@
+Game 1: money=30
+Game 2: money=-50
+Change (moneyToPlay) to: 1
+Game 3: money=-3
+Game 4: money=-5
+Game 5: money=-5
+Game 6: money=4
+Change (moneyToPlay) to: 10
+Game 7: money=20
+Game 8: money=30
+Game 9: money=-60
+Change (moneyToPlay) to: 1
+Game 10: money=4
+Change (moneyToPlay) to: 10
+
+|||||||||||||||||||||||||
+10 rounds.... 
+5 Wins.
+0 Draws.
+5 Loses.
+Money won: -35

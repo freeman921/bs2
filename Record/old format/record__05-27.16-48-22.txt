@@ -1,0 +1,136 @@
+|||||||||||||||||||||||||
+        Game 1
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ¥K 
+AI throws out ¥K
+AI: §L §L ¨ò ¨ò 
+Bs2 Eats ¥K
+
+Bs2 throws out «Ó
+Bs2: 
+---------- Round2 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ÚÏ 
+AI throws out ÚÏ
+AI: §L §L ¨ò ¨ò 
+Bs2 Draws
+
+Bs2 throws out ¥K
+Bs2: 
+---------- Round3 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ØX 
+AI throws out ØX
+AI: §L §L ¨ò ¨ò 
+Bs2 Draws
+
+Bs2 throws out ¥]
+Bs2: 
+---------- Round4 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ¶H 
+AI throws out ¶H
+AI: §L §L ¨ò ¨ò 
+Bs2 Draws
+
+Bs2 throws out ¬¶
+Bs2: 
+---------- Round5 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò ¥K 
+AI throws out ¥K
+AI: §L §L ¨ò ¨ò 
+Bs2 Draws
+
+Bs2 throws out ØX
+Bs2: 
+---------- Round6 ----------
+AI: §L §L ¨ò ¨ò 
+Bs2: 
+------------------------
+AI Draws
+§L §L ¨ò ¨ò §L 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 2
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: «Ó §L ¥] ¨ò 
+Bs2: 
+------------------------
+AI Draws
+«Ó §L ¥] ¨ò °¨ 
+AI throws out «Ó
+AI: §L ¥] ¨ò °¨ 
+Bs2 Draws
+
+Bs2 throws out ¬Û
+Bs2: 
+---------- Round2 ----------
+AI: §L ¥] ¨ò °¨ 
+Bs2: 
+------------------------
+AI Draws
+§L °¨ ¥] ¨ò ¨® 
+AI throws out §L
+AI: °¨ ¥] ¨ò ¨® 
+Bs2 Eats §L
+
+Bs2 throws out ¥]
+Bs2: 
+---------- Round3 ----------
+AI: °¨ ¥] ¨ò ¨® 
+Bs2: 
+------------------------
+AI Draws
+¨® °¨ ¥] ¨ò ¨ò 
+Player 1 wins ~~~~~~!!!
+|||||||||||||||||||||||||
+        Game 3
+|||||||||||||||||||||||||
+---------- Round1 ----------
+AI: «Ó §L ¥] ¥] 
+Bs2: 
+------------------------
+AI Draws
+«Ó §L ¥] ¥] ¬Û 
+AI throws out §L
+AI: «Ó ¥] ¥] ¬Û 
+Bs2 Draws
+
+Bs2 throws out ¥K
+Bs2: 
+---------- Round2 ----------
+AI: «Ó ¥] ¥] ¬Û 
+Bs2: 
+------------------------
+AI Eats ¥K
+«Ó ¬Û ¥] ¥] ¥K 
+Player 1 wins ~~~~~~!!!
+----------------------
+Game 1: moeny=4
+Game 2: moeny=2
+Game 3: moeny=2
+|||||||||||||||||||||||||
+3 rounds.... 
+3 Wins.
+0 Draws.
+0 Loses.
+Money won: 8
