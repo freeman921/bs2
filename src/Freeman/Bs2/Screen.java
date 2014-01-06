@@ -1,0 +1,341 @@
+package Freeman.Bs2;
+import java.io.*;
+import java.net.Socket;
+import java.util.*;
+import java.io.PushbackInputStream;
+
+class User
+{
+	String id;
+	String nickname;
+	String loginTime;
+	
+	User(String a,String b,String c)
+	{
+		id =a;
+		nickname = b;
+		loginTime = c;
+	}
+}
+
+public class Screen 
+{
+	public static final int  BBS_ROW_NUM = 24;
+	public static final int  WORD_PER_LINE = 80;
+	
+	public static final int INIT = 0;
+	public static final int CTRL_SIG = 1;
+	public static final int PAR_LIST = 5;
+	public static final int SEMICOLON = 9;
+	public static final int ERROR = 999;
+	public static final char BLANK = ' ';
+	
+	public static final int STABLE = 1;
+	public static final int UNSTABLE = 2;
+	
+	private Socket socket;
+	//private BufferedReader socketIn;
+	
+	int refresh_state= STABLE; // to determine whether screen refreshed.
+	String line = new String(); 
+	StringBuffer[] scrBuf = new StringBuffer[BBS_ROW_NUM+10];
+	
+	int x,lineNum=1;
+	
+	Screen(Socket socket)
+	{
+		this.socket = socket;
+		for (int i=1; i<=BBS_ROW_NUM; i++)
+		{
+			scrBuf[i] = new StringBuffer(WORD_PER_LINE*2); //capacity
+			scrBuf[i].setLength(WORD_PER_LINE*10);
+		}
+		
+		new ScreenInput().start();  
+		//catch (IOException e) { System.out.println("!!! Screen Construct Wrong !!!"); }
+	}
+	
+	public void setStateToStable () { refresh_state = STABLE; }
+	public int getStability() { return refresh_state; }
+	public char getValueAt(int a,int b) { return scrBuf[ a ].charAt( b ); }
+	public StringBuffer getRow(int row) { return scrBuf[row]; }
+	
+	public void clear() // how to clear ????????
+	{
+		lineNum = 1;
+		for (int i=1 ;i<= BBS_ROW_NUM ; i++)
+			scrBuf[i].setLength(0);  	//= "";
+		
+		System.out.print("---");
+	}
+	public void print()
+	{
+		int i,k;
+		for (i=1;i<=BBS_ROW_NUM;i++)
+		{
+			System.out.print(i +":\t");
+			
+			for(k=1; k<= WORD_PER_LINE ; k++) // scrBuf[i].length()
+				if (scrBuf[i].charAt(k) != 0 )
+					System.out.print( scrBuf[i].charAt(k) );
+			
+			System.out.println("");
+		}
+	}
+	
+	class ScreenInput extends Thread
+	{
+		int row,col;
+		int state,par_num,par[]=new int[6] ; 
+		// 3 is enough in theory? but I've saw 4  *[0;1;37;44m
+		
+		PushbackInputStream pbIn;
+		InputStreamReader isrIn;
+		BufferedReader bufPbIn,fileIn;
+		Scanner scanner;
+		
+		ScreenInput()
+		{
+			col=1;   row=1; 
+			backToInit(); // state and it's setting
+			
+			try {
+				pbIn = new PushbackInputStream( socket.getInputStream() );
+				isrIn = new InputStreamReader (pbIn);
+				//fileIn = new BufferedReader(new FileReader("haha.txt") );
+				//bufPbIn = new BufferedReader ( new InputStreamReader (pbIn) );
+				//scanner = new Scanner(pbIn);
+			}
+			catch (IOException e) { System.out.println("!!! Pushback Reader Wrong !!!"); }
+		}
+		
+		@Override
+		public void run()
+		{
+			try {	
+				int x;
+				while (  ( x = isrIn.read() ) !=  -1) // EOF
+				{
+					refresh_state = UNSTABLE;
+					System.out.print((char)x); // for user to know where he is = = 
+					putToScreen(x);
+				}
+				socket.close();
+			} 
+			catch (IOException e)
+			{
+				System.out.println(e.toString());
+			}
+		}
+		
+		// this is a state machine
+		void putToScreen(int x) throws IOException 
+		{
+			while (true)
+			{
+				switch (state)
+				{
+					case INIT:
+						if ( x==27 ) // esc = *
+							state = CTRL_SIG;
+						else if (x=='\r')
+							row = 1;
+						else if (x=='\n')
+						{
+							if (col>=24)
+								System.out.println("!!! col overwhelm !!!");
+							col++;
+							//row = 1;
+						}
+						else if (x==8) // back space with no delete
+						{
+							if (row>0) 
+								row--;
+							else
+								System.out.println("!!! backspace over row 1 !!!");
+						}
+						
+						// all others input put to screen
+						else 
+						{
+							if ( row < WORD_PER_LINE*10 )
+							{
+								// scrBuf[col][row] = x
+								scrBuf[col].setCharAt(row, (char)x );
+								if (x<128) 
+									row++;
+								else // not asci
+								{
+									scrBuf[col].setCharAt(row+1, (char)0 );
+									row += 2;
+								}
+								
+							}
+							else
+								System.out.print("!!! row too long !!!");
+								
+						}
+						break;
+						
+					case CTRL_SIG:
+						if (x=='[')
+							state = PAR_LIST;
+						//else if (x=='*') // **A
+							//state = STAR_CTRL;
+						else
+						{
+							System.out.print("!!! CTRL_SIG wrong !!!");
+							backToInit();
+						}
+						break;
+					
+					case PAR_LIST:
+						if ( Character.isDigit( (char)x ) )
+						{
+							Int a = new Int(x);
+							// ends and returns a as the next x (not a digit)
+							par[par_num] = inputInt(a); 
+							x = a.value;
+							continue; // cont while
+						}
+						else if (x==';')
+							par_num ++ ;
+						else if (x=='K') // BS2 clear code
+						{
+							clearCurLineFromCursor();
+							backToInit();
+						}
+						else if (x=='m') // 色碼 -> don't bother
+							backToInit();
+						else if (x=='H') // 位移碼
+						{
+							col = par[1];
+							row = par[2];
+							backToInit();
+						}
+						else if ( x==27 ) // esc = *
+							state = CTRL_SIG;
+						else
+						{
+							//System.out.println("!!! 有奇怪的東西喔 !!!");
+							backToInit();
+						}
+					break;
+					
+					
+					default:
+						System.out.println("!!! State machine wrong !!!");
+						backToInit();
+				} // switch
+				break;
+			} //while(true)
+		} // putToScreen()
+		
+		int inputInt(Int num) throws IOException
+		{
+			int sum = 0, x=num.value ;
+			while ( Character.isDigit( (char)x ) )
+			{
+				sum *= 10;
+				sum += x-'0';
+				x = isrIn.read();
+				System.out.print((char)x);
+			}
+			num.value = x;
+			return sum;
+		}
+		
+		void backToInit()
+		{
+			// default setting
+			for(int i=1;i<=3;i++)
+				par[i]=1 ;
+			par_num = 1;
+			state = INIT;
+		}
+		void clearCurLineFromCursor()
+		{
+			for(int i=row ; i<=WORD_PER_LINE  ; i++)
+				scrBuf[col].setCharAt(i, BLANK);
+		}
+		
+	} // class ScreenInput
+	
+} // screen
+
+
+class ScreenIterator
+{
+	Screen scr;
+	int rowNum;
+	int pos; 
+	
+	ScreenIterator()
+	{
+		scr = null;
+		rowNum = 1;
+		pos = 0;
+	}
+	ScreenIterator(Screen a,int x,int y)
+	{
+		scr = a;
+		rowNum = x;
+		pos = y;
+	}
+	
+}
+
+class ScreenTokenizer
+{
+	public static final int  BBS_ROW_NUM = 24;
+	int i,k;
+	String pattern;
+	Screen sc;
+	
+	ScreenTokenizer(Screen sc , String pattern)
+	{ 
+		this.sc = sc;
+		this.pattern = pattern; 
+		i=1; k=0;
+	}
+	
+	ScreenIterator findNextPattern()
+	{
+
+		for ( ;i<=BBS_ROW_NUM ; i++)
+		{
+			int index = sc.scrBuf[i].indexOf(pattern,k); // find pattern in String from k
+			
+			if (index != -1)
+			{
+				k = index+1;
+				return new ScreenIterator(sc,i,index);
+			}
+			k=0;
+		}
+		// not find index==-1
+		return new ScreenIterator(null,-1,-1);
+	}
+	
+	String afterStrings(ScreenIterator si)
+	{
+		return sc.scrBuf[si.rowNum].substring(si.pos+pattern.length() );
+	}
+}
+
+class UserComp implements Comparator <User>
+{
+    public int compare(User a, User b)
+    {
+    	int ans = a.id.compareTo(b.id);
+        return ans;
+    }
+}
+
+class Int
+{
+	int value;
+	Int(int x) { value=x; }
+}
+
+
