@@ -609,30 +609,9 @@ public class ChessMajian extends Thread
 						System.out.println( sc.next() ) ;
 				}
 			}
-			/*
-			if (gameStatus==PLAYER_1_WIN)
-			{
-				(gameRecord.winTime) ++;
-				out.println("Player 1 wins ~~~~~~!!!");
-			}
-			else if (gameStatus==PLAYER_2_WIN)
-			{
-				(gameRecord.loseTime) ++;
-				out.println("Player 2 (Opponent) wins ~~~~~~!!!");
-				money *= -1;
-			}
-			*/
+
 			system.addMoneyToResult(gameStatus,money,curGame);
-			/*
-			if (system.type()==BS2)
-			{
-				money -= Integer.parseInt(moneyShouldPlay);
-				gameRecord.winMoney += money;
-				gameRecord.moneyGameN[curGame] += money;
-				
-				resultOut.println("Game "+curGame+": "+"money="+gameRecord.moneyGameN[curGame]);
-			}
-			*/
+
 		}
 		
 		//clearAllPiles();
