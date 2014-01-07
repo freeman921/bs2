@@ -1,20 +1,22 @@
-/*
- * 象棋麻將 人工智慧   ver 3.2  by Freeman 
+/**
+
+ * 1.5 new : 翻新架構, 使AI,Bs2等皆繼承自Player
+ * 2.0 new : 新增 NormalStrategy (中等強度的AI,依照pattern給定的策略分數去決定牌型優劣)
  * 
- * 本程式任務是 : 打敗BBS(BS2)上的電腦AI並開始賺錢 !!!
+ * 3.0 new : 
+ * 		1. 	原本BS2判斷換頁  仍需以 Sleep() 作為等待, 現在已大翻修架構, 可加入每頁面check
+ * 			目前以  "收到第一個packet -> Delay一小段" 做基礎 , test可跑一千場  
+ * 		2.	將專案整理 , 整理進入 Freeman.Chess 中
  * 
- * 1.5 what's new :	翻新架構, 使AI,Bs2等皆繼承自Player
- * 2.0 what's new :	新增 NormalStrategy (中等強度的AI,依照pattern給定的策略分數去決定牌型優劣)
+ * 3.2 new : 
+ * 		開始賺錢了!  此版突破性的功能乃是 : 1. BS2System.detMoneyToPlay()
+ * 		因為觀察到BS2象棋麻將系統常有連勝、連敗的現象，以此動態調整賭金   預定金額 & 1元  之間切換
+ * 		2.  調整pattern.txt 以吃兵卒為主   ,   並新增一些小功能  ex. 從外部可控制  /stop
  * 
- * 3.0 what's new :	1. 	原本BS2判斷換頁  仍需以 Sleep() 作為等待, 現在已大翻修架構, 可加入每頁面check
- * 						目前以  "收到第一個packet -> Delay一小段" 做基礎 , test可跑一千場  
- * 					2.	將專案整理 , 整理進入 Freeman.Chess 中
- * 
- * 3.2 what's new : 開始賺錢了!  此版突破性的功能乃是 : 1. BS2System.detMoneyToPlay()
- * 					因為觀察到BS2象棋麻將系統常有連勝、連敗的現象，以此動態調整賭金   預定金額 & 1元  之間切換
- * 					2.  調整pattern.txt 以吃兵卒為主   ,   並新增一些小功能  ex. 從外部可控制  /stop
- * 
- */
+ * 3.3 new :
+ * 		新增小功能: 在開頭設定網路封包延遲相關的: delayTime
+ * 		依據距離Bs2的遠近延遲, 愈順數值愈小, 可用ping測試
+ **/
 
 package Freeman.Chess;
 
@@ -49,7 +51,6 @@ public class ChessMajian extends Thread
 	public static int curGame;
 	public static int delayTime;
 
-	
 	public Deck deck;
 	ChessSystem system;
 	Player player1,player2;
@@ -58,8 +59,6 @@ public class ChessMajian extends Thread
 	String moneyShouldPlay;
 	GameRecord gameRecord;
 	Printer printer;
-	
-	
 	
 	public static final int DRAW=0;
 	public static final int EAT=1;
@@ -140,9 +139,10 @@ public class ChessMajian extends Thread
 	
 	void bs2Initialize(Screen screen, PrintStream socketOut)
 	{
-		player1 = new AIPlayer("AI",NORMAL_AI);
-		player2 = new Bs2Player("Bs2",screen);
-		deck = new Bs2Deck(screen,socketOut);
+		player1 = new AIPlayer("AI",NORMAL_AI); 
+		player2 = new Bs2Player("Bs2",screen);  
+		deck = new Bs2Deck(screen,socketOut);   
+
 		commonInitialize(); // must after player type
 	}
 	
