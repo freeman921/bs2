@@ -8,12 +8,8 @@ import Freeman.Chess.Utility.Tools;
 
 public class NormalStrategy extends Strategy
 {
-<<<<<<< HEAD
-=======
 	int sumUpScore,bestScore[],bestPatIdx[]; // the Pattern index of the best score
 	PatternList list;
-	Hand ownerHand;
->>>>>>> 3087125238c5edefb8b0511898f7d9016707a256
 	
 	public NormalStrategy(Hand hand)
 	{
