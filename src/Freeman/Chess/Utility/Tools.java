@@ -24,9 +24,6 @@ public class Tools
 	public static final int TIMEOUT_TIME = 3000;
 	public static final int BASIC_SCORE_PER_MATCH = 100;
 	public static final int WIN = 500;  
-	//static final int FOUR_MATCHED = 3000;
-	//static final int THREE_MATCHED = 1000;
-	//static final int TWO_MATCHED = 100; 
 	
 	public static final int ERROR_CODE = 999999;
 	

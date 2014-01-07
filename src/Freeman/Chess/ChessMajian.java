@@ -28,6 +28,8 @@ import java.util.Scanner;
 
 import Freeman.Bs2.MainControl;
 import Freeman.Bs2.Screen;
+import Freeman.Chess.Player.AIPlayer;
+import Freeman.Chess.Player.Player;
 import Freeman.Chess.Structure.*;
 import Freeman.Chess.Systems.*;
 import Freeman.Chess.Utility.*;
@@ -45,15 +47,13 @@ public class ChessMajian extends Thread
 	PrintStream out,socketOut,resultOut;
 	public static PrintStream errOut;
 	
-	
 	int gameTime;
 	public static int demoFlag;
 	public static int curGame;
 	public static int delayTime;
 
-	public Deck deck;
 	ChessSystem system;
-	Player player1,player2;
+	//Player player1,player2;
 	
 	//String moneyToPlay;
 	String moneyShouldPlay;
@@ -79,19 +79,24 @@ public class ChessMajian extends Thread
 	public static final int DEMONSTATE = 1;
 	
 	public static String RECORD_FILE="record";
+
 	
 	ChessMajian(int times) throws IOException
 	{
+		/*
 		//system = new LocalSystem(player1,player2);
 		gameTime = times;
 		
-		localInitialize();  // must be done after commonInitialize()
+		localInitialize();  // must be done after commonInitialize() ??????
+		commonInitialize();
+		*/
 	}
+	
 	
 	public ChessMajian(	PrintStream socketOut,Screen screen, 
 						int times,String money, int demo, int delay) // for Bs2
 	{
-		system = new Bs2System(player1,player2,money);
+		system = new Bs2System(player1,player2,NORMAL_AI,money);
 		gameTime = times;
 		moneyShouldPlay = money;
 		demoFlag = demo;
@@ -100,7 +105,9 @@ public class ChessMajian extends Thread
 		this.socketOut = socketOut;
 		this.screen = screen;
 		
-		bs2Initialize(screen, this.socketOut); 
+		system.init(screen, this.socketOut);
+			//bs2Initialize(screen, this.socketOut); 
+		commonInitialize();
 	}
 	
 	/////////////////// initialize  ///////////////////
@@ -135,26 +142,6 @@ public class ChessMajian extends Thread
 		
 		system.sendVar(gameRecord,socketOut,resultOut,out);
 		printer = new Printer(out);
-	}
-	
-	void bs2Initialize(Screen screen, PrintStream socketOut)
-	{
-		player1 = new AIPlayer("AI",NORMAL_AI); 
-		player2 = new Bs2Player("Bs2",screen);  
-		deck = new Bs2Deck(screen,socketOut);   
-
-		commonInitialize(); // must after player type
-	}
-	
-	void localInitialize()
-	{
-		//out = new PrintStream( System.out );  ???
-		
-		player1 = new AIPlayer("player1",NORMAL_AI);
-		player2 = new AIPlayer("player2",EASY_AI);
-		//player2 = new HumanPlayer("Freeman",in,out);
-		deck = new LocalDeck();
-		commonInitialize(); // must after player type
 	}
 	
 	@Override
@@ -238,7 +225,7 @@ public class ChessMajian extends Thread
 				return PLAYER1_GET;
 				
 			case PLAYER1_GET:
-				choosenMove = player1.chooseMove( player2.trash ,round ); // polymorphism 
+				choosenMove = player1.chooseMove( player2.getTrashPile() ,round ); // polymorphism 
 				if ( (system.type()==BS2) && (player1.type() !=BS2) )
 				{
 					if (choosenMove=="draw")
@@ -249,7 +236,7 @@ public class ChessMajian extends Thread
 				return PLAYER1_THROW;
 				
 			case PLAYER1_THROW:
-				chooseThrow(player1, player2.trash, round);
+				chooseThrow(player1, player2.getTrashPile(), round);
 				return PLAYER2_GET;
 				
 			case PLAYER2_GET:
@@ -265,7 +252,6 @@ public class ChessMajian extends Thread
 		
 		return newState;
 	}
-	
 	
 	int bs2CheckAndWait( int lastState, int newState, int round )
 	{
@@ -300,7 +286,7 @@ public class ChessMajian extends Thread
 				break; // check if win.
 				
 			case PLAYER2_GET: 
-				choosenMove = player2.chooseMove( player1.trash ,round );
+				choosenMove = player2.chooseMove( player1.getTrashPile() ,round );
 				if ( (endResult=testEnd()) > END_GAME_BENCHMARK )
 					endState = endResult;
 				break;
@@ -311,7 +297,7 @@ public class ChessMajian extends Thread
 					endState = PLAYER_2_WIN;
 					break;
 				}
-				chooseThrow(player2, player1.trash, round);
+				chooseThrow(player2, player1.getTrashPile(), round);
 				break;	
 				
 			default:
@@ -395,7 +381,7 @@ public class ChessMajian extends Thread
 				break;
 				
 			case PLAYER1_GET:
-				getPieceOperation(choosenMove,player1, player2.trash );
+				getPieceOperation(choosenMove,player1, player2.getTrashPile() );
 				break;
 				
 			case PLAYER1_THROW:
@@ -404,7 +390,7 @@ public class ChessMajian extends Thread
 				break;
 				
 			case PLAYER2_GET:
-				getPieceOperation(choosenMove,player2, player1.trash);
+				getPieceOperation(choosenMove,player2, player1.getTrashPile());
 				break;
 				
 			case PLAYER2_THROW:
@@ -417,26 +403,16 @@ public class ChessMajian extends Thread
 		return newState;
 	}
 	
-	void moneyAndInit()
-	{
-		if (system.type() ==BS2) // input money
-			socketOut.print("1\r");
-			//socketOut.print(moneyToPlay + "\r");
-		else
-			((LocalDeck)deck).reGenerate();
-	}
-	
-	
 	int getPieceOperation(String choosenMove, Player player,ChessPile enemytrash ) 
 	{
 		
-		Hand hand = player.hand;
+		Hand hand = player.getHand();
 		//String move=null; // draw/eat
 			
 		if (choosenMove.equals("draw") ) // whether Bs2 or Local
 		{
 			out.println(player.name + " Draws" );
-			Piece p = deck.draw( player.type() );
+			Piece p = system.getDeck().draw( player.type() );
 			/*
 			if ( p==null ) // should no need.
 			{
@@ -453,7 +429,7 @@ public class ChessMajian extends Thread
 				System.err.println("trash Empty !!!");
 				
 			Piece p = enemytrash.removeByPos( enemytrash.pile.size()-1 );
-			if (player.type != BS2 ) 
+			if (player.type() != BS2 ) 
 				hand.add( p );
 			out.println(player.name + " Eats " + p.toString() );
 		}
@@ -462,7 +438,7 @@ public class ChessMajian extends Thread
 			System.err.println("!!! Choice Error !!!");
 		}
 		
-		player.hand.print(out);
+		player.getHand().print(out);
 		return STILL_PLAYING;
 		
 	}// getPiece()
@@ -471,7 +447,7 @@ public class ChessMajian extends Thread
 	void chooseThrow(Player player,ChessPile enemytrash, int round )
 	{
 		String choice = player.chooseToThrow(enemytrash,round);
-		Hand hand = player.hand;
+		Hand hand = player.getHand();
 		
 		if ( choice.equals("win")  ) // announce winning
 		{
@@ -483,7 +459,7 @@ public class ChessMajian extends Thread
 			}
 			*/
 			
-			if ( hand==player1.hand )
+			if ( hand==player1.getHand() )
 			{
 				if (system.type()==BS2)
 					socketOut.write('\r'); // notice win.
@@ -512,11 +488,11 @@ public class ChessMajian extends Thread
 
 	void throwPieceOperation(Player player)
 	{
-		Piece p = player.hand.removeByValue( choosenThrowPiece.value() );
+		Piece p = player.getHand().removeByValue( choosenThrowPiece.value() );
 		if ( p.value()==Tools.UNKNOWN )
 			System.out.println("Bs2 throw operation.");
 		
-		player.trash.add( choosenThrowPiece );
+		player.getTrashPile().add( choosenThrowPiece );
 		player.printHand(out);
 	}
 	
@@ -628,8 +604,8 @@ public class ChessMajian extends Thread
 		{
 			for (int i=0;i<4;i++)
 			{
-				player1.hand.add( deck.draw(player1.type) );
-				player2.hand.add( deck.draw(player2.type) );
+				player1.getHand().add( system.getDeck().draw(player1.type() ) );
+				player2.getHand().add( system.getDeck().draw(player2.type() ) );
 			}
 		}
 	}
@@ -642,7 +618,7 @@ public class ChessMajian extends Thread
 		for (i=3;i<=21;i+=6) // 3 9 15 21
 		{
 			c = screen.getValueAt(17,i);
-			player1.hand.add( new Piece( Character.toString(c) ));
+			player1.getHand().add( new Piece( Character.toString(c) ));
 		}
 	}
 	
@@ -665,9 +641,6 @@ public class ChessMajian extends Thread
 	}
 	
 } // ChessMajian
-
-
-
 
 
 

@@ -2,7 +2,7 @@ package Freeman.Chess.Utility;
 
 import java.io.PrintStream;
 
-import Freeman.Chess.Player;
+import Freeman.Chess.Player.Player;
 
 public class Printer 
 {
