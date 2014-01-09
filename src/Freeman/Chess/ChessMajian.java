@@ -28,6 +28,7 @@ import java.util.Scanner;
 
 import Freeman.Bs2.MainControl;
 import Freeman.Bs2.Screen;
+import Freeman.Chess.Parameters.*;
 import Freeman.Chess.Player.AIPlayer;
 import Freeman.Chess.Player.Player;
 import Freeman.Chess.Structure.*;
@@ -55,8 +56,8 @@ public class ChessMajian extends Thread
 	ChessSystem system;
 	//Player player1,player2;
 	
-	//String moneyToPlay;
-	String moneyShouldPlay;
+		//String moneyToPlay;
+		//String moneyShouldPlay;
 	GameRecord gameRecord;
 	Printer printer;
 	
@@ -68,22 +69,12 @@ public class ChessMajian extends Thread
 	public static final int BS2=1;
 	public static final int AI=2;
 	
-	//BS2=1
-	
-	public static final int EASY_AI=1;
-	public static final int NORMAL_AI=2;
-	
-	public static final int BAIMU =99;
-	
-	public static final int EARN_MONEY = 0;
-	public static final int DEMONSTATE = 1;
-	
-	public static String RECORD_FILE="record";
-
+		//public static final int BAIMU =99;
+		//public static String RECORD_FILE="record";
 	
 	ChessMajian(int times) throws IOException
 	{
-		/*
+		/* For Local
 		//system = new LocalSystem(player1,player2);
 		gameTime = times;
 		
@@ -96,9 +87,9 @@ public class ChessMajian extends Thread
 	public ChessMajian(	PrintStream socketOut,Screen screen, 
 						int times,String money, int demo, int delay) // for Bs2
 	{
-		system = new Bs2System(player1,player2,NORMAL_AI,money);
+		system = new Bs2System();
 		gameTime = times;
-		moneyShouldPlay = money;
+		Bs2Params.moneyPerRound = money;
 		demoFlag = demo;
 		delayTime = delay;
 		
@@ -129,7 +120,7 @@ public class ChessMajian extends Thread
 			errOut = new PrintStream( "Log/Log_" + dateStr + ".txt" );
 			resultOut = new PrintStream("Result/Result_"+dateStr+".txt");
 			
-			if (demoFlag==EARN_MONEY)
+			if (demoFlag==Bs2Params.EARN_MONEY)
 			{
 				out.close();
 				errOut.close();
@@ -146,168 +137,9 @@ public class ChessMajian extends Thread
 	
 	@Override
 	public void run() 
-		{ main(); }
+		{ new MainProc().main(); }
 	
-	public static final int INPUT_MONEY=1;
-	public static final int PLAYER1_GET=11;
-	public static final int PLAYER1_THROW=12;
-	public static final int PLAYER2_GET=13;
-	public static final int PLAYER2_THROW=14;
-	public static final int STILL_PLAYING=50;
 	
-	// state > 100  -->  Game ends.
-	public static final int END_GAME_BENCHMARK = 100;
-	public static final int PLAYER_1_WIN=101;
-	public static final int PLAYER_2_WIN=102;
-	public static final int NO_ONE_WIN	=103;
-	public static final int SOMETHING_WRONG=999;
-	
-	String choosenMove;
-	int throwPos;
-	Piece choosenThrowPiece;
-	
-	boolean stopFlag = false;
-	public void stopTheThread() { stopFlag=true; }
-	
-	void main() 
-	{
-		for (curGame=1; curGame<=gameTime && stopFlag!=true ; curGame++)
-		{
-			printer.gameNum(curGame);
-
-			int round=0, state = INPUT_MONEY ;
-			int newState=SOMETHING_WRONG ;
-			
-			// Main state changing Finite State Machine (FSM).
-			while (true)
-			{
-				if (state == PLAYER1_GET )
-				{
-					round++ ;
-					printer.roundInfo(round,player1,player2);
-				}
-				
-				screen.setStateToStable();
-				
-				/* choose and do movement : will let screen become unstable*/
-				/**  determine next newState, and decide (choosenMove)**/ 
-				newState = chooseMoveAndSend(state,round);
-				
-				/* check the environment and screen , whether stable */
-				newState = bs2CheckAndWait( state, newState, round );
-				if ( newState > END_GAME_BENCHMARK) break; // endGame
-				
-				if (demoFlag==DEMONSTATE)
-					screen.print(); // temp
-				
-				/* System Process : Change and Set */
-				newState = sytemProcess(state,newState);
-				
-				
-				state = newState;
-			}
-			
-			endGame(curGame, newState);
-			
-		} // for: gameTime
-		
-		systemEnds();
-	} // main() ends.
-	
-	int chooseMoveAndSend(int state,int round)
-	{
-		int newState =state;
-		
-		switch(state)
-		{
-			case INPUT_MONEY:
-				system.roundStart();
-				return PLAYER1_GET;
-				
-			case PLAYER1_GET:
-				choosenMove = player1.chooseMove( player2.getTrashPile() ,round ); // polymorphism 
-				if ( (system.type()==BS2) && (player1.type() !=BS2) )
-				{
-					if (choosenMove=="draw")
-						socketOut.write(' ');
-					else if (choosenMove=="eat")
-						MainControl.down(socketOut);
-				}
-				return PLAYER1_THROW;
-				
-			case PLAYER1_THROW:
-				chooseThrow(player1, player2.getTrashPile(), round);
-				return PLAYER2_GET;
-				
-			case PLAYER2_GET:
-				// do nothing.
-				return PLAYER2_THROW;
-			case PLAYER2_THROW:
-				// do nothing.
-				return PLAYER1_GET;
-				
-			default:
-				break;
-		}
-		
-		return newState;
-	}
-	
-	int bs2CheckAndWait( int lastState, int newState, int round )
-	{
-		String result;
-		int endState = SOMETHING_WRONG;
-		int endResult;
-		/*
-		try { Thread.sleep( 20 ); } 
-		catch(InterruptedException e)
-		{ System.out.println("!!! Thread Interrupted !!!"); }
-		*/
-		
-		switch(lastState)
-		{
-			case INPUT_MONEY:
-				//waitCharAt('¢x',EQUAL,17,23);
-				waitPacket();
-				break;
-			
-			case PLAYER1_GET:
-				//waitCharAt('¢x',EQUAL,17,27);
-				waitPacket();
-				if ( (endResult=testEnd()) > END_GAME_BENCHMARK )
-					endState = endResult;
-				break;
-				
-			case PLAYER1_THROW: 
-				//waitCharAt(Screen.BLANK,EQUAL,17,27);
-				waitPacket();
-				if ( (endResult=testEnd()) > END_GAME_BENCHMARK )
-					endState = endResult;
-				break; // check if win.
-				
-			case PLAYER2_GET: 
-				choosenMove = player2.chooseMove( player1.getTrashPile() ,round );
-				if ( (endResult=testEnd()) > END_GAME_BENCHMARK )
-					endState = endResult;
-				break;
-				
-			case PLAYER2_THROW: 
-				if ( (endResult=testEnd()) > END_GAME_BENCHMARK )
-				{
-					endState = PLAYER_2_WIN;
-					break;
-				}
-				chooseThrow(player2, player1.getTrashPile(), round);
-				break;	
-				
-			default:
-				break;
-		}
-		
-		if ( endState != SOMETHING_WRONG )
-			return endState;
-		return newState;
-	}
 	
 	public static final boolean EQUAL = true;
 	public static final boolean NOTEQ = false;
@@ -321,7 +153,7 @@ public class ChessMajian extends Thread
 			// Timeout check.
 			Calendar nowTime = Calendar.getInstance();
 			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
-			if ( x > Tools.TIMEOUT_TIME )
+			if ( x > SystemParams.TIMEOUT_TIME )
 			{
 				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
 				ChessMajian.errOut.println(errMsg);
@@ -349,7 +181,7 @@ public class ChessMajian extends Thread
 			// Timeout check.
 			Calendar nowTime = Calendar.getInstance();
 			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
-			if ( x > Tools.TIMEOUT_TIME )
+			if ( x > SystemParams.TIMEOUT_TIME )
 			{
 				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
 				ChessMajian.errOut.println(errMsg);
@@ -363,7 +195,7 @@ public class ChessMajian extends Thread
 			
 			// Unstable
 			// Delay for a short period to prevent packet been divided.
-			try { Thread.sleep( Tools.WAIT_TIME ); } 
+			try { Thread.sleep( SystemParams.WAIT_TIME ); } 
 			catch(InterruptedException e)
 			{ System.out.println("!!! Thread Interrupted !!!"); }
 
@@ -371,159 +203,8 @@ public class ChessMajian extends Thread
 		}		
 	}
 	
-	int sytemProcess(int curState, int newState)
-	{
-		switch(curState)
-		{			
-			case INPUT_MONEY: 
-				clearAllPiles();
-				giveFirstHand();
-				break;
-				
-			case PLAYER1_GET:
-				getPieceOperation(choosenMove,player1, player2.getTrashPile() );
-				break;
-				
-			case PLAYER1_THROW:
-				throwPieceOperation(player1);
-				getHand4PieceFromBs2();
-				break;
-				
-			case PLAYER2_GET:
-				getPieceOperation(choosenMove,player2, player1.getTrashPile());
-				break;
-				
-			case PLAYER2_THROW:
-				throwPieceOperation(player2);
-				break;
-			default:
-				break;
-		}
-		
-		return newState;
-	}
-	
-	int getPieceOperation(String choosenMove, Player player,ChessPile enemytrash ) 
-	{
-		
-		Hand hand = player.getHand();
-		//String move=null; // draw/eat
-			
-		if (choosenMove.equals("draw") ) // whether Bs2 or Local
-		{
-			out.println(player.name + " Draws" );
-			Piece p = system.getDeck().draw( player.type() );
-			/*
-			if ( p==null ) // should no need.
-			{
-				System.out.println("Deck empty !!!!!!!");
-				return NO_ONE_WIN;
-			}*/
-				
-			//if ( player.type != BS2 )
-			hand.add( p );
-		}
-		else if ( choosenMove.equals("eat") )
-		{
-			if (enemytrash.pile.isEmpty() )
-				System.err.println("trash Empty !!!");
-				
-			Piece p = enemytrash.removeByPos( enemytrash.pile.size()-1 );
-			if (player.type() != BS2 ) 
-				hand.add( p );
-			out.println(player.name + " Eats " + p.toString() );
-		}
-		else
-		{
-			System.err.println("!!! Choice Error !!!");
-		}
-		
-		player.getHand().print(out);
-		return STILL_PLAYING;
-		
-	}// getPiece()
-	
 
-	void chooseThrow(Player player,ChessPile enemytrash, int round )
-	{
-		String choice = player.chooseToThrow(enemytrash,round);
-		Hand hand = player.getHand();
-		
-		if ( choice.equals("win")  ) // announce winning
-		{
-			/*
-			if ( checkWin(hand)==false )
-			{
-				System.out.println("!! Fuck you, you didn't win !!");
-				return BAIMU;
-			}
-			*/
-			
-			if ( hand==player1.getHand() )
-			{
-				if (system.type()==BS2)
-					socketOut.write('\r'); // notice win.
-			}
-		
-		}
-		else
-		{
-			choosenThrowPiece = new Piece(choice);
-			// output movement to Bs2
-			if ( system.type()==BS2 && player.type()!=BS2 )
-			{
-				throwPos= hand.findPiece( choosenThrowPiece.value() );
-				if ( throwPos == -1 )
-					System.out.println("!! Wrong Input for throw choice !!");
-				
-				int cursorMove = 5-(throwPos+1);
-				for (int i=0;i<cursorMove;i++)
-					MainControl.left(socketOut);
-				MainControl.up(socketOut);	
-			}
-			
-			out.println(player.name+ " throws out " + choosenThrowPiece );
-		}
-	}
 
-	void throwPieceOperation(Player player)
-	{
-		Piece p = player.getHand().removeByValue( choosenThrowPiece.value() );
-		if ( p.value()==Tools.UNKNOWN )
-			System.out.println("Bs2 throw operation.");
-		
-		player.getTrashPile().add( choosenThrowPiece );
-		player.printHand(out);
-	}
-	
-	int testEnd() // for Bs2 only
-	{
-		char c,c2;
-		c = screen.getValueAt( 24 , 2 );
-		
-		if (c =='¡»')  // c !=' '
-		{
-			System.out.println("¡» appeared, curGame ending determine.");
-			while (true)
-			{
-				c = screen.getValueAt( 24 , 5 );
-				if (c==Screen.BLANK)
-					continue;
-				
-				if (c=='¬y')
-					return NO_ONE_WIN;
-				else 
-				{
-					c2 = screen.getValueAt( 24 , 7 );
-					if (c=='¹q' && c2=='¸£')
-						return PLAYER_2_WIN;
-					return PLAYER_1_WIN;
-				}
-			}
-		}
-		else
-			return STILL_PLAYING;
-	}
 	
 	///////////////////  Utilities  ///////////////////
 	
@@ -554,74 +235,6 @@ public class ChessMajian extends Thread
 		resultOut.println( "Money won: " + gameRecord.winMoney );
 	}
 	
-	void endGame(int curGame, int gameStatus)
-	{
-		//Tools.waitForRefresh(Tools.DET_END_GAME, screen);
-		
-		if ( gameStatus==SOMETHING_WRONG ) // not Written Good Enough
-			errOut.println("Game" +curGame+": SOMETHING_WRONG");
-		else if (gameStatus==NO_ONE_WIN)
-		{
-			(gameRecord.drawTime) ++;
-			out.println("Nobody wins , Draw ~~~~~~!!!");
-		}
-		else
-		{
-			int money=0;
-			if (system.type()==BS2)
-			{
-				CharSequence cs = screen.getRow(24).subSequence(10,35);
-				String moneyStr = cs.toString();
-				Scanner sc = new Scanner(moneyStr).useDelimiter("\\D"); // \D=non-digit
-				
-				while (sc.hasNext() )
-				{
-					if (sc.hasNextInt())
-					{
-						money = sc.nextInt();
-						break;
-					}
-					else
-						System.out.println( sc.next() ) ;
-				}
-			}
-
-			system.addMoneyToResult(gameStatus,money,curGame);
-
-		}
-		
-		//clearAllPiles();
-		
-		if (system.type()==BS2)
-			socketOut.write('\r');
-	}
-	
-	void giveFirstHand()
-	{
-		if (system.type()==BS2)
-			getHand4PieceFromBs2();
-		else
-		{
-			for (int i=0;i<4;i++)
-			{
-				player1.getHand().add( system.getDeck().draw(player1.type() ) );
-				player2.getHand().add( system.getDeck().draw(player2.type() ) );
-			}
-		}
-	}
-	
-	void getHand4PieceFromBs2() // only player1 will use it
-	{
-		player1.clearHand();
-		char c;
-		int i;
-		for (i=3;i<=21;i+=6) // 3 9 15 21
-		{
-			c = screen.getValueAt(17,i);
-			player1.getHand().add( new Piece( Character.toString(c) ));
-		}
-	}
-	
 	void clearAllPiles()
 	{
 		player1.clear();
@@ -643,4 +256,99 @@ public class ChessMajian extends Thread
 } // ChessMajian
 
 
+
+/*
+int getPieceOperation(String choosenMove, Player player,ChessPile enemytrash ) 
+{
+	
+	Hand hand = player.getHand();
+	//String move=null; // draw/eat
+		
+	if (choosenMove.equals("draw") ) // whether Bs2 or Local
+	{
+		out.println(player.name + " Draws" );
+		Piece p = system.getDeck().draw( player.type() );
+		/--
+		if ( p==null ) // should no need.
+		{
+			System.out.println("Deck empty !!!!!!!");
+			return NO_ONE_WIN;
+		}--/
+			
+		//if ( player.type != BS2 )
+		hand.add( p );
+	}
+	else if ( choosenMove.equals("eat") )
+	{
+		if (enemytrash.pile.isEmpty() )
+			System.err.println("trash Empty !!!");
+			
+		Piece p = enemytrash.removeByPos( enemytrash.pile.size()-1 );
+		if (player.type() != BS2 ) 
+			hand.add( p );
+		out.println(player.name + " Eats " + p.toString() );
+	}
+	else
+	{
+		System.err.println("!!! Choice Error !!!");
+	}
+	
+	player.getHand().print(out);
+	return STILL_PLAYING;
+	
+}// getPiece()
+
+
+void chooseThrow(Player player,ChessPile enemytrash, int round )
+{
+	String choice = player.chooseToThrow(enemytrash,round);
+	Hand hand = player.getHand();
+	
+	if ( choice.equals("win")  ) // announce winning
+	{
+		/--
+		if ( checkWin(hand)==false )
+		{
+			System.out.println("!! Fuck you, you didn't win !!");
+			return BAIMU;
+		}
+		--/
+		
+		if ( hand==player1.getHand() )
+		{
+			if (system.type()==BS2)
+				socketOut.write('\r'); // notice win.
+		}
+	
+	}
+	else
+	{
+		choosenThrowPiece = new Piece(choice);
+		// output movement to Bs2
+		if ( system.type()==BS2 && player.type()!=BS2 )
+		{
+			throwPos= hand.findPiece( choosenThrowPiece.value() );
+			if ( throwPos == -1 )
+				System.out.println("!! Wrong Input for throw choice !!");
+			
+			int cursorMove = 5-(throwPos+1);
+			for (int i=0;i<cursorMove;i++)
+				MainControl.left(socketOut);
+			MainControl.up(socketOut);	
+		}
+		
+		out.println(player.name+ " throws out " + choosenThrowPiece );
+	}
+}
+
+void throwPieceOperation(Player player)
+{
+	Piece p = player.getHand().removeByValue( choosenThrowPiece.value() );
+	if ( p.value()==Tools.UNKNOWN )
+		System.out.println("Bs2 throw operation.");
+	
+	player.getTrashPile().add( choosenThrowPiece );
+	player.printHand(out);
+}
+*/	
 

@@ -7,6 +7,7 @@ import Freeman.Chess.*;
 import Freeman.Chess.Player.AIPlayer;
 import Freeman.Chess.Player.Bs2Player;
 import Freeman.Chess.Player.Player;
+import Freeman.Chess.Structure.Piece;
 import Freeman.Chess.Utility.Tools;
 
 /*
@@ -35,7 +36,14 @@ public class LocalSystem extends ChessSystem
 		return false;
 	}
 	
-
+	void giveFirstHand() // only player1 will use it
+	{
+			for (int i=0;i<4;i++)
+			{
+				player1.getHand().add( system.getDeck().draw(player1.type() ) );
+				player2.getHand().add( system.getDeck().draw(player2.type() ) );
+			}
+	}
 	
 }
 */

@@ -4,6 +4,8 @@ import java.io.*;
 
 import Freeman.Bs2.Screen;
 import Freeman.Chess.ChessMajian;
+import Freeman.Chess.Parameters.SystemParams;
+import Freeman.Chess.Parameters.UserCommonParams;
 import Freeman.Chess.Structure.Pattern;
 import Freeman.Chess.Structure.PatternList;
 import Freeman.Chess.Structure.Piece;
@@ -18,14 +20,6 @@ public class Tools
 	static Hashtable<Piece,PatternList> hash_findPattern;
 	
 	PrintStream errOut;
-	public static final String PATTERN_FILENAME = "pattern.txt";
-	
-	public static int WAIT_TIME=5;
-	public static final int TIMEOUT_TIME = 3000;
-	public static final int BASIC_SCORE_PER_MATCH = 100;
-	public static final int WIN = 500;  
-	
-	public static final int ERROR_CODE = 999999;
 	
 	static final int BLK_JIANG 	= 1;
 	static final int BLK_SHI 	= 6;
@@ -43,12 +37,10 @@ public class Tools
 	static final int RED_BING	= 102;
 	
 	public static final int UNKNOWN = 999;
-	static final int END_GAME	= 9;
+	//static final int END_GAME	= 9;
 	
 	public static void initialize()
 	{
-		if (ChessMajian.delayTime != 0  )
-			WAIT_TIME = ChessMajian.delayTime;
 
 		findStringSetup();
 		findValueSetup();
@@ -112,7 +104,7 @@ public class Tools
 		BufferedReader filein=null ;
 		String inputLine;
 		
-		try { filein= new BufferedReader ( new FileReader(PATTERN_FILENAME) ); }
+		try { filein= new BufferedReader ( new FileReader(UserCommonParams.PATTERN_FILENAME) ); }
 		catch (FileNotFoundException e) 
 		{ 
 			ChessMajian.errOut.println("!! PATTERN_FILE not found !!"); 
@@ -247,10 +239,10 @@ public class Tools
 	}
 	public static int getPieceValue(String s)
 	{
-		int v = ERROR_CODE;
+		int v = SystemParams.ERROR_CODE;
 		if (s != null)
 			v = hash_findValue.get(s);
-		if (v==ERROR_CODE)
+		if (v==SystemParams.ERROR_CODE)
 			System.out.println("hash_findValue Error !\n");
 		return v;
 	}
