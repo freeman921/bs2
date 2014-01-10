@@ -19,6 +19,8 @@ public class MainProc
 	int throwPos;
 	Piece choosenThrowPiece;
 	
+	public static int curGame;
+	
 	boolean stopFlag = false;
 	public void stopTheThread() { stopFlag=true; }
 	
@@ -203,6 +205,12 @@ public class MainProc
 //  					Sub functions                    	 //
 //-----------------------------------------------------------//
 	
+	void clearAllPiles()
+	{
+		player1.clear();
+		player2.clear();
+	}
+	
 	void endGame(int curGame, int gameStatus)
 	{
 		//Tools.waitForRefresh(Tools.DET_END_GAME, screen);
@@ -239,4 +247,4 @@ public class MainProc
 
 		}
 	
-}
+} // class MainProc

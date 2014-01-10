@@ -1,6 +1,7 @@
 package Freeman.Chess.Systems;
 
 import java.io.PrintStream;
+import java.util.Calendar;
 
 import Freeman.Bs2.Screen;
 import Freeman.Chess.*;
@@ -128,6 +129,65 @@ public class Bs2System extends ChessSystem
 		}
 		else
 			return GameParams.STILL_PLAYING;
+	}
+	
+	void waitCharAt(char waitChar,boolean detMethod, int col, int row)
+	{
+		// wait for period of time.
+		Calendar startTime = Calendar.getInstance();
+		while ( true )
+		{
+			// Timeout check.
+			Calendar nowTime = Calendar.getInstance();
+			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
+			if ( x > SystemParams.TIMEOUT_TIME )
+			{
+				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
+				ChessMajian.errOut.println(errMsg);
+				break;
+			}
+			
+			if ( detMethod==EQUAL && screen.getValueAt(col,row)==waitChar )
+				break;
+			else if ( detMethod==NOTEQ && screen.getValueAt(col,row)!=waitChar )
+				break;
+			
+			try { Thread.sleep( 0 ); }  // give CPU to context-switch
+			catch(InterruptedException e)
+			{ System.out.println("!!! Thread Interrupted !!!"); }
+			
+		}//while
+	}
+	
+	void waitPacket()
+	{
+		// wait for period of time.
+		Calendar startTime = Calendar.getInstance();
+		while ( true )
+		{
+			// Timeout check.
+			Calendar nowTime = Calendar.getInstance();
+			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
+			if ( x > SystemParams.TIMEOUT_TIME )
+			{
+				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
+				ChessMajian.errOut.println(errMsg);
+				break;
+			}
+			
+			//main check : packet arrived
+			int stb = screen.getStability();
+			if ( stb == Screen.STABLE ) // no new packet arrive
+				continue;
+			
+			// Unstable
+			// Delay for a short period to prevent packet been divided.
+			try { Thread.sleep( SystemParams.WAIT_TIME ); } 
+			catch(InterruptedException e)
+			{ System.out.println("!!! Thread Interrupted !!!"); }
+
+			break;
+		}		
 	}
 	
 }
