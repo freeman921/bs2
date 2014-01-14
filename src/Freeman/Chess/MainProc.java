@@ -5,6 +5,7 @@ import java.util.Scanner;
 import Freeman.Bs2.MainControl;
 import Freeman.Chess.Parameters.GameParams;
 import Freeman.Chess.Structure.Piece;
+import Freeman.Chess.Systems.ChessSystem;
 
 public class MainProc 
 {
@@ -15,6 +16,8 @@ public class MainProc
 	public static final int PLAYER2_THROW=14;
 	public static final int STILL_PLAYING=50;
 	
+	ChessSystem system;
+	
 	String choosenMove;
 	int throwPos;
 	Piece choosenThrowPiece;
@@ -23,6 +26,11 @@ public class MainProc
 	
 	boolean stopFlag = false;
 	public void stopTheThread() { stopFlag=true; }
+	
+	public MainProc(ChessSystem system)
+	{
+		this.system = system;
+	}
 	
 	void main() 
 	{
@@ -66,7 +74,7 @@ public class MainProc
 			
 		} // for: gameTime
 		
-		systemEnds();
+		system.ends();
 	} // main() ends.
 	
 //-----------------------------------------------------------//

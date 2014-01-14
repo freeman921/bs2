@@ -3,6 +3,7 @@ package Freeman.Chess.Systems;
 import java.io.PrintStream;
 import java.util.Calendar;
 
+import Freeman.Bs2.MainControl;
 import Freeman.Bs2.Screen;
 import Freeman.Chess.*;
 import Freeman.Chess.Player.AIPlayer;
@@ -129,6 +130,18 @@ public class Bs2System extends ChessSystem
 		}
 		else
 			return GameParams.STILL_PLAYING;
+	}
+	
+	void endSetting()
+	{
+		statistics();
+		out.close();
+		
+		if (system.type()==BS2) // exit game
+		{
+			socketOut.print("\r");
+			MainControl.backToMain(socketOut);
+		}
 	}
 	
 	void waitCharAt(char waitChar,boolean detMethod, int col, int row)

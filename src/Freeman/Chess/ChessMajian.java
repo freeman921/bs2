@@ -136,7 +136,7 @@ public class ChessMajian extends Thread
 	
 	@Override
 	public void run() 
-		{ new MainProc().main(); }
+		{ new MainProc(system).main(); }
 	
 	
 	
@@ -144,38 +144,7 @@ public class ChessMajian extends Thread
 	public static final boolean NOTEQ = false;
 	
 	
-	
-
-
-	
 	///////////////////  Utilities  ///////////////////
-	
-	void systemEnds()
-	{
-		statistics();
-		out.close();
-		
-		if (system.type()==BS2) // exit game
-		{
-			socketOut.print("\r");
-			MainControl.backToMain(socketOut);
-		}
-	}
-	
-	void statistics()
-	{
-		out.println("----------------------");
-		/*if (system_type==BS2)
-			for (int i=1;i<=gameTime;i++)
-				out.println("Game "+i+": "+"money="+gameRecord.moneyGameN[i]);*/
-		
-		resultOut.println("\n|||||||||||||||||||||||||");
-		resultOut.println( (curGame-1)+ " rounds.... ");
-		resultOut.println( gameRecord.winTime + " Wins.");
-		resultOut.println( gameRecord.drawTime + " Draws.");
-		resultOut.println( gameRecord.loseTime + " Loses.");
-		resultOut.println( "Money won: " + gameRecord.winMoney );
-	}
 	
 	// others
 	
