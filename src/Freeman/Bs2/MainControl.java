@@ -139,8 +139,8 @@ public class MainControl extends Thread
 			System.out.println("How much money to play ?");
 			moneyToPlay = in.readLine(); 
 			
-			System.out.println("Mode: [" + ChessMajian.EARN_MONEY +
-				"]Earm Money  ["+ ChessMajian.DEMONSTATE + "]Demonstrate");
+			System.out.println("Mode: [" + Freeman.Chess.Parameters.Bs2Params.EARN_MONEY +
+				"]Earm Money  ["+ Freeman.Chess.Parameters.Bs2Params.DEMONSTATE + "]Demonstrate");
 			s = in.readLine();
 			demo = Integer.parseInt(s);
 			

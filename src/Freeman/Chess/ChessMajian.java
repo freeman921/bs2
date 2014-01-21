@@ -49,7 +49,6 @@ public class ChessMajian extends Thread
 	public static PrintStream errOut;
 	
 	int totalRounds;
-	public static int demoFlag;
 	public static int delayTime;
 
 	ChessSystem system;
@@ -115,7 +114,7 @@ public class ChessMajian extends Thread
 		String dateStr = (dateFm.format(date)).toString();
 		
 		try { 
-			out = new PrintStream( "Record/Rec_" + dateStr + ".txt" ); 
+			out = new PrintStream( "Record/Rec_" + dateStr + ".txt" );
 			errOut = new PrintStream( "Log/Log_" + dateStr + ".txt" );
 			resultOut = new PrintStream("Result/Result_"+dateStr+".txt");
 			
@@ -136,7 +135,7 @@ public class ChessMajian extends Thread
 	
 	@Override
 	public void run() 
-		{ new MainProc(system).main(); }
+		{ new MainProc(system,totalRounds).main(); }
 	
 	
 	
@@ -159,7 +158,6 @@ public class ChessMajian extends Thread
 	}
 	
 } // ChessMajian
-
 
 
 /*
