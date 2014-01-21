@@ -48,9 +48,7 @@ public class ChessMajian extends Thread
 	PrintStream out,socketOut,resultOut;
 	public static PrintStream errOut;
 	
-	int gameTime;
-	public static int demoFlag;
-	public static int curGame;
+	int totalRounds;
 	public static int delayTime;
 
 	ChessSystem system;
@@ -88,7 +86,7 @@ public class ChessMajian extends Thread
 						int times,String money, int demo, int delay) // for Bs2
 	{
 		system = new Bs2System();
-		gameTime = times;
+		totalRounds = times;
 		Bs2Params.moneyPerRound = money;
 		demoFlag = demo;
 		delayTime = delay;
@@ -106,7 +104,7 @@ public class ChessMajian extends Thread
 	void commonInitialize()
 	{
 		Tools.initialize();
-		gameRecord = new GameRecord(gameTime);
+		gameRecord = new GameRecord(totalRounds);
 		
 		in = new BufferedReader(new InputStreamReader(System.in) );
 		
@@ -116,7 +114,7 @@ public class ChessMajian extends Thread
 		String dateStr = (dateFm.format(date)).toString();
 		
 		try { 
-			out = new PrintStream( "Record/Rec_" + dateStr + ".txt" ); 
+			out = new PrintStream( "Record/Rec_" + dateStr + ".txt" );
 			errOut = new PrintStream( "Log/Log_" + dateStr + ".txt" );
 			resultOut = new PrintStream("Result/Result_"+dateStr+".txt");
 			
@@ -137,109 +135,15 @@ public class ChessMajian extends Thread
 	
 	@Override
 	public void run() 
-		{ new MainProc().main(); }
+		{ new MainProc(system,totalRounds).main(); }
 	
 	
 	
 	public static final boolean EQUAL = true;
 	public static final boolean NOTEQ = false;
 	
-	void waitCharAt(char waitChar,boolean detMethod, int col, int row)
-	{
-		// wait for period of time.
-		Calendar startTime = Calendar.getInstance();
-		while ( true )
-		{
-			// Timeout check.
-			Calendar nowTime = Calendar.getInstance();
-			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
-			if ( x > SystemParams.TIMEOUT_TIME )
-			{
-				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
-				ChessMajian.errOut.println(errMsg);
-				break;
-			}
-			
-			if ( detMethod==EQUAL && screen.getValueAt(col,row)==waitChar )
-				break;
-			else if ( detMethod==NOTEQ && screen.getValueAt(col,row)!=waitChar )
-				break;
-			
-			try { Thread.sleep( 0 ); }  // give CPU to context-switch
-			catch(InterruptedException e)
-			{ System.out.println("!!! Thread Interrupted !!!"); }
-			
-		}//while
-	}
-	
-	void waitPacket()
-	{
-		// wait for period of time.
-		Calendar startTime = Calendar.getInstance();
-		while ( true )
-		{
-			// Timeout check.
-			Calendar nowTime = Calendar.getInstance();
-			long x = nowTime.getTimeInMillis() - startTime.getTimeInMillis();
-			if ( x > SystemParams.TIMEOUT_TIME )
-			{
-				String errMsg = "Round:"+ChessMajian.curGame+" waitForRefresh : Timeout!";
-				ChessMajian.errOut.println(errMsg);
-				break;
-			}
-			
-			//main check : packet arrived
-			int stb = screen.getStability();
-			if ( stb == Screen.STABLE ) // no new packet arrive
-				continue;
-			
-			// Unstable
-			// Delay for a short period to prevent packet been divided.
-			try { Thread.sleep( SystemParams.WAIT_TIME ); } 
-			catch(InterruptedException e)
-			{ System.out.println("!!! Thread Interrupted !!!"); }
-
-			break;
-		}		
-	}
-	
-
-
 	
 	///////////////////  Utilities  ///////////////////
-	
-	void systemEnds()
-	{
-		statistics();
-		out.close();
-		
-		if (system.type()==BS2) // exit game
-		{
-			socketOut.print("\r");
-			MainControl.backToMain(socketOut);
-		}
-	}
-	
-	void statistics()
-	{
-		out.println("----------------------");
-		/*if (system_type==BS2)
-			for (int i=1;i<=gameTime;i++)
-				out.println("Game "+i+": "+"money="+gameRecord.moneyGameN[i]);*/
-		
-		resultOut.println("\n|||||||||||||||||||||||||");
-		resultOut.println( (curGame-1)+ " rounds.... ");
-		resultOut.println( gameRecord.winTime + " Wins.");
-		resultOut.println( gameRecord.drawTime + " Draws.");
-		resultOut.println( gameRecord.loseTime + " Loses.");
-		resultOut.println( "Money won: " + gameRecord.winMoney );
-	}
-	
-	void clearAllPiles()
-	{
-		player1.clear();
-		player2.clear();
-	}
 	
 	// others
 	
@@ -254,7 +158,6 @@ public class ChessMajian extends Thread
 	}
 	
 } // ChessMajian
-
 
 
 /*

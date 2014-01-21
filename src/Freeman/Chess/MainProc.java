@@ -5,6 +5,8 @@ import java.util.Scanner;
 import Freeman.Bs2.MainControl;
 import Freeman.Chess.Parameters.GameParams;
 import Freeman.Chess.Structure.Piece;
+import Freeman.Chess.Systems.ChessSystem;
+import Freeman.Chess.Parameters.*;
 
 public class MainProc 
 {
@@ -15,21 +17,32 @@ public class MainProc
 	public static final int PLAYER2_THROW=14;
 	public static final int STILL_PLAYING=50;
 	
+	ChessSystem system;
+	
 	String choosenMove;
-	int throwPos;
+	//int throwPos;
 	Piece choosenThrowPiece;
+	
+	int totalRounds;
+	public static int curGame;
 	
 	boolean stopFlag = false;
 	public void stopTheThread() { stopFlag=true; }
 	
+	public MainProc(ChessSystem system, int totalRounds)
+	{
+		this.totalRounds = totalRounds;
+		this.system = system;
+	}
+	
 	void main() 
 	{
-		for (curGame=1; curGame<=gameTime && stopFlag!=true ; curGame++)
+		for (curGame=1; curGame<=totalRounds && stopFlag!=true ; curGame++)
 		{
 			printer.gameNum(curGame);
 
 			int round=0, state = INPUT_MONEY ;
-			int newState=SOMETHING_WRONG ;
+			int newState=GameParams.SOMETHING_WRONG ;
 			
 			// Main state changing Finite State Machine (FSM).
 			while (true)
@@ -48,9 +61,9 @@ public class MainProc
 				
 				/* check the environment and screen , whether stable */
 				newState = bs2CheckAndWait( state, newState, round );
-				if ( newState > END_GAME_BENCHMARK) break; // endGame
+				if ( newState > GameParams.END_GAME_BENCHMARK) break; // endGame
 				
-				if (demoFlag==DEMONSTATE)
+				if (demoFlag==Bs2Params.DEMONSTATE)
 					screen.print(); // temp
 				
 				/* System Process : Change and Set */
@@ -64,7 +77,7 @@ public class MainProc
 			
 		} // for: gameTime
 		
-		systemEnds();
+		system.ends();
 	} // main() ends.
 	
 //-----------------------------------------------------------//
@@ -203,6 +216,12 @@ public class MainProc
 //  					Sub functions                    	 //
 //-----------------------------------------------------------//
 	
+	void clearAllPiles()
+	{
+		player1.clear();
+		player2.clear();
+	}
+	
 	void endGame(int curGame, int gameStatus)
 	{
 		//Tools.waitForRefresh(Tools.DET_END_GAME, screen);
@@ -239,4 +258,4 @@ public class MainProc
 
 		}
 	
-}
+} // class MainProc
