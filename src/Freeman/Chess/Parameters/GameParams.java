@@ -1,7 +1,7 @@
 package Freeman.Chess.Parameters;
 
 public class GameParams 
-{
+{	
 	public static final int BASIC_SCORE_PER_MATCH = 100;
 	public static final int WIN_SCORE = 500;
 	

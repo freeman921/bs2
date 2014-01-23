@@ -30,8 +30,6 @@ public class GameRecord
 			latestResult[i] = 0;
 	}
 	
-	°®¯Ü§ï¦¨µá static§a!
-	
 	static void statistics(int curGame, PrintStream resultOut)
 	{
 		//out.println("----------------------");
