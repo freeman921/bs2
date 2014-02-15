@@ -16,15 +16,17 @@ import Freeman.Chess.Parameters.*;
 public class Bs2System extends ChessSystem  
 {
 	String moneyToPlay;
+	Screen screen;
 	PrintStream socketOut,resultOut,out;
 	GameRecord gameRecord;
 	
-	public Bs2System ()  // Player p1, Player p2,int AI_TYPE, String moneyShouldPlay
+	public Bs2System (Screen screen)  // Player p1, Player p2,int AI_TYPE, String moneyShouldPlay
 	{
 		type = BS2;
 		moneyToPlay = Bs2Params.moneyPerRound;
+		this.screen = screen;
 	}
-	public void init(Screen screen, PrintStream socketOut)
+	public void init(PrintStream socketOut)
 	{
 		player1 = new AIPlayer("AI", Bs2Params.AI_TYPE); 
 		player2 = new Bs2Player("Bs2",screen);  

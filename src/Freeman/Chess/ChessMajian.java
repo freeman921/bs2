@@ -50,14 +50,14 @@ public class ChessMajian extends Thread
 	
 	int totalRounds;
 	public static int delayTime;
-
+	
+	MainProc mainProc;
 	ChessSystem system;
 	//Player player1,player2;
 	
 		//String moneyToPlay;
 		//String moneyShouldPlay;
 	GameRecord gameRecord;
-	Printer printer;
 	
 	public static final int DRAW=0;
 	public static final int EAT=1;
@@ -81,21 +81,20 @@ public class ChessMajian extends Thread
 		*/
 	}
 	
-	
+	// Constructor for Bs2
 	public ChessMajian(	PrintStream socketOut,Screen screen, 
-						int times,String money, int demo, int delay) // for Bs2
+						int times,String money, int demo, int delay) 
 	{
-		system = new Bs2System();
+		system = new Bs2System(screen);
 		totalRounds = times;
 		Bs2Params.moneyPerRound = money;
-		demoFlag = demo;
 		delayTime = delay;
+		Bs2Params.demoFlag = demo;
 		
 		this.socketOut = socketOut;
 		this.screen = screen;
 		
-		system.init(screen, this.socketOut);
-			//bs2Initialize(screen, this.socketOut); 
+		system.init(this.socketOut);
 		commonInitialize();
 	}
 	
@@ -113,35 +112,23 @@ public class ChessMajian extends Thread
 		SimpleDateFormat dateFm = new SimpleDateFormat("MM-dd__kk-mm-ss");
 		String dateStr = (dateFm.format(date)).toString();
 		
-		try { 
-			out = new PrintStream( "Record/Rec_" + dateStr + ".txt" );
-			errOut = new PrintStream( "Log/Log_" + dateStr + ".txt" );
-			resultOut = new PrintStream("Result/Result_"+dateStr+".txt");
-			
-			if (demoFlag==Bs2Params.EARN_MONEY)
-			{
-				out.close();
-				errOut.close();
-			}
-		}
-		catch (FileNotFoundException e) { 
-			System.err.println ("RECORD_FILE open wrong");
-			return;
-		}
-		
-		system.sendVar(gameRecord,socketOut,resultOut,out);
-		printer = new Printer(out);
+			//system.sendVar(gameRecord,socketOut,resultOut,out);
+		myIO = system.getIO();
 	}
 	
 	@Override
-	public void run() 
-		{ new MainProc(system,totalRounds).main(); }
+	public void run()
+	{ 
+		mainProc = new MainProc(system,totalRounds);
+		mainProc.main();
+	}
 	
 	
 	
 	public static final boolean EQUAL = true;
-	public static final boolean NOTEQ = false;
+	public static final boolean NOTEQ = false; // Not Equal
 	
+	public void stopTheThread() { mainProc.stopTheThread(); }
 	
 	///////////////////  Utilities  ///////////////////
 	

@@ -32,7 +32,7 @@ public abstract class ChessSystem
 	public void setType(int t) { type = t; }
 	public Deck getDeck() { return deck; }
 	
-	public abstract void init(Screen screen, PrintStream socketOut);
+	public abstract void init(PrintStream socketOut);
 	public abstract void roundStart();
 	public abstract void addMoneyToResult( int gameStatus,int money,int curGame);
 	public abstract void sendVar( GameRecord gr, 
