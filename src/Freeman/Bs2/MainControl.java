@@ -5,15 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Hashtable;
 import java.util.Random;
 import java.util.StringTokenizer;
-
-import Freeman.Chess.ChessMajian;
 
 public class MainControl extends Thread
 {
@@ -54,8 +47,8 @@ public class MainControl extends Thread
 							autoPost();
 					//else if ( tok.equals("FISHING") ) 
 						//fishingControl();
-					else if ( tok.equals("CHESSGAME") ) 
-						chessGameControl();
+					//else if ( tok.equals("CHESSGAME") ) 
+						//chessGameControl();
 					else if ( tok.equals("QUIT") || tok.equals("EXIT")) // end.
 							socket.close();
 					else if ( tok.equals("LEFT") )
@@ -116,178 +109,15 @@ public class MainControl extends Thread
 		System.out.println("-- /ascii X : write a single char  -->  X=char | X=^@ (@=a~z) | X=int");
 		System.out.println("-- /exit (/quit) : stop the program");
 		
+		/*
 		System.out.println("Special function..\n");
 		System.out.println("-- /autopost : auto post a fucking article (random char) on the board where you are");
+		*/
 		/*
 		System.out.println("-- /fishing  : fish users on board with ^u for a period of time");
 		System.out.println("		-- /stop  : stop fishing and record to file");
 		System.out.println("		-- /write  : write the latest record now , but continue fishing");
 		 */
-	}
-	
-	void chessGameControl()
-	{
-		String s,moneyToPlay;
-		int gameTime=0, demo=0, delayTime=0;
-		
-		try
-		{ 
-			System.out.println("How many rounds to play ?");
-			s = in.readLine(); 
-			
-			gameTime = Integer.parseInt(s);
-			System.out.println("How much money to play ?");
-			moneyToPlay = in.readLine(); 
-			
-			System.out.println("Mode: [" + Freeman.Chess.Parameters.Bs2Params.EARN_MONEY +
-				"]Earm Money  ["+ Freeman.Chess.Parameters.Bs2Params.DEMONSTATE + "]Demonstrate");
-			s = in.readLine();
-			demo = Integer.parseInt(s);
-			
-			System.out.println("Set the delay time: (ms)");
-			s = in.readLine();
-			delayTime = Integer.parseInt(s);
-			
-			// go to the main screen of chessgame : (it asks how much $ you wanna play)
-			backToMain(socketOut);
-			socketOut.print("x\rg\r2\r3\r"); 
-			ChessMajian cm = new ChessMajian(socketOut,screen,gameTime,
-									moneyToPlay,demo,delayTime);
-			cm.start();
-
-			while ( cm.isAlive() )
-			{
-				s = in.readLine();
-				if (s.equals("/screen") )
-					screen.print();
-				else if (s.equals("/stop") )
-					cm.stopTheThread();
-				sleep(1000);
-			}
-			System.out.println("ChessMajian Ends well");
-		}
-		//catch (InterruptedException e) { System.out.println("!!! Chess Interrupted !!!"); }
-		catch (Exception e) { 
-			System.out.println("!!! User Input wrong !!!");
-			return;
-		}
-		
-	}
-	
-	/// --  "Fishing" related  Functions  -- ///
-	
-	public static int stopFishFlag;
-	
-	void fishingControl()
-	{
-		stopFishFlag=0;
-		Hashtable<String,User> hash = new Hashtable<String,User>();
-		new Fishing(hash).start();
-		
-		while ( stopFishFlag ==0 )
-		{
-			try
-			{
-				String s = in.readLine();
-				if (s.equals("/stop") )
-				{
-					stopFishFlag = 1;
-					printFish(hash,fileOut);
-				}
-				else if (s.equals("/write") )
-					printFish(hash,fileOut);
-			}catch (Exception e){}
-			
-		}
-		
-		System.out.println("--- Fishing ends properly ---");
-		
-		return;
-	}
-	
-	class Fishing extends Thread
-	{
-		Hashtable<String,User> hash;
-		
-		Fishing(Hashtable<String,User> hash)
-		{
-			this.hash = hash;
-		}
-		@Override
-		public void run()
-		{
-			socketOut.write(21); //^u
-			try {Thread.sleep(300);}
-			catch (Exception e){}
-			
-			while (stopFishFlag==0)
-			{
-				left(socketOut);
-				try {Thread.sleep(300);}  catch (Exception e){}
-				screen.clear();
-				try {Thread.sleep(500);}  catch (Exception e){}
-				
-				socketOut.write(21);
-				try {Thread.sleep(200);}  catch (Exception e){}
-				
-				ScreenTokenizer sk = new ScreenTokenizer(screen ,"ºô¤Í¦Cªí");
-				ScreenIterator si = sk.findNextPattern(); // friend title (ªO¦ñ)
-				if (si.scr==null)  continue;
-				
-				ScreenTokenizer stk = new ScreenTokenizer(screen ,"36m");
-				ScreenIterator sti = stk.findNextPattern(); // friend title (ªO¦ñ)
-				
-				if (sti.scr != null)
-				{
-					sti = stk.findNextPattern();
-					while (sti.scr != null)
-					{
-						String aftString = stk.afterStrings(sti);
-						//System.out.println("\n\n " + aftString );
-						
-						String id="",nick="";
-						StringTokenizer st = new StringTokenizer(aftString," \t\r\n");
-						if (st.hasMoreElements() )
-							id = st.nextToken();
-						else
-							System.out.println("aftString=" + aftString);
-						if (st.hasMoreElements() )
-							nick = st.nextToken();
-						else
-							System.out.println("aftString=" + aftString);
-						
-						if ( hash.get(id)==null ) // not find
-						{
-							Date date = new Date();
-							SimpleDateFormat dateFm = new SimpleDateFormat("EEEE/MMMM/dd/kk:mm:ss");
-							String time = (dateFm.format(date));
-							hash.put(id, new User(id,nick,time) );
-							printFish(hash,fileOut);
-						}
-						sti = stk.findNextPattern();
-					}
-				} // if
-				try {Thread.sleep(100);}  catch (Exception e){}
-			}// for
-			
-			return;
-		}
-	}
-	
-	static void printFish(Hashtable<String,User> hash, PrintStream fileOut)
-	{
-		try { fileOut = new PrintStream("Visitor List.txt"); } catch (Exception e){}
-		Collection<User> col = hash.values();
-		User[] users = (User[]) col.toArray(new User[col.size()] );   // 
-		Arrays.sort(users,new UserComp() );
-		
-		for ( int i=0;i<col.size();i++ )
-		{
-			User u = users[i];
-			fileOut.printf("%20s%20s%40s\r\n",u.id, u.nickname,u.loginTime );  // u.id + "\t\t" + u.nickname + "\t\t" + u.loginTime
-			fileOut.flush();
-		}
-		fileOut.close();
 	}
 	
 	////////////////////////////////////////////////////////////////////////////////////

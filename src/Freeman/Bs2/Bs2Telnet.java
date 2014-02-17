@@ -45,8 +45,6 @@ import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import Freeman.Chess.ChessMajian;
-
 public class Bs2Telnet
 {
 	
