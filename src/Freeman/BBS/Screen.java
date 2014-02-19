@@ -147,45 +147,7 @@ public class Screen
 				switch (state)
 				{
 					case INIT:
-						if ( x==27 ) // esc = *
-							state = CTRL_SIG;
-						else if (x=='\r')
-							row = 1;
-						else if (x=='\n')
-						{
-							if (col>=24)
-								System.out.println("!!! col overwhelm !!!");
-							col++;
-							//row = 1;
-						}
-						else if (x==8) // back space with no delete
-						{
-							if (row>0) 
-								row--;
-							else
-								System.out.println("!!! backspace over row 1 !!!");
-						}
-						
-						// all others input -> put to screen
-						else 
-						{
-							if ( row < WORD_PER_LINE*10 )
-							{
-								// scrBuf[col][row] = x
-								scrBuf[col].setCharAt(row, (char)x );
-								if (x<128) 
-									row++;
-								else // not ascii  like Big5
-								{
-									scrBuf[col].setCharAt(row+1, (char)0 );
-									row += 2;
-								}
-								
-							}
-							else
-								System.out.print("!!! row too long !!!");
-								
-						}
+						state_INIT(x);
 						break;
 						
 					case CTRL_SIG:
@@ -201,53 +163,8 @@ public class Screen
 						break;
 					
 					case PAR_LIST:
-						if ( Character.isDigit( (char)x ) )
-						{
-							Int a = new Int(x);
-							// ends and returns a as the next x (not a digit)
-							par[par_num] = inputInt(a); 
-							x = a.value;
-							continue; // cont while
-						}
-						else if (x==';')
-							par_num ++ ;
-						else if (x=='K') // clear line code  //NOT DONE
-						{
-							if (par[1]==0) // *[0K
-							{
-								clearCurLineFromCursor();
-								backToInitState();
-							}
-						}
-						
-						else if (x=='J') // clear screen code //NOT DONE
-						{
-							if (par[1]==2)
-							{
-								clear();  // screen clear
-								backToInitState();
-							}
-						}
-						else if (x=='m') // 色碼 -> don't bother
-							backToInitState();
-						else if (x=='H') // 位移碼
-						{
-							if (parNum)
-							col = par[1];
-							row = par[2];
-							backToInitState();
-						}
-						else if ( x==27 ) // esc = *
-							state = CTRL_SIG;
-						else
-						{
-							System.err.print("!!! 有奇怪的東西喔 !!! : ");
-							System.err.println( (x>0 & x<127)? (char)x:"" );
-							
-							backToInitState();
-						}
-					break;
-					
+						state_PAR_LIST(x);
+						break;
 					
 					default:
 						System.out.println("!!! State machine wrong !!!");
@@ -256,6 +173,96 @@ public class Screen
 				break;
 			} //while(true)
 		} // putToScreen()
+		
+		void state_INIT(int x)
+		{
+			if ( x==27 ) // esc = *
+				state = CTRL_SIG;
+			else if (x=='\r')
+				row = 1;
+			else if (x=='\n')
+			{
+				if (col>=24)
+					System.out.println("!!! col overwhelm !!!");
+				col++;
+				//row = 1;
+			}
+			else if (x==8) // back space with no delete
+			{
+				if (row>0) 
+					row--;
+				else
+					System.out.println("!!! backspace over row 1 !!!");
+			}
+			
+			// all others input -> put to screen
+			else 
+			{
+				if ( row < WORD_PER_LINE*10 )
+				{
+					// scrBuf[col][row] = x
+					scrBuf[col].setCharAt(row, (char)x );
+					if (x<128) 
+						row++;
+					else // not ascii  like Big5
+					{
+						scrBuf[col].setCharAt(row+1, (char)0 );
+						row += 2;
+					}
+				}
+				else
+					System.out.print("!!! row too long !!!");	
+			}
+		}
+		
+		void state_PAR_LIST(int x)
+		{
+			if ( Character.isDigit( (char)x ) )
+			{
+				Int a = new Int(x);
+				// ends and returns a as the next x (not a digit)
+				par[par_num] = inputInt(a); 
+				x = a.value;
+				continue; // cont while
+			}
+			else if (x==';')
+				par_num ++ ;
+			else if (x=='K') // clear line code  //NOT DONE
+			{
+				if (par[1]==0) // *[0K
+				{
+					clearCurLineFromCursor();
+					backToInitState();
+				}
+			}
+			
+			else if (x=='J') // clear screen code //NOT DONE
+			{
+				if (par[1]==2)
+				{
+					clear();  // screen clear
+					backToInitState();
+				}
+			}
+			else if (x=='m') // 色碼 -> don't bother
+				backToInitState();
+			else if (x=='H') // 位移碼
+			{
+				if (parNum)
+				col = par[1];
+				row = par[2];
+				backToInitState();
+			}
+			else if ( x==27 ) // esc = *
+				state = CTRL_SIG;
+			else
+			{
+				System.err.print("!!! 有奇怪的東西喔 !!! : ");
+				System.err.println( (x>0 & x<127)? (char)x:"" );
+				
+				backToInitState();
+			}
+		}
 		
 		int inputInt(Int num)
 		{
