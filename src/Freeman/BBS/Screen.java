@@ -139,11 +139,13 @@ public class Screen
 			}
 		}
 		
-		// this is a state machine
+		public static final int NOT_SET = -1;
+		
+		// this is a State Machine
 		void putToScreen(int x) 
 		{
-			while (true)
-			{
+			//while (true)
+			//{
 				switch (state)
 				{
 					case INIT:
@@ -170,8 +172,8 @@ public class Screen
 						System.out.println("!!! State machine wrong !!!");
 						backToInitState();
 				} // switch
-				break;
-			} //while(true)
+				//break;
+			//} //while(true)
 		} // putToScreen()
 		
 		void state_INIT(int x)
@@ -223,36 +225,51 @@ public class Screen
 				// ends and returns a as the next x (not a digit)
 				par[par_num] = inputInt(a); 
 				x = a.value;
-				continue; // cont while
+					//continue;   ahh ! have to send x back to main func
 			}
 			else if (x==';')
 				par_num ++ ;
-			else if (x=='K') // clear line code  //NOT DONE
-			{
-				if (par[1]==0) // *[0K
-				{
-					clearCurLineFromCursor();
-					backToInitState();
-				}
-			}
 			
-			else if (x=='J') // clear screen code //NOT DONE
+			// A telnet control code
+			else if ( Character.isAlphabetic( (char)x) )
 			{
-				if (par[1]==2)
+				for (int i=1; i<=3; i++)
 				{
-					clear();  // screen clear
-					backToInitState();
+					if ( par[i] != NOT_SET )
+					{
+						par_num = i;
+						break;
+					}
 				}
-			}
-			else if (x=='m') // ¦â½X -> don't bother
+				
+				// CODE TYPES
+				
+				if (x=='K') // clear line code  //NOT DONE
+				{
+					if (par[1]==0) // *[0K
+						clearCurLineFromCursor();
+				}
+				
+				else if (x=='J') // clear screen code //NOT DONE
+				{
+					if (par[1]==2)
+						clear();  // screen clear
+				}
+				
+				else if (x=='m') ; // color code -> don't bother
+
+				else if (x=='H') // move code
+				{
+					if (true) //parNum
+					col = par[1];
+					row = par[2];
+				}
+				else  // not a special
+					;
+				
 				backToInitState();
-			else if (x=='H') // ¦ì²¾½X
-			{
-				if (parNum)
-				col = par[1];
-				row = par[2];
-				backToInitState();
-			}
+			} // else : telnet control code
+			
 			else if ( x==27 ) // esc = *
 				state = CTRL_SIG;
 			else
@@ -284,8 +301,8 @@ public class Screen
 		{
 			// default setting
 			for(int i=1;i<=3;i++)
-				par[i]=-1 ;
-			par_num = 1;
+				par[i]= NOT_SET ;
+			par_num = 0;
 			state = INIT;
 		}
 		void clearCurLineFromCursor()
