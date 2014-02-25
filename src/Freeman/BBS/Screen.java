@@ -35,7 +35,7 @@ public class Screen
 	public static final int STABLE = 1;
 	public static final int UNSTABLE = 2;
 	
-	public static final String CLEAR_LINE="                        ";
+	//public static final String CLEAR_LINE="                        ";
 	
 	private Socket socket;
 	//private BufferedReader socketIn;
@@ -56,7 +56,6 @@ public class Screen
 		}
 		
 		new ScreenInput().start();  
-		//catch (IOException e) { System.out.println("!!! Screen Construct Wrong !!!"); }
 	}
 	
 	public void setStateToStable () { refresh_state = STABLE; }
@@ -69,12 +68,9 @@ public class Screen
 		lineNum = 1;
 		for (int i=1 ;i<= BBS_ROW_NUM ; i++)
 		{
-			//scrBuf[i] = new StringBuffer(CLEAR_LINE);
 			scrBuf[i].setLength(0);  	// clear line
 			scrBuf[i].setLength(SCREEN_REAL_WIDTH);
 		}
-		
-		//System.out.print("---");
 	}
 	public void print()
 	{
@@ -87,10 +83,12 @@ public class Screen
 				System.out.print('_'); // to align
 			
 			for(k=1; k<= WORD_PER_LINE ; k++) // scrBuf[i].length()
+			{
 				if (scrBuf[i].charAt(k) != 0 )
 					System.out.print( scrBuf[i].charAt(k) );
 				else	
 					System.out.print (BLANK);
+			}
 			
 			System.out.println("");
 		}
@@ -101,7 +99,7 @@ public class Screen
 	{
 		int ptr_x, ptr_y;
 		int state,par_num,par[]=new int[6] ; 
-		// 3 is enough in theory? but I've saw 4  *[0;1;37;44m
+		// 3 is enough in theory? but I've saw 4, like *[0;1;37;44m
 		
 		PushbackInputStream pbIn;
 		InputStreamReader isrIn;
@@ -147,36 +145,33 @@ public class Screen
 		// this is a State Machine
 		void putToScreen(int x) 
 		{
-			//while (true)
-			//{
-				switch (state)
-				{
-					case INIT:
-						state_INIT(x);
-						break;
-						
-					case CTRL_SIG:
-						if (x=='[')
-							state = PAR_LIST;
-						//else if (x=='*') // **A
-							//state = STAR_CTRL;
-						else
-						{
-							System.out.print("!!! CTRL_SIG wrong !!!");
-							backToInitState();
-						}
-						break;
+			switch (state)
+			{
+				case INIT:
+					state_INIT(x);
+					break;
 					
-					case PAR_LIST:
-						state_PAR_LIST(x);
-						break;
-					
-					default:
-						System.out.println("!!! State machine wrong !!!");
+				case CTRL_SIG:
+					if (x=='[')
+						state = PAR_LIST;
+					//else if (x=='*') // **A
+						//state = STAR_CTRL;
+					else
+					{
+						System.out.print("!!! CTRL_SIG wrong !!!");
 						backToInitState();
-				} // switch
-				//break;
-			//} //while(true)
+					}
+					break;
+				
+				case PAR_LIST:
+					state_PAR_LIST(x);
+					break;
+				
+				default:
+					System.out.println("!!! State machine wrong !!!");
+					backToInitState();
+			} // switch
+			
 		} // putToScreen()
 		
 		void state_INIT(int x)
@@ -223,22 +218,18 @@ public class Screen
 		{
 			if ( Character.isDigit( (char)x ) )
 			{
-				Int a = new Int(x);
-				// ends and returns a as the next x (not a digit)
+				// nextChar is the next input character.
+				Int nextChar = new Int(x);
 				par_num++;
-				par[par_num] = inputInt(a); 
+				par[par_num] = inputInt(nextChar); 
 				
-				// 2nd call
-				putToScreen(a.value);
-				
-				//x = a.value;
-					//continue;   ahh ! have to send x back to main func
+				// 2nd recursive call
+				putToScreen(nextChar.value);
 			}
 			else if (x==';') ;
 				// do nothing
-				//	org : par_num ++ ;
 			
-			// A telnet control code
+			// is a telnet control code
 			else if ( Character.isAlphabetic( (char)x) )
 			{
 				for (int i=COMMON_PARAM_MAXNUM; i>0; i--) // from big param to small
@@ -254,7 +245,7 @@ public class Screen
 				
 				if (x=='K') // clear line code  //NOT DONE
 				{
-					if (par[1]==0) // *[0K
+					if (par_num==0 || par_num==1 && par[1]==0) // *[0K
 						clearCurLineFromCursor();
 				}
 				
@@ -290,7 +281,7 @@ public class Screen
 					;
 				
 				backToInitState();
-			} // else : telnet control code
+			} // big else : telnet control code
 			
 			else if ( x==27 ) // esc = *
 				state = CTRL_SIG;
@@ -301,7 +292,8 @@ public class Screen
 				
 				backToInitState();
 			}
-		}
+			
+		} // state_PAR_LIST()
 		
 		int inputInt(Int num)
 		{
@@ -359,6 +351,7 @@ class ScreenIterator
 	
 }
 
+// Latent Bug exist : cannot search for chinese pattern over 2 words.
 class ScreenTokenizer
 {
 	public static final int  BBS_ROW_NUM = 24;

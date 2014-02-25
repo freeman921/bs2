@@ -47,8 +47,8 @@ public class MainControl extends Thread
 							autoPost();
 					//else if ( tok.equals("FISHING") ) 
 						//fishingControl();
-					//else if ( tok.equals("CHESSGAME") ) 
-						//chessGameControl();
+					else if ( tok.equals("FETCH") ) 
+							fetch();
 					else if ( tok.equals("QUIT") || tok.equals("EXIT")) // end.
 							socket.close();
 					else if ( tok.equals("LEFT") )
@@ -120,7 +120,6 @@ public class MainControl extends Thread
 		 */
 	}
 	
-	////////////////////////////////////////////////////////////////////////////////////
 	
 	void ascii(StringTokenizer st)
 	{
@@ -140,6 +139,13 @@ public class MainControl extends Thread
 		else
 			System.out.print("ASCII wrong..");
 		socketOut.flush();
+	}
+	
+	////////////  Advanced Functions  ////////////////
+	
+	void fetch()
+	{
+		new FetchArticle()
 	}
 	
 	void autoPost() throws IOException
