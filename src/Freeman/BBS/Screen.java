@@ -22,6 +22,7 @@ public class Screen
 {
 	public static final int  BBS_ROW_NUM = 24;
 	public static final int  WORD_PER_LINE = 80;
+	public static final int  COMMON_PARAM_MAXNUM = 3;
 	public static final int  SCREEN_REAL_WIDTH = WORD_PER_LINE *10;
 	
 	public static final int INIT = 0;
@@ -88,6 +89,8 @@ public class Screen
 			for(k=1; k<= WORD_PER_LINE ; k++) // scrBuf[i].length()
 				if (scrBuf[i].charAt(k) != 0 )
 					System.out.print( scrBuf[i].charAt(k) );
+				else	
+					System.out.print (BLANK);
 			
 			System.out.println("");
 		}
@@ -96,7 +99,7 @@ public class Screen
 	
 	class ScreenInput extends Thread
 	{
-		int row,col;
+		int ptr_x, ptr_y;
 		int state,par_num,par[]=new int[6] ; 
 		// 3 is enough in theory? but I've saw 4  *[0;1;37;44m
 		
@@ -107,7 +110,7 @@ public class Screen
 		
 		ScreenInput()
 		{
-			col=1;   row=1; 
+			ptr_x=1;   ptr_y=1; 
 			backToInitState(); // state and it's setting
 			
 			try {
@@ -181,39 +184,38 @@ public class Screen
 			if ( x==27 ) // esc = *
 				state = CTRL_SIG;
 			else if (x=='\r')
-				row = 1;
+				ptr_x = 1;
 			else if (x=='\n')
 			{
-				if (col>=24)
-					System.out.println("!!! col overwhelm !!!");
-				col++;
-				//row = 1;
+				if (ptr_y >=24)
+					System.out.println("!!! ptr_y overwhelm !!!");
+				else
+					ptr_y ++;
 			}
 			else if (x==8) // back space with no delete
 			{
-				if (row>0) 
-					row--;
+				if (ptr_x >0) 
+					ptr_x --;
 				else
-					System.out.println("!!! backspace over row 1 !!!");
+					System.out.println("!!! backspace go over ptr_x 1 !!!");
 			}
 			
 			// all others input -> put to screen
 			else 
 			{
-				if ( row < WORD_PER_LINE*10 )
+				if ( ptr_x < WORD_PER_LINE*10 )
 				{
-					// scrBuf[col][row] = x
-					scrBuf[col].setCharAt(row, (char)x );
+					scrBuf[ptr_y].setCharAt(ptr_x, (char)x );
 					if (x<128) 
-						row++;
+						ptr_x ++;
 					else // not ascii  like Big5
 					{
-						scrBuf[col].setCharAt(row+1, (char)0 );
-						row += 2;
+						scrBuf[ptr_y].setCharAt(ptr_x+1, (char)0 );
+						ptr_x += 2;
 					}
 				}
 				else
-					System.out.print("!!! row too long !!!");	
+					System.out.print("!!! ptr_x too long !!!");	
 			}
 		}
 		
@@ -223,17 +225,23 @@ public class Screen
 			{
 				Int a = new Int(x);
 				// ends and returns a as the next x (not a digit)
+				par_num++;
 				par[par_num] = inputInt(a); 
-				x = a.value;
+				
+				// 2nd call
+				putToScreen(a.value);
+				
+				//x = a.value;
 					//continue;   ahh ! have to send x back to main func
 			}
-			else if (x==';')
-				par_num ++ ;
+			else if (x==';') ;
+				// do nothing
+				//	org : par_num ++ ;
 			
 			// A telnet control code
 			else if ( Character.isAlphabetic( (char)x) )
 			{
-				for (int i=1; i<=3; i++)
+				for (int i=COMMON_PARAM_MAXNUM; i>0; i--) // from big param to small
 				{
 					if ( par[i] != NOT_SET )
 					{
@@ -260,9 +268,23 @@ public class Screen
 
 				else if (x=='H') // move code
 				{
-					if (true) //parNum
-					col = par[1];
-					row = par[2];
+					if ( par_num == 0 ) 
+					{
+						ptr_x = 1;
+						ptr_y = 1;
+					}
+					else if ( par_num == 1 )
+					{
+						ptr_y = par[1];
+						ptr_x = 1;
+					}
+					else if ( par_num == 2 )
+					{
+						ptr_y = par[1];
+						ptr_x = par[2];
+					}
+					else
+						System.err.println("!! Wrong : code 'H' param# !!");
 				}
 				else  // not a special
 					;
@@ -300,15 +322,15 @@ public class Screen
 		void backToInitState()
 		{
 			// default setting
-			for(int i=1;i<=3;i++)
+			for(int i=1;i<=COMMON_PARAM_MAXNUM;i++)
 				par[i]= NOT_SET ;
 			par_num = 0;
 			state = INIT;
 		}
 		void clearCurLineFromCursor()
 		{
-			for(int i=row ; i<=WORD_PER_LINE  ; i++)
-				scrBuf[col].setCharAt(i, BLANK);
+			for(int i=ptr_x ; i<=WORD_PER_LINE  ; i++)
+				scrBuf[ptr_y].setCharAt(i, BLANK);
 		}
 		
 	} // class ScreenInput
